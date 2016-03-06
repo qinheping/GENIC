@@ -1,0 +1,63 @@
+import java_cup.runtime.*;
+
+
+class TempString {
+	static String str = new String();
+}
+%%
+
+WHITESPACE = [ \n\t\r\f]
+LETTER = [a-zA-Z]
+DIGIT = [0-9]
+BIDIGIT = [0-1]
+SYMBOL = [a-zA-Z0-9._+\-*=%/?!$_~&^<>@]
+HEXLETTER = [a-fA-F0-9]
+
+%cup
+
+%eofval{
+return new Symbol(sym.EOF);
+%eofval}
+
+%line
+
+%%
+
+<YYINITIAL> 	"("	{ yybegin(DECLARESTATE);
+		 	  TempString.str = "(";}
+
+<YYINITIAL>	WHITESPACE	{// do nothing}
+
+<DECLARESTATE>{
+		[^;]	{ TempString.str += yytext();}
+		";"	{ TempString.str += ';';
+			  yybegin(YYINITIAL);
+			  return new Symbol(sym.DECLARATION, TempString.str);}
+}
+<YYINITIAL>	"==="	{ yybegin(PGROGRAMSTATE);}
+
+<PROGRAMSTATE>{	
+		WHITESPACE	{// do nothing}
+		"function"	{ return new Symbol(sym.FUNCTION);}
+		"("		{ return new Symbol(sym.LPAREN);}
+		")"		{ return new Symbol(sym.RPAREN);}
+		"["		{ return new Symbol(sym.LBRACKET);}
+		"]"		{ return new Symbol(sym.RBRACKET);}
+		";"		{ return new Symbol(sym.SEMICOLON);}
+		"|"		{ return new Symbol(sym.VLINE);}
+		"->"		{ return new Symbol(sym.MAPTO);}
+		":"		{ return new Symbol(sym.COLON);}
+		":="		{ return new Symbol(sym.DEFINE);}
+		"::"		{ return new Symbol(sym.CONCAT);}
+		"with"		{ yybegin(PREDICATESTATE);
+				  return new Symbol(sym.WITH);}
+		"++"		{ return new Symbol(sym.APPEND);}
+}
+
+<PREDICATESTATE>{
+		[^;]	{ TempString.str += yytext();}
+		";"	{ TempString.str += ';';
+			  yybegin(YYINITIAL);
+			  return new Symbol(sym.DECLARATION, TempString.str);}
+}
+
