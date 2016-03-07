@@ -1,0 +1,44 @@
+package Scanner;
+
+import java_cup.runtime.*;
+
+parser code {:
+	public static void main(String args[]) throws Exception {
+		new parser(new Yylex(System.in)).parse();
+	}
+:}
+
+
+terminal FUNCTION, LPAREN, RPAREN, SEMICOLON, VLINE, MAPTO, COLON, DEFINE, CONCAT, APPEND, INT, BOOL, BV, CHAR, WITH, INVERT, MATCH;
+terminal Integer INTVALUE;
+terminal String DECLARATION;
+terminal String ID;
+terminal String PREDICATE;
+terminal TokenVal OUTPUTFUNCTION;
+
+non terminal coder, declaration_list, program_list, program, query_list, query, program_head, program_body, input, type;
+non terminal match_head, case_list,case, pattern, output, outputfunction_list, function;
+
+start with coder;
+
+coder			::= declaration_list program_list query_list;
+declaration_list	::= declaration_list DECLARATION:str {: System.out.println(str); :} | ;
+program_list		::= program_list program | program;
+program			::= program_head DEFINE program_body;
+program_head		::= FUNCTION ID:str {: System.out.println("function name: "+str); :} input COLON type;
+input 			::= LPAREN ID:str {: System.out.println("function input: "+str); :} COLON type RPAREN;
+type			::= INT {: System.out.println("int"); :}
+			  | BOOL {: System.out.println("bool"); :}
+			  | CHAR {: System.out.println("char"); :}
+			  | LPAREN BV INTVALUE:n {: System.out.println("bv"+n); :} RPAREN;
+program_body		::= match_head case_list;
+match_head		::= MATCH ID:str {: System.out.println("match"+str); :} WITH;
+case_list		::= case_list VLINE case | ;
+case			::= pattern WITH PREDICATE:str {: System.out.println(str); :} MAPTO output;
+pattern			::= pattern CONCAT ID:str {: System.out.println(str); :} | ID:str {: System.out.println(str); :};
+output			::= outputfunction_list APPEND function;
+function		::= ID:str1 {: System.out.println(str1); :} LPAREN ID:str2 {: System.out.println(str2); :} RPAREN;
+outputfunction_list	::= outputfunction_list OUTPUTFUNCTION:t  {: System.out.println(t.index+t.str); :}| ;
+
+query_list		::= query_list query | query;
+query			::= INVERT ID:str {: System.out.println(str); :} SEMICOLON;
