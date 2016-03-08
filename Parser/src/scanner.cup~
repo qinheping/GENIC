@@ -9,7 +9,7 @@ parser code {:
 :}
 
 
-terminal FUNCTION, LPAREN, RPAREN, SEMICOLON, VLINE, MAPTO, COLON, DEFINE, CONCAT, APPEND, INT, BOOL, BV, CHAR, WITH, INVERT, MATCH;
+terminal FUNCTION, LPAREN, RPAREN, SEMICOLON, VLINE, MAPTO, COLON, DEFINE, CONCAT, APPEND, INT, BOOL, BV, CHAR, WITH, INVERT, MATCH, WHEN;
 terminal Integer INTVALUE;
 terminal String DECLARATION;
 terminal String ID;
@@ -34,11 +34,10 @@ type			::= INT {: System.out.println("int"); :}
 program_body		::= match_head case_list;
 match_head		::= MATCH ID:str {: System.out.println("match"+str); :} WITH;
 case_list		::= case_list VLINE case | ;
-case			::= pattern WITH PREDICATE:str {: System.out.println(str); :} MAPTO output;
+case			::= pattern WHEN PREDICATE:str {: System.out.println(str); :} MAPTO output;
 pattern			::= pattern CONCAT ID:str {: System.out.println(str); :} | ID:str {: System.out.println(str); :};
 output			::= outputfunction_list APPEND function;
-function		::= ID:str {: System.out.println(str); :} LPAREN ID:str {: System.out.println(str); :} RPAREN;
+function		::= ID:str1 {: System.out.println(str1); :} LPAREN ID:str2 {: System.out.println(str2); :} RPAREN;
 outputfunction_list	::= outputfunction_list OUTPUTFUNCTION:t  {: System.out.println(t.index+t.str); :}| ;
-
 query_list		::= query_list query | query;
 query			::= INVERT ID:str {: System.out.println(str); :} SEMICOLON;

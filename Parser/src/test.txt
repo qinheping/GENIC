@@ -1,0 +1,8 @@
+(this is a declaration);
+===
+function f (l: Int):Int :=
+	match l with
+	| a::b::c::l when (this is a predicate); -> [outf1;outf2;outf3] ++ g(x)
+===
+invert f;
+invert g;

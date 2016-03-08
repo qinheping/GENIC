@@ -62,16 +62,17 @@ return new Symbol(sym.EOF);
 <PROGRAMSTATE>	"Bool"		{ return new Symbol(sym.BOOL);}
 <PROGRAMSTATE>	"BitVector" 	{ return new Symbol(sym.BV);}
 <PROGRAMSTATE>	"Char"		{ return new Symbol(sym.CHAR);}
+<PROGRAMSTATE>	"with"		{ return new Symbol(sym.WITH);}
 <PROGRAMSTATE>	{DIGIT}+	{ return new Symbol(sym.INTVALUE, Integer.parseInt(yytext()));}
 <PROGRAMSTATE>	"["		{ yybegin(OUTPUTFUNCTIONSTATE);
 				  TempString.str = "";
 				  IndexNum.num = 1;}
 
-<PROGRAMSTATE>	"with"		{ yybegin(PREDICATESTATE);
+<PROGRAMSTATE>	"when"		{ yybegin(PREDICATESTATE);
 			  	  TempString.str = "";
-			  	  return new Symbol(sym.WITH);}
+			  	  return new Symbol(sym.WHEN);}
 
-<PROGRAMSTATE>	"==="		{ yybegin(QUERYSTATE);}
+<PROGRAMSTATE>	"==="		{ yybegin(QUERYSTATE); }
 <PROGRAMSTATE>	{LETTER}({LETTER}|{DIGIT})*	{ return new Symbol(sym.ID, new String(yytext()));}
 
 
@@ -81,15 +82,15 @@ return new Symbol(sym.EOF);
 
 
 <OUTPUTFUNCTIONSTATE>	[^;\]]	{ TempString.str += yytext();}
-<OUTPUTFUNCTIONSTATE>	";"	{ Symbol S = new Symbol(sym.OUTPUTFUNCTION, TempString.str);
+<OUTPUTFUNCTIONSTATE>	";"	{ Symbol S = new Symbol(sym.OUTPUTFUNCTION, new TokenVal(IndexNum.num,TempString.str));
 				  TempString.str = "";
 				  IndexNum.num ++;
 				  return S;}
 <OUTPUTFUNCTIONSTATE>	"]"	{ yybegin(PROGRAMSTATE);
-				  Symbol S = new Symbol(sym.OUTPUTFUNCTION, TempString.str);
+				  Symbol S = new Symbol(sym.OUTPUTFUNCTION, new TokenVal(IndexNum.num,TempString.str));
 				  return S;}
 
-
+<QUERYSTATE>	{WHITESPACE}	{}
 <QUERYSTATE>	"invert"	{return new Symbol(sym.INVERT);}
 <QUERYSTATE>	";"		{return new Symbol(sym.SEMICOLON);}
 <QUERYSTATE>	{LETTER}({LETTER}|{DIGIT})*	{ return new Symbol(sym.ID, new String(yytext()));}
