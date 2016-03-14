@@ -72,7 +72,7 @@ return new Symbol(sym.EOF);
 			  	  TempString.str = "";
 			  	  return new Symbol(sym.WHEN);}
 
-<PROGRAMSTATE>	"==="		{ yybegin(QUERYSTATE); System.out.println("ENTER QSTATE");}
+<PROGRAMSTATE>	"==="		{ yybegin(QUERYSTATE); }
 <PROGRAMSTATE>	{LETTER}({LETTER}|{DIGIT})*	{ return new Symbol(sym.ID, new String(yytext()));}
 
 
