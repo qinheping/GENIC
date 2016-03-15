@@ -82,12 +82,12 @@ return new Symbol(sym.EOF);
 
 
 <OUTPUTFUNCTIONSTATE>	[^;\]]	{ TempString.str += yytext();}
-<OUTPUTFUNCTIONSTATE>	";"	{ Symbol S = new Symbol(sym.OUTPUTFUNCTION, new TokenVal(IndexNum.num,TempString.str));
+<OUTPUTFUNCTIONSTATE>	";"	{ Symbol S = new Symbol(sym.OUTPUTFUNCTION, TempString.str);
 				  TempString.str = "";
 				  IndexNum.num ++;
 				  return S;}
 <OUTPUTFUNCTIONSTATE>	"]"	{ yybegin(PROGRAMSTATE);
-				  Symbol S = new Symbol(sym.OUTPUTFUNCTION, new TokenVal(IndexNum.num,TempString.str));
+				  Symbol S = new Symbol(sym.OUTPUTFUNCTION, TempString.str);
 				  return S;}
 
 <QUERYSTATE>	{WHITESPACE}	{}

@@ -519,12 +519,12 @@ return new Symbol(sym.EOF);
 						break;
 					case 33:
 						{ yybegin(PROGRAMSTATE);
-				  Symbol S = new Symbol(sym.OUTPUTFUNCTION, new TokenVal(IndexNum.num,TempString.str));
+				  Symbol S = new Symbol(sym.OUTPUTFUNCTION, TempString.str);
 				  return S;}
 					case -34:
 						break;
 					case 34:
-						{ Symbol S = new Symbol(sym.OUTPUTFUNCTION, new TokenVal(IndexNum.num,TempString.str));
+						{ Symbol S = new Symbol(sym.OUTPUTFUNCTION, TempString.str);
 				  TempString.str = "";
 				  IndexNum.num ++;
 				  return S;}

@@ -4,7 +4,7 @@ import java_cup.runtime.*;
 import java.util.*;
 parser code {:
 	public static void main(String args[]) throws Exception {
-		new parser(new Yylex(System.in)).parse();
+		Symbol root = new parser(new Yylex(System.in)).parse();
 	}
 :}
 
@@ -14,7 +14,7 @@ terminal Integer INTVALUE;
 terminal String DECLARATION;
 terminal String ID;
 terminal String PREDICATE;
-terminal TokenVal OUTPUTFUNCTION;
+terminal String OUTPUTFUNCTION;
 
 non terminal CoderNode 		coder;
 non terminal LinkedList 	decl_list;
@@ -32,7 +32,7 @@ non terminal CaseNode		case;
 non terminal LinkedList		pattern;
 non terminal OutputNode		output;
 non terminal LinkedList		outputfunction_list;
-non terminal FunctionNode	function;
+non terminal FuncNode	function;
 
 start with coder;
 
@@ -68,10 +68,10 @@ input 			::= LPAREN ID:idstr COLON type:t RPAREN
 			{:  RESULT = new InputNode(idstr,t); 
 			:};
 
-type			::= INT 			{: RESULT = new TypeNode(type.INT); :}
-			  | BOOL 			{: RESULT = new TypeNode(type.BOOL); :}
-			  | CHAR 			{: RESULT = new TypeNode(type.CHAR); :}
-			  | LPAREN BV INTVALUE:n 	{: RESULT = new TypeNode(type.BV,n); :} RPAREN;
+type			::= INT 			{: RESULT = new TypeNode(Type.INT); :}
+			  | BOOL 			{: RESULT = new TypeNode(Type.BOOL); :}
+			  | CHAR 			{: RESULT = new TypeNode(Type.CHAR); :}
+			  | LPAREN BV INTVALUE:n 	{: RESULT = new TypeNode(Type.BV,n); :} RPAREN;
 
 program_body		::= match_head:mhstr case_list:cl
 			{:  RESULT = new ProgbodyNode(mhstr, new CaseListNode(cl));
@@ -90,37 +90,41 @@ case_list		::= case_list:cl VLINE case:c
 			:};
 
 case			::= pattern:p WHEN PREDICATE:predstr MAPTO output:o
-			{:  RESULT = new CaseNode(p,predstr,o);
+			{:  RESULT = new CaseNode(p,new PredNode(predstr),o);
 			:};
 
 pattern			::= pattern:p CONCAT ID:idstr 
 			{:  p.addLast(idstr); 
+			    RESULT = p;
 			:} 
-			| 
-			{:  RESULT = new LinkedList<String>(); :};
-
-output			::= outputfunction_list:ofl APPEND function:f
-			{:  RESULT = new OutputNode(ofl,f);
+			| ID:idstr
+			{:  LinkedList<String> result = new LinkedList<String>();
+			    result.addLast(idstr);
+			    RESULT = result;
 			:};
 
-function		::= ID:idstr1 LPAREN ID:idstr2 RPAREN
-			{:  RESULT = new FunctionNode(idstr1, idstr2);
+output			::= outputfunction_list:ofl APPEND function:f
+			{:  RESULT = new OutputNode(new OutputFuncListNode(ofl),f);
 			:};
 
 outputfunction_list	::= outputfunction_list:ofl OUTPUTFUNCTION:t  
-			{:  ofl.addLast(t);
+			{:  ofl.addLast(new OutputFuncNode(t));
 			    RESULT = ofl; 
 			:}
 			| 
-			{:  RESULT = new LinkedList<TokenVal>();
+			{:  RESULT = new LinkedList<OutputFuncNode>();
+			:};
+
+function		::= ID:idstr1 LPAREN ID:idstr2 RPAREN
+			{:  RESULT = new FuncNode(idstr1, idstr2);
 			:};
 
 query_list		::= query_list:ql query:q
-			{:  ql.addLast(q);
+			{:  ql.addLast(new QueryNode(q));
 			    RESULT = ql;
 			:} 
 			| 
-			{:  RESULT = new LinkedList<String>();
+			{:  RESULT = new LinkedList<QueryNode>();
 			:};
 query			::= INVERT ID:idstr 
 			{:  RESULT = idstr;
