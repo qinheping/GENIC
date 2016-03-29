@@ -1,0 +1,65 @@
+package SMTParser;
+
+import java_cup.runtime.*;
+import java.util.*;
+parser code {:
+	public static void main(String args[]) throws Exception {
+	}
+:}
+
+terminal 			TK_DEFINE_FUN;
+terminal			TK_LEFTPAREN;
+terminal			TK_RIGHTPAREN;
+terminal			TK_FORALL;
+terminal			TK_EXISTS;
+terminal			RIGHTPAREN;
+terminal			LEFTPAREN;
+terminal			TK_UNDERSCORE;
+terminal	String		SYMBOL;
+terminal	String		NUMERAL;
+
+non terminal	CmdNode		cmd;
+non terminal	CmddefNode	cmd_define;
+non terminal	SortNode	a_sort;
+non terminal	TermNode	a_term;
+non terminal	QuantvarNode	quant_var;
+non terminal	LinkedList	quant_var_list;
+
+start with cmd;
+
+cmd			::= cmd_define:cd
+			{:  RESULT = new CmdNode(cd); :}
+			|   a_term:ct
+			{:  RESULT = new CmdNode(ct); :}
+			;
+
+cmd_define		::= LEFTPAREN SYMBOL:sbl LEFTPAREN quant_var_list:qvl RIGHTPAREN a_sort:ast a_term:atm RIGHTPAREN
+			{:  RESULT = new CmddefNode(sbl, qvl, ast, atm); :}
+			;
+
+quant_var_list		::= quant_var_list:qvl quant_var:qv
+			{:  qvl.addLast(qv); 
+			    RESULT = qvl;
+			:}
+			|   
+			{:  RESULT = new LinkedList<QuantvarNode>(); }
+			;
+
+quant_var		::= LEFTPAREN SYMBOL:s a_sort:st RIGHTPAREN
+			{:  RESULT = new QuantvarNode(s,st);:}
+			;
+
+a_sort			::= SYMBOL:s
+			{:  RESULT = new SortNode(s); :}
+			|   LEFTPAREN TK_UNDERSCORE SYMBOL:sl NUMERAL:i RIGHTPAREN
+			{:  RESULT = new SortNode(sl, Integer.parseInt(i)); :}
+			;
+
+a_term			::= LEFTPAREN TK_FORALL LEFTPAREN quant_var_list:qvl1 RIGHTPAREN a_term:t1 RIGHTPAREN
+			{:  RESULT = new TermNode(qvl1,t1,TermNode.forall); :}
+			|   LEFTPAREN TK_EXISTS LEFTPAREN quant_var_list:qvl1 RIGHTPAREN a_term:t1 RIGHTPAREN
+			{:  RESULT = new TermNode(qvl1,t1,TermNode.exists); :}
+			|   SYMBOL:s
+			{:  RESULT = new TermNode(s); :}
+			|   term_num_constant
+
