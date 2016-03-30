@@ -73,12 +73,20 @@ class TermNode extends SMTASTNode{
 		mylist = null;
 		mysymbol = null;
 	}
+	public TermNode(String s, TermlistNode l){
+		mysymbol = s;
+		mylist = l;
+		setChildtype(LIST);
+		mychild = null;
+	}
+	
 	public final static Integer FORALL = 0;
 	public final static Integer EXISTS = 1;
 	public final static Integer SYMBOL = 2;
 	public final static Integer CONSTANT = 3;
+	public final static Integer LIST = 4;
 	
-	private QvlistNode mylist;
+	private SMTASTNode mylist;
 	private SMTASTNode mychild;
 	private String mysymbol;
 	private Integer childtype;
@@ -99,9 +107,11 @@ class TermNode extends SMTASTNode{
 		case 2: System.out.println(mysymbol);
 				break;
 		case 3: mychild.print_this();
+				break;
+		case 4: mylist.print_this();
+				break;
 		}
 		System.out.print(") ");
-		
 	}
 	
 	public Integer getChildtype() {
@@ -113,6 +123,23 @@ class TermNode extends SMTASTNode{
 	
 }
 
+class TermlistNode extends SMTASTNode{
+	public TermlistNode(){
+		mylist = new LinkedList<TermNode>();
+	}
+	public void add(TermNode t){
+		mylist.addLast(t);
+	}
+	
+	private LinkedList<TermNode> mylist;
+	
+	@Override
+	public void print_this() {
+		// TODO Auto-generated method stub
+		
+	}
+}
+
 class QvlistNode extends SMTASTNode{
 	public QvlistNode(){
 		mylist = new LinkedList<QuantvarNode>();
@@ -121,7 +148,7 @@ class QvlistNode extends SMTASTNode{
 	private LinkedList<QuantvarNode> mylist;
 	
 	public void add(QuantvarNode n){
-		mylist.add(n);
+		mylist.addLast(n);
 	}
 	@Override
 	public void print_this() {
