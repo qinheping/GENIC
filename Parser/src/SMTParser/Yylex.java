@@ -222,7 +222,11 @@ class Yylex implements java_cup.runtime.Scanner {
 		/* 15 */ YY_NO_ANCHOR,
 		/* 16 */ YY_NO_ANCHOR,
 		/* 17 */ YY_NO_ANCHOR,
+<<<<<<< HEAD
+		/* 18 */ YY_NOT_ACCEPT,
+=======
 		/* 18 */ YY_NO_ANCHOR,
+>>>>>>> origin/HEAD
 		/* 19 */ YY_NO_ANCHOR,
 		/* 20 */ YY_NOT_ACCEPT,
 		/* 21 */ YY_NO_ANCHOR,
@@ -230,9 +234,15 @@ class Yylex implements java_cup.runtime.Scanner {
 		/* 23 */ YY_NO_ANCHOR,
 		/* 24 */ YY_NOT_ACCEPT,
 		/* 25 */ YY_NO_ANCHOR,
+<<<<<<< HEAD
+		/* 26 */ YY_NO_ANCHOR,
+		/* 27 */ YY_NO_ANCHOR,
+		/* 28 */ YY_NO_ANCHOR,
+=======
 		/* 26 */ YY_NOT_ACCEPT,
 		/* 27 */ YY_NO_ANCHOR,
 		/* 28 */ YY_NOT_ACCEPT,
+>>>>>>> origin/HEAD
 		/* 29 */ YY_NO_ANCHOR,
 		/* 30 */ YY_NO_ANCHOR,
 		/* 31 */ YY_NO_ANCHOR,
@@ -247,6 +257,31 @@ class Yylex implements java_cup.runtime.Scanner {
 		/* 40 */ YY_NO_ANCHOR,
 		/* 41 */ YY_NO_ANCHOR,
 		/* 42 */ YY_NO_ANCHOR,
+<<<<<<< HEAD
+		/* 43 */ YY_NO_ANCHOR
+	};
+	private int yy_cmap[] = unpackFromString(1,130,
+"2:9,5,3,2:2,4,2:18,5,30,2,23,30:3,2,6,7,30:2,2,21,28,30,25:2,27:8,2,1,30:5," +
+"26:6,30:20,2:3,30,8,2,12,24,26,19,14,9,30:2,16,30:2,13,30,20,10,30:2,11,17," +
+"18,22,29,30,15,30:2,2:3,30,2,0:2")[0];
+
+	private int yy_rmap[] = unpackFromString(1,44,
+"0,1:6,2,3,4,1,5,6,7,8,2:3,9,7,10,8,5,11,6,12,13,14,15,16,17,18,19,20,21,22," +
+"23,24,25,26,27,2,28,29")[0];
+
+	private int yy_nxt[][] = unpackFromString(30,31,
+"1,18,-1,2,3,4,5,6,7,8,41:4,42,41:4,43,41:3,20,27,9,41,9,41:3,-1:39,41:15,-1" +
+",41:7,-1:8,41:2,34,41:12,-1,41:7,-1:8,41:15,-1,41,9,41,9,21,41:2,-1:9,11,-1" +
+":2,11,-1,11,-1:4,11,-1:4,11:4,-1:28,12,-1:13,41:15,-1,41,13,41,13,41:3,-1:8" +
+",41:15,-1,41,14,41,14,41:3,-1,18:2,10,18:27,-1:15,22,-1:8,24,-1:14,41:5,15," +
+"41:9,-1,41:7,-1:8,41:9,16,41:5,-1,41:7,-1:8,41:12,17,41:2,-1,41:7,-1:8,41:1" +
+"5,-1,41:5,19,41,-1:8,41:5,23,41:9,-1,41:7,-1:8,41:10,25,41:4,-1,41:7,-1:8,4" +
+"1:14,26,-1,41:7,-1:8,41:4,28,41:10,-1,41:7,-1:8,41:9,29,41:5,-1,41:7,-1:8,4" +
+"1,30,41:13,-1,41:7,-1:8,41:3,31,41:11,-1,41:7,-1:8,41:8,32,41:6,-1,41:7,-1:" +
+"8,41,37,41:13,-1,41:7,-1:8,41:8,38,41:6,-1,41:7,-1:8,41:12,39,41:2,-1,41:7," +
+"-1:8,41:6,40,41:8,-1,41:7,-1:8,41:13,33,41,-1,41:7,-1:8,41:7,35,41:7,-1,41:" +
+"7,-1:8,41:6,36,41:8,-1,41:7");
+=======
 		/* 43 */ YY_NO_ANCHOR,
 		/* 44 */ YY_NO_ANCHOR,
 		/* 45 */ YY_NO_ANCHOR,
@@ -275,6 +310,7 @@ class Yylex implements java_cup.runtime.Scanner {
 ":2,40,44:13,-1,44:7,-1,44,-1:8,44:9,41,44:6,-1,44:7,-1,44,-1:8,44:13,42,44:" +
 "2,-1,44:7,-1,44,-1:8,44:7,43,44:8,-1,44:7,-1,44,-1:8,44:14,36,44,-1,44:7,-1" +
 ",44,-1:8,44:8,38,44:7,-1,44:7,-1,44,-1:8,44:7,39,44:8,-1,44:7,-1,44");
+>>>>>>> origin/HEAD
 
 	public java_cup.runtime.Symbol next_token ()
 		throws java.io.IOException {
@@ -350,6 +386,64 @@ return new Symbol(sym.EOF);
 					case -8:
 						break;
 					case 8:
+<<<<<<< HEAD
+						{ return new Symbol(sym.SYMBOL, new String(yytext())); }
+					case -9:
+						break;
+					case 9:
+						{ return new Symbol(sym.NUMERAL, new String(yytext())); }
+					case -10:
+						break;
+					case 10:
+						{  }
+					case -11:
+						break;
+					case 11:
+						{ return new Symbol(sym.HEXCONSTANT, new String(yytext())); }
+					case -12:
+						break;
+					case 12:
+						{ return new Symbol(sym.BINCONSTANT, new String(yytext())); }
+					case -13:
+						break;
+					case 13:
+						{ return new Symbol(sym.BVCONSTANT, new String(yytext())); }
+					case -14:
+						break;
+					case 14:
+						{ return new Symbol(sym.RATCONSTANT, new String(yytext())); }
+					case -15:
+						break;
+					case 15:
+						{ return new Symbol(sym.TK_FORALL); }
+					case -16:
+						break;
+					case 16:
+						{ return new Symbol(sym.TK_EXISTS); }
+					case -17:
+						break;
+					case 17:
+						{ return new Symbol(sym.TK_DEFINE_FUN); }
+					case -18:
+						break;
+					case 19:
+						{ return new Symbol(sym.SYMBOL, new String(yytext())); }
+					case -19:
+						break;
+					case 21:
+						{ return new Symbol(sym.SYMBOL, new String(yytext())); }
+					case -20:
+						break;
+					case 23:
+						{ return new Symbol(sym.SYMBOL, new String(yytext())); }
+					case -21:
+						break;
+					case 25:
+						{ return new Symbol(sym.SYMBOL, new String(yytext())); }
+					case -22:
+						break;
+					case 26:
+=======
 						{ return new Symbol(sym.TK_BANG);}
 					case -9:
 						break;
@@ -406,6 +500,7 @@ return new Symbol(sym.EOF);
 					case -22:
 						break;
 					case 25:
+>>>>>>> origin/HEAD
 						{ return new Symbol(sym.SYMBOL, new String(yytext())); }
 					case -23:
 						break;
@@ -413,6 +508,72 @@ return new Symbol(sym.EOF);
 						{ return new Symbol(sym.SYMBOL, new String(yytext())); }
 					case -24:
 						break;
+<<<<<<< HEAD
+					case 28:
+						{ return new Symbol(sym.SYMBOL, new String(yytext())); }
+					case -25:
+						break;
+					case 29:
+						{ return new Symbol(sym.SYMBOL, new String(yytext())); }
+					case -26:
+						break;
+					case 30:
+						{ return new Symbol(sym.SYMBOL, new String(yytext())); }
+					case -27:
+						break;
+					case 31:
+						{ return new Symbol(sym.SYMBOL, new String(yytext())); }
+					case -28:
+						break;
+					case 32:
+						{ return new Symbol(sym.SYMBOL, new String(yytext())); }
+					case -29:
+						break;
+					case 33:
+						{ return new Symbol(sym.SYMBOL, new String(yytext())); }
+					case -30:
+						break;
+					case 34:
+						{ return new Symbol(sym.SYMBOL, new String(yytext())); }
+					case -31:
+						break;
+					case 35:
+						{ return new Symbol(sym.SYMBOL, new String(yytext())); }
+					case -32:
+						break;
+					case 36:
+						{ return new Symbol(sym.SYMBOL, new String(yytext())); }
+					case -33:
+						break;
+					case 37:
+						{ return new Symbol(sym.SYMBOL, new String(yytext())); }
+					case -34:
+						break;
+					case 38:
+						{ return new Symbol(sym.SYMBOL, new String(yytext())); }
+					case -35:
+						break;
+					case 39:
+						{ return new Symbol(sym.SYMBOL, new String(yytext())); }
+					case -36:
+						break;
+					case 40:
+						{ return new Symbol(sym.SYMBOL, new String(yytext())); }
+					case -37:
+						break;
+					case 41:
+						{ return new Symbol(sym.SYMBOL, new String(yytext())); }
+					case -38:
+						break;
+					case 42:
+						{ return new Symbol(sym.SYMBOL, new String(yytext())); }
+					case -39:
+						break;
+					case 43:
+						{ return new Symbol(sym.SYMBOL, new String(yytext())); }
+					case -40:
+						break;
+=======
 					case 29:
 						{ return new Symbol(sym.SYMBOL, new String(yytext())); }
 					case -25:
@@ -485,6 +646,7 @@ return new Symbol(sym.EOF);
 						{ return new Symbol(sym.SYMBOL, new String(yytext())); }
 					case -42:
 						break;
+>>>>>>> origin/HEAD
 					default:
 						yy_error(YY_E_INTERNAL,false);
 					case -1:

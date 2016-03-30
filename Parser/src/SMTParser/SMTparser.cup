@@ -4,12 +4,21 @@ import java_cup.runtime.*;
 import java.util.*;
 parser code {:
 	public static void main(String args[]) throws Exception {
+<<<<<<< HEAD
+		Symbol root = new parser(new Yylex(System.in)).parse();
+		CmdNode Root = (CmdNode) root.value;
+		Root.print_this();
+=======
+>>>>>>> origin/HEAD
 	}
 :}
 
 terminal 			TK_DEFINE_FUN;
+<<<<<<< HEAD
+=======
 terminal			TK_LEFTPAREN;
 terminal			TK_RIGHTPAREN;
+>>>>>>> origin/HEAD
 terminal			TK_FORALL;
 terminal			TK_EXISTS;
 terminal			RIGHTPAREN;
@@ -17,13 +26,25 @@ terminal			LEFTPAREN;
 terminal			TK_UNDERSCORE;
 terminal	String		SYMBOL;
 terminal	String		NUMERAL;
+<<<<<<< HEAD
+terminal	String		BINCONSTANT;
+terminal	String		HEXCONSTANT;
+terminal	String		BVCONSTANT;
+terminal	String		RATCONSTANT;
+=======
+>>>>>>> origin/HEAD
 
 non terminal	CmdNode		cmd;
 non terminal	CmddefNode	cmd_define;
 non terminal	SortNode	a_sort;
 non terminal	TermNode	a_term;
 non terminal	QuantvarNode	quant_var;
+<<<<<<< HEAD
+non terminal	QvlistNode	quant_var_list;
+non terminal	NumconstNode	term_num_constant;
+=======
 non terminal	LinkedList	quant_var_list;
+>>>>>>> origin/HEAD
 
 start with cmd;
 
@@ -33,11 +54,26 @@ cmd			::= cmd_define:cd
 			{:  RESULT = new CmdNode(ct); :}
 			;
 
+<<<<<<< HEAD
+cmd_define		::= LEFTPAREN TK_DEFINE_FUN SYMBOL:sbl LEFTPAREN quant_var_list:qvl RIGHTPAREN a_sort:ast a_term:atm RIGHTPAREN
+=======
 cmd_define		::= LEFTPAREN SYMBOL:sbl LEFTPAREN quant_var_list:qvl RIGHTPAREN a_sort:ast a_term:atm RIGHTPAREN
+>>>>>>> origin/HEAD
 			{:  RESULT = new CmddefNode(sbl, qvl, ast, atm); :}
 			;
 
 quant_var_list		::= quant_var_list:qvl quant_var:qv
+<<<<<<< HEAD
+			{:  qvl.add(qv); 
+			    RESULT = qvl;
+			:}
+			|   
+			{:  RESULT = new QvlistNode(); :}
+			;
+
+quant_var		::= LEFTPAREN SYMBOL:s a_sort:st RIGHTPAREN
+			{:  RESULT = new QuantvarNode(s,st); :}
+=======
 			{:  qvl.addLast(qv); 
 			    RESULT = qvl;
 			:}
@@ -47,10 +83,33 @@ quant_var_list		::= quant_var_list:qvl quant_var:qv
 
 quant_var		::= LEFTPAREN SYMBOL:s a_sort:st RIGHTPAREN
 			{:  RESULT = new QuantvarNode(s,st);:}
+>>>>>>> origin/HEAD
 			;
 
 a_sort			::= SYMBOL:s
 			{:  RESULT = new SortNode(s); :}
+<<<<<<< HEAD
+			  |   LEFTPAREN TK_UNDERSCORE SYMBOL:sl NUMERAL:i RIGHTPAREN
+			{:  RESULT = new SortNode(sl, Integer.parseInt(i)); :}
+			;
+
+a_term			::= LEFTPAREN TK_FORALL LEFTPAREN quant_var_list:qvl RIGHTPAREN a_term:t1 RIGHTPAREN
+			{:  RESULT = new TermNode(qvl,t1,TermNode.FORALL); :}
+			|   LEFTPAREN TK_EXISTS LEFTPAREN quant_var_list:qvl RIGHTPAREN a_term:t1 RIGHTPAREN
+			{:  RESULT = new TermNode(qvl,t1,TermNode.EXISTS); :}
+			|   SYMBOL:s
+			{:  RESULT = new TermNode(s); :}
+			|   term_num_constant:nc
+			{:  RESULT = new TermNode(nc); :}
+			;
+
+term_num_constant	::= NUMERAL:s 		{: RESULT = new NumconstNode(NumconstNode.NUM, s); :}
+			|   BINCONSTANT:s 	{: RESULT = new NumconstNode(NumconstNode.BIN, s); :}
+			|   HEXCONSTANT:s 	{: RESULT = new NumconstNode(NumconstNode.HEX, s); :}
+			|   BVCONSTANT:s 	{: RESULT = new NumconstNode(NumconstNode.BV, s); :}
+			|   RATCONSTANT:s 	{: RESULT = new NumconstNode(NumconstNode.RAT, s); :}
+			;
+=======
 			|   LEFTPAREN TK_UNDERSCORE SYMBOL:sl NUMERAL:i RIGHTPAREN
 			{:  RESULT = new SortNode(sl, Integer.parseInt(i)); :}
 			;
@@ -63,3 +122,4 @@ a_term			::= LEFTPAREN TK_FORALL LEFTPAREN quant_var_list:qvl1 RIGHTPAREN a_term
 			{:  RESULT = new TermNode(s); :}
 			|   term_num_constant
 
+>>>>>>> origin/HEAD
