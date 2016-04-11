@@ -60,7 +60,7 @@ return new Symbol(sym.EOF);
 <PROGRAMSTATE>	"++"		{ return new Symbol(sym.APPEND);}
 <PROGRAMSTATE>	"Int"		{ return new Symbol(sym.INT);}
 <PROGRAMSTATE>	"Bool"		{ return new Symbol(sym.BOOL);}
-<PROGRAMSTATE>	"BitVector" 	{ return new Symbol(sym.BV);}
+<PROGRAMSTATE>	"BitVec" 	{ return new Symbol(sym.BV);}
 <PROGRAMSTATE>	"Char"		{ return new Symbol(sym.CHAR);}
 <PROGRAMSTATE>	"with"		{ return new Symbol(sym.WITH);}
 <PROGRAMSTATE>	{DIGIT}+	{ return new Symbol(sym.INTVALUE, Integer.parseInt(yytext()));}

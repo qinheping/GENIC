@@ -1,13 +1,15 @@
 package Parser;
 
+import Ast.*;
 import java_cup.runtime.*;
 import java.util.*;
+import java.io.*;
 parser code {:
-	public static void main(String args[]) throws Exception {
-		Symbol root = new parser(new Yylex(System.in)).parse();
-		CoderNode Root = (CoderNode) root.value;
-		Root.print_this();
-	}
+	public Symbol ParsingStreamToAST(InputStream s) throws Exception{
+		Symbol root = new parser(new Yylex(s)).parse();
+		return root;	
+}
+	
 :}
 
 
