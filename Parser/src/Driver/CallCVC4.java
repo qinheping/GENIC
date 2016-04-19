@@ -30,12 +30,15 @@ public class CallCVC4 {
 
             String line = null;  
             line = input.readLine();
+            if(line == null){
+            	return "<error>";
+            }else 
             if(line.equals("unsat")){            	
             //result = "<output>\n";
             while ((line = input.readLine ()) != null)
             	result = result + line + "\n";
             }	else{
-            result = "<error>";
+            result = "<unknown>";
             while ((line = br.readLine()) != null)  
                 result = result + line + "\n";  
             }
@@ -50,10 +53,5 @@ public class CallCVC4 {
 		fileWriter.write(s);
 		fileWriter.close();
 	}
-	public static void main(String args[]) throws Exception {
 
-			CallCVC4 cvc = new CallCVC4();
-			System.out.println(cvc.CallByString("haha"));
-	
-	}
 }

@@ -1,0 +1,8 @@
+(define-fun SUB2 ((x (BitVec 8))) (BitVec 8) (bvsub x #x02)
+);
+===
+function f (l: (BitVec 8)) : (BitVec 8) :=
+	match l with
+	| x::tail when (bvuge x #x10); -> [(SUB2 x)] ++ g(tail)
+===
+invert f;

@@ -1,5 +1,5 @@
 package SMTAst;
-
+import Ast.*;
 
 public class SortNode extends SMTASTNode{
 	public SortNode(String s){
@@ -26,5 +26,23 @@ public class SortNode extends SMTASTNode{
 		} else{
 			System.out.println("(_ " + mysymbol + " " + myparameter + ")");
 		}
+	}
+	@Override
+	public String to_String_z3() {
+		String result;
+		if(mytype == 0){
+			result = mysymbol;
+		} else{
+			result = "(_ " + mysymbol + " " + myparameter + ")";
+		}
+		return result;
+	}
+	
+	public TypeNode getType(){
+		if(mysymbol.equals("Int"))
+			return new TypeNode(Type.INT);
+		if(mysymbol.equals("BitVec"))
+			return new TypeNode(Type.BV,myparameter);
+		return null;
 	}
 }

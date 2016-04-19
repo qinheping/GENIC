@@ -14,10 +14,6 @@ public class SyGusConvertor {
 	
 	public String StringToScript(String s){
 		String result = "";
-		
-		
-		
-		
 		result = result + "(check-synth)";
 		return result;
 	}

@@ -1,7 +1,0 @@
-
-===
-function f (x: (BitVec 8)) : (BitVec 8) :=
-	match l with
-	| x::y::l when (bvuge x #x10); -> [(bvsub x #x01);(bvsub x #x01)] ++ g(x)
-===
-invert f;

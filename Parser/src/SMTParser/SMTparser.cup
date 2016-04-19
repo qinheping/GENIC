@@ -3,12 +3,12 @@ package SMTParser;
 import java_cup.runtime.*;
 import java.util.*;
 import SMTAst.*;
+import java.io.*;
 parser code {:
-	public static void main(String args[]) throws Exception {
-		Symbol root = new parser(new Yylex(System.in)).parse();
-		CmdNode Root = (CmdNode) root.value;
-		Root.print_this();
-	}
+	public Symbol ParsingStreamToAST(InputStream s) throws Exception{
+		Symbol root = new parser(new Yylex(s)).parse();
+		return root;	
+}
 :}
 
 terminal 			TK_DEFINE_FUN;
@@ -36,9 +36,9 @@ non terminal	TermlistNode	term_list;
 start with cmd;
 
 cmd			::= cmd_define:cd
-			{:  RESULT = new CmdNode(cd); :}
+			{:  RESULT = new CmdNode(cd,CmdNode.CMDDEF); :}
 			|   a_term:ct
-			{:  RESULT = new CmdNode(ct); :}
+			{:  RESULT = new CmdNode(ct,CmdNode.CMDTERM); :}
 			;
 
 cmd_define		::= LEFTPAREN TK_DEFINE_FUN SYMBOL:sbl LEFTPAREN quant_var_list:qvl RIGHTPAREN a_sort:ast a_term:atm RIGHTPAREN
@@ -60,6 +60,8 @@ quant_var		::= LEFTPAREN SYMBOL:s a_sort:st RIGHTPAREN
 a_sort			::= SYMBOL:s
 			{:  RESULT = new SortNode(s); :}
 			  |   LEFTPAREN TK_UNDERSCORE SYMBOL:sl NUMERAL:i RIGHTPAREN
+			{:  RESULT = new SortNode(sl, Integer.parseInt(i)); :}
+			  |   LEFTPAREN SYMBOL:sl NUMERAL:i RIGHTPAREN
 			{:  RESULT = new SortNode(sl, Integer.parseInt(i)); :}
 			;
 

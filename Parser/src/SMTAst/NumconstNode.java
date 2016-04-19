@@ -26,4 +26,8 @@ public class NumconstNode extends SMTASTNode{
 	public void setMytype(Integer mytype) {
 		this.mytype = mytype;
 	}
+	@Override
+	public String to_String_z3() {
+		return content;
+	}
 }

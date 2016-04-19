@@ -40,33 +40,39 @@ public class TermNode extends SMTASTNode{
 	private Integer childtype;
 	@Override
 	public void print_this() {
-		System.out.print("( ");
-		switch(this.getChildtype()){
-		case 0: System.out.print("forall (");
-				mylist.print_this();
-				System.out.print(") ");
-				mychild.print_this();
-				break;
-		case 1: System.out.print("exists (");
-				mylist.print_this();
-				System.out.print(") ");
-				mychild.print_this();
-				break;
-		case 2: System.out.println(mysymbol);
-				break;
-		case 3: mychild.print_this();
-				break;
-		case 4: mylist.print_this();
-				break;
-		}
-		System.out.print(") ");
+		//TODO
 	}
 	
 	public Integer getChildtype() {
 		return childtype;
 	}
+	
 	public void setChildtype(Integer childtype) {
 		this.childtype = childtype;
+	}
+	
+	@Override
+	public String to_String_z3() {
+		String result = "";
+		switch(this.getChildtype()){
+		case 0: result += "(forall (";
+				result += mylist.to_String_z3();
+				result += ") ";
+				result += mychild.to_String_z3() + ") ";
+				break;
+		case 1: result += "(exists (";
+				result += mylist.to_String_z3();
+				result += ") ";
+				result += mychild.to_String_z3() + ") ";
+				break;
+		case 2: result += mysymbol + " ";
+				break;
+		case 3: result += mychild.to_String_z3();
+				break;
+		case 4: result += "(" + mysymbol + " " + mylist.to_String_z3() + ") ";
+				break;
+		}
+		return result;
 	}
 	
 }
