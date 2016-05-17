@@ -1,8 +1,0 @@
-package injchecker;
-
-import com.microsoft.z3.*;
-
-public class TransitionInjChecker {
-	
-	public static bool check(Context ctx)
-}

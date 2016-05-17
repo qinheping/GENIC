@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename Java project &apos;Parser&apos; to &apos;GENIClib&apos;&#x0A;- Original element: &apos;Parser&apos;&#x0A;- Renamed element: &apos;Parser&apos;&#x0A;- Update references to refactored element" description="Rename Java project &apos;Parser&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=Parser" name="GENIClib" references="true" stamp="1461183583743" version="1.0"/>
-</session>
