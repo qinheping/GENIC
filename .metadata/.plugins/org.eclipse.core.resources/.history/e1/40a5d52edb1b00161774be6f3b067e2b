@@ -1,0 +1,69 @@
+package injchecker;
+
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+
+import ast.*;
+import automata.esfa.CartesianESFA;
+import automata.esfa.ESFAMove;
+import smtast.*;
+import theory.CharPred;
+import z3factory.Z3Factory;
+
+import com.microsoft.z3.*;
+
+public class ESFAConvertor {
+	List<ProgNode> progs;
+	String finalNode;
+	String startNode;
+	Map<String, Integer> nameList;
+	Context ctx;
+	
+	ESFAConvertor(CoderNode root, Context ctx){
+		this.progs = root.getProgList();
+		finalNode = "F";
+		startNode = "S";
+		nameList = new HashMap();
+		this.ctx = ctx;
+	}
+	
+	Integer getId(String s){
+		if(nameList.get(s) != null)
+			return nameList.get(s);
+		else{
+			nameList.put(s, nameList.size()+1);
+			return nameList.size();
+		}
+	}
+	
+	public CartesianESFA<BoolExpr, Expr> Convert() throws Exception{
+		Collection<ESFAMove<BoolExpr, Expr>> transitions = new LinkedList<ESFAMove<BoolExpr, Expr>>();
+		for(ProgNode node: this.progs){
+			// the id and name of FROM node
+			Integer from = getId(node.getName());
+			String from_s = node.getName();
+			
+			List<TransitionNode> transList = node.getTransList();
+			for(TransitionNode trans: transList){
+				// the id and name of TO node
+				Integer to = getId(trans.getOutput().getFunc().FuncName());
+				String to_s = trans.getOutput().getFunc().FuncName();
+				
+				Integer lookahead = trans.getLookahead();
+				// factory used to generate predicate
+				Z3Factory factory = new Z3Factory(ctx);
+				BoolExpr pred = (BoolExpr) factory.StringToExpr(trans.getPred());
+				BoolExpr[] preds = new BoolExpr[trans.getLookahead()];
+				//preds = toCartesianPreds(pred);
+				String [] wayPoints_s = new String[lookahead - 1];
+				for(int i = 0; i < wayPoints.length - 1; i++){
+					wayPoint
+				}
+			}
+		}
+		return null;
+	}
+}

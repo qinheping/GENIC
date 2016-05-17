@@ -1,4 +1,4 @@
-package SMTast;
+package smtast;
 
 public abstract class SMTASTNode { 
 	abstract public void print_this();

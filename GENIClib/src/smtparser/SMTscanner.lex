@@ -1,4 +1,4 @@
-package SMTParser;
+package smtparser;
 import java_cup.runtime.*;
 
 class TokenVal{

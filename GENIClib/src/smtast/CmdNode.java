@@ -1,4 +1,4 @@
-package SMTast;
+package smtast;
 import java.util.List;
 
 import ast.*;
@@ -23,10 +23,13 @@ class CmdNode extends SMTASTNode{
 	public Integer gettype(){
 		return childtype;
 	}
+	public SMTASTNode getChild(){
+		return mychild;
+	}
 	public String getFuncName(){
 		if(childtype == CMDTERM)
 			return null;
-		return ((CmddefNode)mychild).getFuncName();
+		return ((DefCmdNode)mychild).getFuncName();
 	}
 	@Override
 	public String to_String_z3() {
@@ -35,16 +38,16 @@ class CmdNode extends SMTASTNode{
 	public List<TypeNode> getIntype(){
 		if(childtype == CMDTERM)
 			return null;
-		return ((CmddefNode)mychild).getIntype();
+		return ((DefCmdNode)mychild).getIntype();
 	}
 	public List<String> getVarList(){
 		if(childtype == CMDTERM)
 			return null;
-		return ((CmddefNode)mychild).getVarList();
+		return ((DefCmdNode)mychild).getVarList();
 	}
 	public TypeNode getOuttype(){
 		if(childtype == CMDTERM)
 			return null;
-		return ((CmddefNode)mychild).getOuttype();
+		return ((DefCmdNode)mychild).getOuttype();
 	}
 }

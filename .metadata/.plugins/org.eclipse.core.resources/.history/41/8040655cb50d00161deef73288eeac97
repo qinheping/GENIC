@@ -1,0 +1,331 @@
+
+import java.util.*;
+import java.util.Map.Entry;
+
+import com.microsoft.z3.*;
+public class PDR {
+	private final List<Frame> R = new ArrayList<>();
+	private final Map<Cube,Cube> chains = new HashMap<>();
+	private Context ctx;
+	private Integer N = 0;
+	protected final Expr I;
+	protected final BoolExpr T;
+	protected final Expr P;
+	
+	public class Interpretation{
+		private final Map<Symbol, Boolean> map;
+		@SuppressWarnings("unused")
+		public Interpretation(Map<Symbol, Boolean> map) {
+			this.map = Collections.unmodifiableMap(map);
+		}
+	}
+	
+
+	@SuppressWarnings("serial")
+	private class Counterexample extends RuntimeException {
+		public final List<Interpretation> cex;
+
+		@SuppressWarnings("unused")
+		public Counterexample(List<Interpretation> cex) {
+			this.cex = cex;
+		}
+	}
+	
+	public List<Interpretation> check(){
+		R.add(new Frame(I,ctx));
+		try{
+		while(true){
+			Expr query = ctx.mkAnd((BoolExpr)R.get(N).toExpr(),ctx.mkNot((BoolExpr) P));
+			Optional<Model> result = check(ctx,(BoolExpr) query,Status.SATISFIABLE);
+			if(result.isPresent()){
+				Model mo = result.get();
+				Cube m = ModeltoCube(mo);
+				Cube t = generalizeSat(m, query);
+				System.out.println("m: = "+m.toExpr());
+				System.out.println(t.toExpr());
+				block(t, N);
+			} else {
+				propogateClauses();
+				if (existsEqualFrames()) {
+					return Collections.emptyList();
+				}
+				R.add(new Frame(ctx));
+				N++;
+				//System.out.println("Frames: " + N);
+			}
+		}}catch (Counterexample cex) {
+			return cex.cex;
+		}
+	}
+	
+	private boolean existsEqualFrames() {
+		for (int k = 1; k < N; k++) {
+			if (R.get(k).equals(R.get(k + 1))) {
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	private void propogateClauses() {
+		for (int k = 1; k < N; k++) {
+			for (Clause c : R.get(k).getClauses()) {
+				Expr query = ctx.mkAnd((BoolExpr)R.get(k).toExpr(), (BoolExpr)T, (BoolExpr)c.prime().toExpr());
+				Optional<Model> res = check(ctx,(BoolExpr) query,Status.SATISFIABLE);
+				if (!res.isPresent()) {
+					R.get(k + 1).addClause(c);
+				}
+			}
+		}
+	}
+	
+	private void block(Cube s0, Integer k0){
+		PriorityQueue<Obligation> Q = new PriorityQueue<>();
+		Q.add(new Obligation(s0, k0));
+		
+		while(!Q.isEmpty()){
+			Obligation en = Q.poll();
+			Cube s = (Cube) en.s;
+			int k = en.k;
+			
+			if(k == 0){
+				if(check(ctx,(BoolExpr) ctx.mkAnd(CubetoExpr(s),(BoolExpr)I),Status.SATISFIABLE).isPresent())
+					extractCounterexample(s);
+			} else {
+				Expr query = ctx.mkAnd((BoolExpr)R.get(k-1).toExpr(), ctx.mkNot((BoolExpr) s.toExpr()), T, (BoolExpr)s.prime().toExpr());
+				Optional<Model> result = check(ctx,(BoolExpr) query,Status.SATISFIABLE);
+				if(result.isPresent()){
+					// unblocked
+					Cube t = generalizeSat(ModeltoCube(result.get()), query);
+					chains.put(t, s);
+					Q.add(new Obligation(t, k - 1));
+					Q.add(new Obligation(s, k));
+				} else{
+					// blocked
+					Clause t = generalizeUnsat(s.negate(), ctx.mkAnd((BoolExpr)R.get(k-1).toExpr(), T));
+					for (int i = 1; i <= k; i++) {
+						R.get(i).addClause(t);
+					}
+
+					// Original cube is bad in future states too
+					if (k < N) {
+						Q.add(new Obligation(s, k + 1));
+					}
+				}
+			}
+		}
+	}
+	
+	// Inductively generalize 'clause' with respect to 'relative'
+		private Clause generalizeUnsat(Clause clause, Expr relative) {
+			Clause curr = clause;
+
+			for (Expr v : clause.getVars()) {
+				Clause reduced = curr.remove(v.getFuncDecl().getName());
+
+				// Clause cannot overlap initial states
+				if (check(ctx, ctx.mkAnd((BoolExpr)I, (BoolExpr)curr.toExpr()),Status.SATISFIABLE).isPresent()) {
+					continue;
+				}
+
+				Expr query = ctx.mkAnd((BoolExpr)relative, (BoolExpr)curr.toExpr(), (BoolExpr)curr.negate().prime().toExpr());
+				if (!check(ctx, (BoolExpr)query,Status.SATISFIABLE).isPresent()) {
+					curr = reduced;
+				}
+			}
+
+			if (curr != clause) {
+				System.out.println("Before: " + clause);
+				System.out.println("After: " + curr);
+				System.out.println();
+			}
+
+			return curr;
+		}
+
+	private void extractCounterexample(Cube s) {
+		List<Cube> cubes = new ArrayList<>();
+		List<Interpretation> args = new ArrayList<>();
+		Cube curr = s;
+		while (curr != null) {
+			cubes.add(curr);
+			curr = chains.get(curr);
+			args.add(new Interpretation(curr.toInterpretation()));
+		}
+		throw new Counterexample(args);
+	}
+	
+	// Constrain Cube c on Expr query
+	private Cube generalizeSat(Cube c, Expr query){
+		Map<Symbol,Boolean> interp = c.toInterpretation();
+		
+		// constrain interp on query, that is, deleting 
+		for (Expr v: c.getVars()){
+			
+			// if a var is not prime
+			if(!v.getFuncDecl().getName().toString().substring(v.getFuncDecl().getName().toString().length() - 1).equals('\'')){
+				Map<Symbol,Boolean> reduced = new HashMap<Symbol,Boolean>();		// construct a reduced interpretation by deleting v from interp
+				for(Symbol s: interp.keySet()){
+					if(!s.toString().equals(v.getFuncDecl().getName().toString()))	// if s =/= v
+						reduced.put(s, interp.get(s)); 								// put (s, s.value) into reduced
+				}
+				if(checkPresent(query,reduced))										// check whether all vars in reduced appear in query
+					interp = reduced;
+			}
+		}
+		return InterptoCube(interp);
+	}
+	
+	// Convert an interpretation to a Z3 Expr, such that the Expr is ture <=> all var are assigned as the given interp
+	public BoolExpr InterptoExpr(Map<Symbol,Boolean> interp){
+		Expr result = null;
+		Expr t = ctx.mkTrue();
+		Expr f = ctx.mkFalse();
+		Integer size = interp.size();
+		Integer i = 0;
+		Expr[] args = new Expr[size];
+		for(Symbol s: interp.keySet()){
+			if(interp.get(s))
+				args[i] = ctx.mkEq(ctx.mkBoolConst(s), t);
+			else
+				args[i] = ctx.mkEq(ctx.mkBoolConst(s), f);
+			i++;
+		}
+		return ctx.mkAnd((BoolExpr[]) args);
+	}
+	
+	// Convert an interpretation to a Cube
+	public Cube InterptoCube(Map<Symbol,Boolean> interp){
+		Set<Expr> positives = new HashSet<>();
+		Set<Expr> negatives = new HashSet<>();
+		for (Symbol s : interp.keySet()) {
+			if (interp.get(s)) {
+				positives.add(ctx.mkBoolConst(s));
+			} else {
+				negatives.add(ctx.mkBoolConst(s));
+			}
+		}
+		return new Cube(positives, negatives,ctx);
+	}
+	
+	// Convert a Cube to a Z3 Expr
+		public BoolExpr CubetoExpr(Cube c){
+			Set<Expr> positives = c.pos;
+			Set<Expr> negatives = c.neg;
+			Integer size = positives.size() + negatives.size();
+			BoolExpr[] args = new BoolExpr[size];
+			Integer i = 0;
+			for(Expr e: positives){
+				args[i] = ctx.mkBoolConst(e.getFuncDecl().getName());
+				i++;
+			}
+			for(Expr e: negatives){
+				args[i] = ctx.mkNot(ctx.mkBoolConst(e.getFuncDecl().getName()));
+				i++;
+			}
+			return ctx.mkAnd(args);
+		}
+	
+    Optional<Model> check(Context ctx, BoolExpr f, Status sat)
+    {
+        Solver s = ctx.mkSolver();
+        s.add(f);
+        if (s.check() != sat)
+            return Optional.empty();
+        if (sat == Status.SATISFIABLE)
+            return Optional.of(s.getModel());
+        else
+            return Optional.empty();
+    }
+    
+	public PDR(Expr I, BoolExpr T, Expr P, Context ctx){
+		this.I = I;
+		this.T = T;
+		this.P = P;
+		this.ctx = ctx;
+	}
+	
+	public Cube ModeltoCube(Model mo){
+		Set<Expr> positives = new HashSet<>();
+		Set<Expr> negatives = new HashSet<>();
+		for(FuncDecl f: mo.getConstDecls()){
+			if(mo.getConstInterp(f).isTrue()){
+				positives.add(ctx.mkBoolConst(f.getName()));
+			}else
+				negatives.add(ctx.mkBoolConst(f.getName()));
+		}
+		return new Cube(positives,negatives,ctx);
+	}
+	
+	// Check whether all vars in interp appear in query
+	public boolean checkPresent(Expr query, Map<Symbol,Boolean> interp){
+		boolean flag;							
+		for(Symbol s: interp.keySet()){
+			flag = false;		
+			for(Expr e: query.getArgs()){
+				if(s.toString().equals(e.getFuncDecl().getName().toString()))
+					flag = true;												// we found a s in e so turn flag to true
+			}
+			if(!flag)															// return false when s not in e
+				return false;
+		}
+		return true;
+	}
+	
+	// Check whether an interpretation satisfy a given query
+	public boolean check(Expr query, Map<Symbol,Boolean> interp){
+		Solver s = ctx.mkSolver();
+        s.add(ctx.mkAnd((BoolExpr)query,InterptoExpr(interp)));
+        if (s.check() == Status.SATISFIABLE)
+            return true;
+        else
+        	return false;
+	}
+	
+	public void showFrames() {
+		for (int k = 1; k <= N; k++) {
+			System.out.println("Frame " + k + ": " + R.get(k));
+		}
+	}
+	public class Obligation implements Comparable<Obligation>{
+		public final Cube s;
+		public final int k;
+
+		public Obligation(Cube s, int k) {
+			this.s = s;
+			this.k = k;
+		}
+		public int compareTo(Obligation other) {
+			int r = Integer.compare(k, other.k);
+			if (r != 0) {
+				return r;
+			}
+			return s.toString().compareTo(other.s.toString());
+		}
+		@Override
+		public boolean equals(Object obj) {
+			if (this == obj) {
+				return true;
+			}
+			if (obj == null) {
+				return false;
+			}
+			if (!(obj instanceof Obligation)) {
+				return false;
+			}
+			Obligation other = (Obligation) obj;
+			if (k != other.k) {
+				return false;
+			}
+			if (s == null) {
+				if (other.s != null) {
+					return false;
+				}
+			} else if (!s.equals(other.s)) {
+				return false;
+			}
+			return true;
+		}
+	}
+	
+}

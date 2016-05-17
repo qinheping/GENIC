@@ -17,5 +17,8 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="lib"/>
+	<classpathentry kind="lib" path="lib/com.microsoft.z3.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/BooleanAlgebras"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/SVPAlib"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

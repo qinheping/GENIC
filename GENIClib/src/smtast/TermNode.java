@@ -1,9 +1,9 @@
-package SMTast;
+package smtast;
 
 
 
 public class TermNode extends SMTASTNode{
-	public TermNode(QvlistNode qvl, TermNode t, Integer i){
+	public TermNode(QVListNode qvl, TermNode t, Integer i){
 		setChildtype(i);
 		mychild = t;
 		mylist = qvl;
@@ -14,18 +14,20 @@ public class TermNode extends SMTASTNode{
 		setChildtype(SYMBOL);
 		mylist = null;
 		mychild = null;
+		symboltype = true;
 	}
-	public TermNode(NumconstNode cn){
+	public TermNode(NumConstNode cn){
 		mychild = cn;
 		setChildtype(CONSTANT);
 		mylist = null;
 		mysymbol = null;
 	}
-	public TermNode(String s, TermlistNode l){
+	public TermNode(String s, TermListNode l){
 		mysymbol = s;
-		mylist = l;
+		mylist = null;
 		setChildtype(LIST);
-		mychild = null;
+		mychild = l;
+		symboltype = false;
 	}
 	
 	public final static Integer FORALL = 0;
@@ -33,7 +35,10 @@ public class TermNode extends SMTASTNode{
 	public final static Integer SYMBOL = 2;
 	public final static Integer CONSTANT = 3;
 	public final static Integer LIST = 4;
+	public final static boolean FUNC = false;
+	public final static boolean VAR = true;
 	
+	private boolean symboltype;
 	private SMTASTNode mylist;
 	private SMTASTNode mychild;
 	private String mysymbol;
@@ -42,7 +47,21 @@ public class TermNode extends SMTASTNode{
 	public void print_this() {
 		//TODO
 	}
-	
+	public String getSymbol(){
+		return mysymbol;
+	}
+	public boolean isFuncSymbol(){
+		return !symboltype;
+	}
+	public boolean isVarSymbol(){
+		return symboltype;
+	}
+	public QVListNode getQVList(){
+		return (QVListNode) mylist;
+	}
+	public SMTASTNode getChild(){
+		return mychild;
+	}
 	public Integer getChildtype() {
 		return childtype;
 	}

@@ -1,0 +1,11 @@
+package injchecker;
+
+import com.microsoft.z3.*;
+
+public class TransitionInjChecker {
+	
+	public static boolean check(Context ctx, BoolExpr domain, String[] vars, Expr[] outputFunc){
+		return false
+	}
+	
+}

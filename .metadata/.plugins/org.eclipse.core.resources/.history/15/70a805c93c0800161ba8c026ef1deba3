@@ -1,0 +1,15 @@
+package test.z3factory;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class Z3FactoryUnitTest {
+
+	@Test
+	public void test() {
+		String s = "(forall ((x Nat)) (implies (p (pred x)) (p x)))"
+		fail("Not yet implemented");
+	}
+	
+}

@@ -4,9 +4,9 @@ import java.io.*;
 import java.util.*;
 
 import parser.parser;
+import smtast.*;
 import ast.*;
 import java_cup.runtime.*;
-import SMTast.*;
 
 public class mainDriver {
 	//TODO 
@@ -87,7 +87,7 @@ public class mainDriver {
 		z3script += funcdefCMD;
 		String PredCMD = "(define-fun Pred (";
 		for(int i = 0; i < inpattern.size()-1; i++) PredCMD += "(" + inpattern.get(i) + " " + intype.to_String_z3() + ")";
-		PredCMD += ") Bool" + t.getPred().getPred() + ")\n"; 
+		PredCMD += ") Bool" + t.getPred() + ")\n"; 
 		z3script += PredCMD + "(assert (exists (";
 		for(int i = 0; i < inpattern.size()-1;i++) z3script +="(" + inpattern.get(i) + " " + intype.to_String_z3()+")";
 		z3script +=") (and  (Pred "+getVarNameList(inpattern.subList(0, inpattern.size()-1))+") (and ";
@@ -130,7 +130,7 @@ public class mainDriver {
 		}
 		String PredCMD = "(define-fun Pred (";
 		for(int i = 0; i < inpattern.size()-1; i++) PredCMD += "(" + inpattern.get(i) + " " + intype.to_String() + ")";
-		PredCMD += ") Bool" + t.getPred().getPred() + ")\n"; 
+		PredCMD += ") Bool" + t.getPred() + ")\n"; 
 		String SyGusScript = null;
 		for(int i = 0; i < inpattern.size() - 1; i++){
 			SyGusScript = setlogic;

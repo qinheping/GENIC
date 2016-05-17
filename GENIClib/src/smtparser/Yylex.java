@@ -1,4 +1,4 @@
-package SMTparser;
+package smtparser;
 import java_cup.runtime.*;
 class TokenVal{
 	Integer index;

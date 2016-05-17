@@ -1,0 +1,42 @@
+//
+public class gObligation implements Comparable<gObligation>{
+		public final Cube s;
+		public final int k;
+
+		public gObligation(Cube s, int k) {
+			this.s = s;
+			this.k = k;
+		}
+		public int compareTo(gObligation other) {
+			int r = Integer.compare(k, other.k);
+			if (r != 0) {
+				return r;
+			}
+			return s.toString().compareTo(other.s.toString());
+		}
+		@Override
+		public boolean equals(Object obj) {
+			if (this == obj) {
+				return true;
+			}
+			if (obj == null) {
+				return false;
+			}
+			if (!(obj instanceof gObligation)) {
+				return false;
+			}
+			gObligation other = (gObligation) obj;
+			if (k != other.k) {
+				return false;
+			}
+			if (s == null) {
+				if (other.s != null) {
+					return false;
+				}
+			} else if (!s.equals(other.s)) {
+				return false;
+			}
+			return true;
+		}
+
+	}

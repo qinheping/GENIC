@@ -1,0 +1,7 @@
+package injchecker;
+
+import com.microsoft.z3.*;
+
+public class TransitionInjChecker {
+	context ctx;
+}

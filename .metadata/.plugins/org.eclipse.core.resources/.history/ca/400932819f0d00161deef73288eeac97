@@ -1,0 +1,29 @@
+import java.util.*;
+
+import com.microsoft.z3.*;
+
+public class Frame {
+	private final Expr expr;
+	private final Set<Clause> clauses = new HashSet<>();
+	public Context ctx;
+	
+	public Frame(Expr expr, Context ctx){
+		this.expr = expr;
+		this.ctx = ctx;
+	}
+	public Frame(Context ctx){
+		this.ctx = ctx;
+		this.expr = ctx.mkTrue();
+	}
+	
+	public Expr toExpr(){
+		int size = clauses.size();
+		BoolExpr[] args = new BoolExpr[size];
+		int i = 0;
+		for(Clause c: clauses){
+			args[i] = (BoolExpr) c.toExpr();
+			i++;
+		}
+		return ctx.mkAnd((BoolExpr)expr, )
+	}
+}

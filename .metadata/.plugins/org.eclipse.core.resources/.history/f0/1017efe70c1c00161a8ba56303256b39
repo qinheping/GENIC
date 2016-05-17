@@ -1,0 +1,21 @@
+package injchecker;
+
+import com.microsoft.z3.*;
+
+public class TransitionInjChecker {
+	
+	public static boolean check(Context ctx, BoolExpr domain, String[] varsName, Expr[] outputFunc, Sort sort){
+		Integer lookahead = varsName.length;
+		Expr[] vars = new Expr[lookahead];
+		Expr[] boundsA = new Expr[lookahead];
+		Expr[] boundsB = new Expr[lookahead];
+		for(int i = 0; i < lookahead; i++){
+			vars[i] = ctx.mkConst(varsName[i], sort); 
+			boundsA[i] = ctx.mkBound(i, sort);
+			boundsB[i] = ctx.mkBound(lookahead + i, sort);
+		}
+		BoolExpr notEQ = ctx.mkNot(ctx.mkEq(arg0, arg1))
+		return false;
+	}
+	
+}

@@ -2,3 +2,17 @@
 1461183722613	Rename package 'Parser'
 1461183731281	Rename package 'SMTAst'
 1461183739150	Rename package 'SMTParser'
+1461281129893	Rename type 'z3factory'
+1461281138867	Rename package 'SMTast'
+1461281143346	Rename package 'SMTparser'
+1461281369505	Rename type 'Z3factory'
+1461282163536	Rename type 'CmddefNode'
+1461282174309	Rename type 'CmdDefNode'
+1461282185758	Rename type 'QuantvarNode'
+1461282193939	Rename type 'QvlistNode'
+1461282201055	Rename type 'TermlistNode'
+1461282845106	Delete element
+1461296972864	Rename type 'NumconstNode'
+1461300401582	Delete element
+1461300405913	Delete element
+1461380053207	Delete elements

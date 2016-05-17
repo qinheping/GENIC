@@ -1,0 +1,92 @@
+package SMTParser;
+
+import java_cup.runtime.*;
+import java.util.*;
+import SMTAst.*;
+import java.io.*;
+parser code {:
+	public Symbol ParsingStreamToAST(InputStream s) throws Exception{
+		Symbol root = new parser(new Yylex(s)).parse();
+		return root;	
+}
+:}
+
+terminal 			TK_DEFINE_FUN;
+terminal			TK_FORALL;
+terminal			TK_EXISTS;
+terminal			RIGHTPAREN;
+terminal			LEFTPAREN;
+terminal			TK_UNDERSCORE;
+terminal	String		SYMBOL;
+terminal	String		NUMERAL;
+terminal	String		BINCONSTANT;
+terminal	String		HEXCONSTANT;
+terminal	String		BVCONSTANT;
+terminal	String		RATCONSTANT;
+
+non terminal	CmdNode		cmd;
+non terminal	DefCmdNode	cmd_define;
+non terminal	SortNode	a_sort;
+non terminal	TermNode	a_term;
+non terminal	QuantVarNode	quant_var;
+non terminal	QVListNode	quant_var_list;
+non terminal	NumConstNode	term_num_constant;
+non terminal	TermlistNode	term_list;
+
+start with cmd;
+
+cmd			::= cmd_define:cd
+			{:  RESULT = new CmdNode(cd,CmdNode.CMDDEF); :}
+			|   a_term:ct
+			{:  RESULT = new CmdNode(ct,CmdNode.CMDTERM); :}
+			;
+
+cmd_define		::= LEFTPAREN TK_DEFINE_FUN SYMBOL:sbl LEFTPAREN quant_var_list:qvl RIGHTPAREN a_sort:ast a_term:atm RIGHTPAREN
+			{:  RESULT = new DefCmdNode(sbl, qvl, ast, atm); :}
+			;
+
+quant_var_list		::= quant_var_list:qvl quant_var:qv
+			{:  qvl.add(qv); 
+			    RESULT = qvl;
+			:}
+			|   
+			{:  RESULT = new QVListNode(); :}
+			;
+
+quant_var		::= LEFTPAREN SYMBOL:s a_sort:st RIGHTPAREN
+			{:  RESULT = new QuantVarNode(s,st); :}
+			;
+
+a_sort			::= SYMBOL:s
+			{:  RESULT = new SortNode(s); :}
+			  |   LEFTPAREN TK_UNDERSCORE SYMBOL:sl NUMERAL:i RIGHTPAREN
+			{:  RESULT = new SortNode(sl, Integer.parseInt(i)); :}
+			  |   LEFTPAREN SYMBOL:sl NUMERAL:i RIGHTPAREN
+			{:  RESULT = new SortNode(sl, Integer.parseInt(i)); :}
+			;
+
+a_term			::= LEFTPAREN TK_FORALL LEFTPAREN quant_var_list:qvl RIGHTPAREN a_term:t1 RIGHTPAREN
+			{:  RESULT = new TermNode(qvl,t1,TermNode.FORALL); :}
+			|   LEFTPAREN TK_EXISTS LEFTPAREN quant_var_list:qvl RIGHTPAREN a_term:t1 RIGHTPAREN
+			{:  RESULT = new TermNode(qvl,t1,TermNode.EXISTS); :}
+			|   SYMBOL:s
+			{:  RESULT = new TermNode(s); :}
+			|   term_num_constant:nc
+			{:  RESULT = new TermNode(nc); :}
+			|   LEFTPAREN SYMBOL:s term_list:tl RIGHTPAREN
+			{:  RESULT = new TermNode(s,tl); :}
+			;
+
+term_list		::= term_list:tl a_term:t
+			{:  tl.add(t);
+			    RESULT = tl; :}
+			|
+			{:  RESULT = new TermlistNode(); :}
+			;
+
+term_num_constant	::= NUMERAL:s 		{: RESULT = new NumConstNode(NumconstNode.NUM, s); :}
+			|   BINCONSTANT:s 	{: RESULT = new NumConstNode(NumconstNode.BIN, s); :}
+			|   HEXCONSTANT:s 	{: RESULT = new NumConstNode(NumconstNode.HEX, s); :}
+			|   BVCONSTANT:s 	{: RESULT = new NumConstNode(NumconstNode.BV, s); :}
+			|   RATCONSTANT:s 	{: RESULT = new NumConstNode(NumconstNode.RAT, s); :}
+			;

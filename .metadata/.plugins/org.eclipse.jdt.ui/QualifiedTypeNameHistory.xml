@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java_cup.runtime.Symbol"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="com.microsoft.z3.Context"/>
+<fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="com.microsoft.z3.Expr"/>
+<fullyQualifiedTypeName name="smtast.CmdNode"/>
+<fullyQualifiedTypeName name="ast.CoderNode"/>
+<fullyQualifiedTypeName name="automata.esfa.CartesianESFA"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="z3factory.Z3Factory"/>
+<fullyQualifiedTypeName name="Driver.SMTDriver"/>
+<fullyQualifiedTypeName name="automata.sfa.SFAInputMove"/>
+<fullyQualifiedTypeName name="automata.sfa.SFA"/>
+<fullyQualifiedTypeName name="automata.sfa.SFAMove"/>
+<fullyQualifiedTypeName name="Z3Pred.Z3BooleanAlgebra"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+</qualifiedTypeNameHistroy>

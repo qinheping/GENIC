@@ -1,4 +1,4 @@
-package SMTast;
+package smtast;
 import ast.*;
 
 public class SortNode extends SMTASTNode{
@@ -36,6 +36,13 @@ public class SortNode extends SMTASTNode{
 			result = "(_ " + mysymbol + " " + myparameter + ")";
 		}
 		return result;
+	}
+	
+	public String getSort(){
+		return mysymbol;
+	}
+	public Integer getParameter(){
+		return myparameter;
 	}
 	
 	public TypeNode getType(){

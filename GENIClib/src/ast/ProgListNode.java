@@ -18,7 +18,9 @@ public class ProgListNode extends ASTnode{
 		}
 		return null;
 	}
-	
+	public List<ProgNode> getProgList(){
+		return myProgs;
+	}
 	@Override
 	public void print_this() {
 		for(ProgNode prog: myProgs){

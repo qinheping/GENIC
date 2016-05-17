@@ -1,4 +1,4 @@
-package SMTast;
+package smtast;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -6,14 +6,14 @@ import java.util.List;
 import ast.*;
 
 
-public class QvlistNode extends SMTASTNode{
-	public QvlistNode(){
-		mylist = new LinkedList<QuantvarNode>();
+public class QVListNode extends SMTASTNode{
+	public QVListNode(){
+		mylist = new LinkedList<QuantVarNode>();
 	}
 	
-	private LinkedList<QuantvarNode> mylist;
+	private LinkedList<QuantVarNode> mylist;
 	
-	public void add(QuantvarNode n){
+	public void add(QuantVarNode n){
 		mylist.addLast(n);
 	}
 	@Override
@@ -37,6 +37,9 @@ public class QvlistNode extends SMTASTNode{
 		}
 		return result;
 	}	
+	public List<QuantVarNode> getQVList(){
+		return mylist;
+	}
 	public List<String> getVarList(){
 		List<String> result = new ArrayList<String>();
 		for(int i=0; i<mylist.size(); i++){

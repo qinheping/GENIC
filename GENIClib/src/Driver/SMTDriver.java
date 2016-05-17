@@ -2,11 +2,11 @@ package Driver;
 
 import java.io.ByteArrayInputStream;
 
+import smtparser.parser;
 import java_cup.runtime.Symbol;
-import SMTparser.parser;
 
 public class SMTDriver {
-	static Symbol GetSMTRootFromString(String str) throws Exception{
+	public static Symbol GetSMTRootFromString(String str) throws Exception{
 		ByteArrayInputStream stream = new ByteArrayInputStream(str.getBytes());
 		Symbol root = new parser().ParsingStreamToAST(stream);
 		return root;

@@ -23,7 +23,9 @@ public class CoderNode extends ASTnode{
 	public ProgNode findProg(String name){
 		return myProgList.findProg(name);
 	}
-	
+	public List<ProgNode> getProgList(){
+		return myProgList.getProgList();
+	}
 	public void setDeclList(DeclListNode dl){
 		myDeclList = dl;
 	}

@@ -23,10 +23,15 @@ public class TransitionNode extends ASTnode{
 	public List<OutputFuncNode> getOutputFuncList(){
 		return myOutput.getOutputFuncList();
 	}
-	public PredNode getPred(){
+	public PredNode getPredNode(){
 		return myPred;
 	}
-	
+	public Integer getLookahead(){
+		return myPattern.size()-1;
+	}
+	public String getPred(){
+		return myPred.getPred();
+	}
 	@Override
 	public void print_this() {
 		System.out.print(myPattern.get(0));

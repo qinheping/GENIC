@@ -58,3 +58,1119 @@
 2016-04-20 15:29:20,299 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
 2016-04-20 15:29:20,301 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2016-04-20 15:29:20,307 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 15:40:26,032 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 15:40:26,091 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 15:40:26,554 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 15:40:26,570 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 15:50:06,527 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 15:50:07,132 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 15:50:07,134 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 15:50:07,468 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 15:50:23,827 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 15:50:23,834 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 15:50:23,836 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 15:50:23,841 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 15:50:27,877 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 15:50:27,884 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 15:50:27,886 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 15:50:27,891 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 15:50:32,148 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 15:50:32,158 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 15:50:32,160 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 15:50:32,165 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 15:50:45,260 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 15:50:45,270 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 15:50:45,272 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 15:50:45,282 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 15:50:51,197 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 15:50:51,210 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 15:50:51,212 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 15:50:51,217 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 15:51:04,720 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 15:51:04,728 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 15:51:04,729 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 15:51:04,737 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 15:51:14,338 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 15:51:14,347 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 15:51:14,349 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 15:51:14,355 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 15:51:19,545 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 15:51:19,553 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 15:51:19,555 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 15:51:19,567 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 15:59:23,438 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 15:59:23,494 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 15:59:23,496 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 15:59:23,506 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 16:10:45,240 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:10:45,517 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 16:10:45,550 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:10:45,560 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 16:10:49,632 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:10:49,653 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 16:10:49,654 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:10:49,677 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 16:12:26,895 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:12:26,904 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 16:12:26,906 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:12:26,913 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 16:12:44,494 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:12:44,501 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 16:12:44,512 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:12:44,525 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 16:38:58,463 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:38:58,755 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 16:38:58,811 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:38:58,817 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 16:39:26,800 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:39:26,809 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 16:39:26,810 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:39:26,819 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 16:39:54,373 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:39:54,380 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 16:39:54,382 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:39:54,388 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 16:47:54,143 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:47:54,185 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 16:47:54,197 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:47:54,203 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 16:48:13,470 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:48:13,478 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 16:48:13,479 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:48:13,486 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 16:48:37,859 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:48:37,874 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 16:48:37,875 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:48:37,881 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 16:48:45,437 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:48:45,445 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 16:48:45,446 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:48:45,453 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 16:48:52,252 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:48:52,260 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 16:48:52,264 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:48:52,269 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 16:48:57,978 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:48:57,985 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 16:48:57,986 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:48:57,997 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 16:49:01,353 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:49:01,363 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 16:49:01,364 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:49:01,370 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 16:49:05,495 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:49:05,503 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 16:49:05,510 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:49:05,521 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 16:49:10,761 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:49:10,768 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 16:49:10,769 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:49:10,786 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 16:49:19,242 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:49:19,260 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 16:49:19,261 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:49:19,272 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 16:49:34,709 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:49:34,718 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 16:49:34,719 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:49:34,724 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 16:49:36,895 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:49:36,913 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 16:49:36,922 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:49:36,928 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 16:49:46,974 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:49:46,981 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 16:49:46,983 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:49:46,992 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 16:49:48,090 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:49:48,101 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 16:49:48,103 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:49:48,108 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 16:49:55,798 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:49:55,805 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 16:49:55,807 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:49:55,818 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 16:50:00,372 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:50:00,379 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 16:50:00,381 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:50:00,387 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 16:50:16,811 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:50:16,824 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 16:50:16,825 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:50:16,831 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 16:56:45,379 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:56:45,401 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 16:56:45,402 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 16:56:45,413 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 17:11:54,068 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 17:11:54,155 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 17:11:54,167 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 17:11:54,173 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 17:12:04,485 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 17:12:04,499 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 17:12:04,500 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 17:12:04,511 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 17:12:21,900 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 17:12:21,908 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 17:12:21,909 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 17:12:21,916 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 17:26:06,918 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 17:26:06,945 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 17:26:06,946 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 17:26:06,952 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 19:38:22,169 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 19:38:22,229 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 19:38:22,243 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 19:38:22,250 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 19:38:22,735 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 19:38:22,751 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 19:38:22,753 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 19:38:22,766 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 20:10:53,645 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:10:53,889 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 20:10:53,891 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:10:53,900 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 20:11:04,187 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:11:04,200 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 20:11:04,201 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:11:04,208 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 20:23:10,028 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:23:10,115 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 20:23:10,116 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:23:10,124 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 20:23:36,696 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:23:36,704 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 20:23:36,719 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:23:36,728 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 20:23:54,618 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:23:54,631 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 20:23:54,632 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:23:54,643 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 20:26:56,290 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:26:56,312 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 20:26:56,316 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:26:56,330 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 20:27:02,957 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:27:02,969 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 20:27:02,975 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:27:02,982 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 20:27:09,068 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:27:09,885 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 20:27:09,886 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:27:11,849 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 20:27:22,714 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:27:22,725 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 20:27:22,726 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:27:22,732 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 20:28:27,216 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:28:27,231 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 20:28:27,233 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:28:27,239 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 20:31:15,776 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:31:15,810 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 20:31:15,812 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:31:15,829 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 20:31:40,196 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:31:40,212 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 20:31:40,213 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:31:40,222 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 20:32:04,109 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:32:04,121 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 20:32:04,122 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:32:04,136 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 20:32:09,973 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:32:09,985 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 20:32:09,989 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:32:09,997 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 20:32:12,162 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:32:12,176 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 20:32:12,177 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:32:12,193 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 20:33:33,799 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:33:33,806 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 20:33:33,807 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:33:33,813 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 20:33:39,125 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:33:39,144 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 20:33:39,145 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:33:39,160 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 20:33:55,673 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:33:55,681 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 20:33:55,684 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:33:55,703 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 20:34:56,465 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:34:56,473 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 20:34:56,474 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:34:56,481 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 20:35:05,045 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:35:05,062 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 20:35:05,064 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:35:05,070 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 20:35:11,793 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:35:11,805 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 20:35:11,806 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:35:11,815 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 20:53:20,265 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:53:20,523 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 20:53:20,525 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:53:20,539 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 20:54:14,617 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:54:14,627 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 20:54:14,628 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:54:14,639 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 20:54:36,220 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:54:36,228 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 20:54:36,230 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:54:36,238 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 20:56:29,004 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:56:29,028 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 20:56:29,030 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:56:29,036 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 20:57:28,924 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:57:28,933 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 20:57:28,934 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:57:28,948 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 20:57:32,157 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:57:32,166 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 20:57:32,167 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 20:57:32,176 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 21:21:42,241 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:21:42,373 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 21:21:42,375 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:21:42,381 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 21:38:59,301 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:38:59,421 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 21:38:59,422 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:38:59,435 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 21:39:12,938 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:39:12,946 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 21:39:12,947 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:39:12,953 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 21:39:39,038 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:39:39,048 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 21:39:39,049 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:39:39,061 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 21:41:23,999 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:41:24,021 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 21:41:24,022 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:41:24,031 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 21:41:41,479 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:41:41,487 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 21:41:41,488 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:41:41,498 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 21:41:59,872 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:41:59,882 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 21:41:59,883 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:41:59,895 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 21:51:34,225 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:51:34,247 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 21:51:34,248 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:51:34,254 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 21:51:37,789 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:51:37,797 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 21:51:37,798 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:51:37,805 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 21:52:42,909 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:52:43,016 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 21:52:43,017 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:52:43,024 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 21:52:51,667 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:52:51,674 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 21:52:51,676 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:52:51,682 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 21:52:53,895 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:52:53,903 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 21:52:53,904 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:52:53,914 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 21:53:57,099 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:53:57,107 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 21:53:57,108 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:53:57,115 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 21:54:13,573 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:54:13,581 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-04-22 21:54:13,582 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:54:13,588 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 21:55:13,365 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:55:13,373 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 21:55:13,374 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:55:13,386 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 21:55:16,081 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:55:16,089 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 21:55:16,090 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:55:16,096 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 21:55:43,683 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:55:43,696 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 21:55:43,697 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:55:43,703 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 21:57:09,337 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:57:09,345 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 21:57:09,346 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:57:09,353 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 21:58:21,033 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:58:21,054 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 21:58:21,055 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:58:21,062 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 21:58:25,256 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:58:25,267 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 21:58:25,268 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:58:25,293 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 21:58:32,788 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:58:32,796 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 21:58:32,797 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:58:32,807 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 21:58:39,149 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:58:39,160 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 21:58:39,162 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 21:58:39,170 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 22:15:45,823 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:15:45,951 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 22:15:45,953 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:15:45,959 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 22:24:29,073 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:24:29,104 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 22:24:29,105 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:24:29,114 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 22:24:41,929 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:24:41,938 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 22:24:41,939 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:24:41,947 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 22:24:49,223 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:24:49,231 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 22:24:49,233 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:24:49,252 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 22:24:51,376 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:24:51,385 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 22:24:51,386 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:24:51,647 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 22:25:06,755 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:25:06,763 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 22:25:06,764 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:25:06,772 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 22:25:08,834 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:25:08,843 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 22:25:08,844 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:25:08,854 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 22:25:11,620 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:25:11,630 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 22:25:11,632 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:25:11,640 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 22:38:30,079 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:38:30,106 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 22:38:30,107 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:38:30,116 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 22:38:40,882 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:38:40,894 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 22:38:40,895 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:38:40,902 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 22:38:43,453 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:38:43,462 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 22:38:43,465 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:38:43,474 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 22:53:17,379 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:53:17,411 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 22:53:17,412 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:53:17,426 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 22:53:24,341 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:53:24,350 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 22:53:24,360 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:53:24,367 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 22:54:14,290 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:54:14,300 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 22:54:14,302 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:54:14,309 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 22:54:47,078 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:54:47,089 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 22:54:47,090 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:54:47,100 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 22:55:00,981 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:55:00,996 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 22:55:00,997 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:55:01,012 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 22:55:19,398 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:55:19,410 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 22:55:19,411 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:55:19,420 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 22:55:40,621 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:55:40,629 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 22:55:40,631 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:55:40,638 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 22:55:50,038 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:55:50,047 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 22:55:50,050 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:55:50,059 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 22:55:51,261 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:55:51,284 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 22:55:51,285 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:55:51,300 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 22:56:16,496 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:56:16,507 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 22:56:16,508 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:56:16,516 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 22:56:33,133 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:56:33,143 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 22:56:33,144 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:56:33,155 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 22:56:49,746 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:56:49,761 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 22:56:49,762 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:56:49,773 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 22:56:52,446 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:56:52,458 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 22:56:52,459 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:56:52,466 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 22:56:56,610 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:56:56,618 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 22:56:56,619 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 22:56:56,628 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 23:00:20,625 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 23:00:20,692 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 23:00:20,693 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 23:00:20,707 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 23:00:49,303 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 23:00:49,320 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 23:00:49,322 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 23:00:49,333 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 23:01:30,894 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 23:01:30,904 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 23:01:30,905 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 23:01:30,918 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 23:01:46,481 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 23:01:46,491 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 23:01:46,492 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 23:01:46,501 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 23:01:59,806 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 23:01:59,815 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 23:01:59,816 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 23:01:59,823 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 23:02:06,377 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 23:02:06,386 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 23:02:06,387 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 23:02:06,394 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 23:02:09,524 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 23:02:09,535 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 23:02:09,537 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 23:02:09,546 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 23:03:13,855 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 23:03:13,866 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 23:03:13,867 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 23:03:13,875 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 23:03:17,955 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 23:03:17,969 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 23:03:17,970 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 23:03:17,978 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 23:03:29,698 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 23:03:29,712 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 23:03:29,713 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 23:03:29,722 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 23:03:36,453 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 23:03:36,462 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 23:03:36,463 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 23:03:36,473 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 23:03:39,320 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 23:03:39,334 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 23:03:39,336 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 23:03:39,346 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 23:03:45,332 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 23:03:45,354 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 23:03:45,355 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 23:03:45,378 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 23:03:53,377 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 23:03:53,389 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 23:03:53,390 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 23:03:53,402 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 23:03:56,223 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 23:03:56,237 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 23:03:56,238 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 23:03:56,249 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-22 23:03:58,817 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 23:03:58,828 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-22 23:03:58,830 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-22 23:03:58,840 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 20:34:17,006 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 20:34:17,222 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 20:34:17,286 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 20:34:17,307 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 20:48:29,294 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 20:48:29,353 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 20:48:29,355 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 20:48:29,369 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 20:48:52,832 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 20:48:52,847 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 20:48:52,849 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 20:48:52,863 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 20:49:05,602 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 20:49:05,618 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 20:49:05,625 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 20:49:05,638 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 21:13:02,305 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:13:02,388 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 21:13:02,390 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:13:02,405 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 21:13:55,372 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:13:55,392 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 21:13:55,393 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:13:55,413 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 21:13:59,433 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:13:59,449 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 21:13:59,451 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:13:59,466 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 21:14:17,836 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:14:17,853 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 21:14:17,855 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:14:17,871 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 21:23:29,299 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:23:29,358 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 21:23:29,361 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:23:29,382 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 21:23:57,277 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:23:57,294 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 21:23:57,297 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:23:57,316 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 21:24:05,665 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:24:05,685 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 21:24:05,691 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:24:05,707 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 21:24:58,473 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:24:58,489 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 21:24:58,491 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:24:58,504 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 21:25:02,390 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:25:02,407 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 21:25:02,408 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:25:02,426 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 21:25:16,378 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:25:16,400 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 21:25:16,402 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:25:16,417 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 21:25:20,830 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:25:20,925 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 21:25:20,959 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:25:21,043 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 21:40:41,179 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:40:41,232 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 21:40:41,234 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:40:41,253 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 21:41:25,046 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:41:25,062 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 21:41:25,065 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:41:25,080 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 21:41:55,796 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:41:56,454 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 21:41:56,455 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:41:56,476 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 21:42:16,621 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:42:16,637 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 21:42:16,638 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:42:16,652 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 21:43:04,372 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:43:04,388 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 21:43:04,394 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:43:04,408 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 21:43:06,444 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:43:06,459 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 21:43:06,465 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:43:06,487 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 21:43:16,033 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:43:16,049 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 21:43:16,050 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:43:16,070 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 21:43:43,099 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:43:43,115 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 21:43:43,118 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:43:43,140 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 21:43:53,526 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:43:53,543 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 21:43:53,544 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:43:53,562 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 21:44:01,969 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:44:01,988 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 21:44:01,990 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:44:02,006 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 21:44:05,583 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:44:05,604 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 21:44:05,606 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:44:05,620 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 21:44:15,154 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:44:15,170 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 21:44:15,172 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:44:15,191 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 21:44:22,122 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:44:22,147 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 21:44:22,148 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:44:22,166 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 21:44:33,474 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:44:33,493 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 21:44:33,495 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:44:33,509 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 21:44:40,903 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:44:40,920 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 21:44:40,924 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:44:40,939 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 21:44:46,457 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:44:46,475 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 21:44:46,477 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:44:46,496 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 21:45:39,394 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:45:39,411 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 21:45:39,412 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:45:39,428 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 21:45:44,905 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:45:44,921 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 21:45:44,922 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:45:44,941 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 21:46:00,813 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:46:00,851 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 21:46:00,852 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:46:00,867 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 21:47:30,460 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:47:30,476 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 21:47:30,477 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:47:30,492 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 21:48:04,611 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:48:04,627 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 21:48:04,628 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 21:48:04,648 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:00:10,371 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:00:10,418 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:00:10,419 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:00:10,434 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:00:14,944 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:00:14,960 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:00:14,961 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:00:14,978 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:00:22,733 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:00:22,752 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:00:22,753 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:00:22,778 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:00:29,089 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:00:29,108 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:00:29,114 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:00:29,132 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:00:55,146 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:00:55,167 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:00:55,168 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:00:55,184 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:00:58,362 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:00:58,386 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:00:58,388 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:00:58,408 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:02:05,287 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:02:05,326 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:02:05,327 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:02:05,342 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:02:28,271 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:02:28,287 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:02:28,289 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:02:28,304 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:02:30,398 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:02:30,415 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:02:30,416 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:02:30,431 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:02:38,599 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:02:38,617 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:02:38,618 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:02:38,641 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:09:02,771 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:09:02,812 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:09:02,813 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:09:02,828 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:17:38,946 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:17:38,990 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:17:38,992 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:17:39,007 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:18:43,444 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:18:43,568 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:18:43,569 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:18:43,585 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:23:28,592 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:23:28,609 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:23:28,611 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:23:28,628 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:25:12,095 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:25:12,114 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:25:12,115 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:25:12,130 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:25:32,931 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:25:32,952 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:25:32,953 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:25:32,968 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:25:46,876 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:25:46,895 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:25:46,901 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:25:46,929 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:25:53,858 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:25:53,875 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:25:53,877 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:25:53,892 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:26:13,911 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:26:13,930 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:26:13,932 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:26:13,949 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:26:20,284 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:26:20,302 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:26:20,303 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:26:20,319 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:26:32,010 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:26:32,028 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:26:32,029 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:26:32,044 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:26:38,144 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:26:38,161 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:26:38,163 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:26:38,178 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:26:50,912 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:26:50,929 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:26:50,931 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:26:50,948 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:26:57,158 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:26:57,177 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:26:57,179 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:26:57,194 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:27:08,497 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:27:08,514 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:27:08,515 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:27:08,531 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:27:12,521 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:27:12,543 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:27:12,545 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:27:12,560 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:27:17,727 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:27:17,748 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:27:17,750 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:27:17,767 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:27:27,993 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:27:28,018 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:27:28,019 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:27:28,037 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:27:32,691 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:27:32,711 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:27:32,713 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:27:32,729 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:27:34,950 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:27:34,967 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:27:34,968 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:27:34,985 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:27:44,513 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:27:44,530 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:27:44,531 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:27:44,547 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:27:48,847 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:27:48,943 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:27:48,993 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:27:49,083 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:27:57,735 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:27:57,752 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:27:57,753 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:27:57,769 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:27:59,904 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:27:59,922 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:27:59,923 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:27:59,939 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:33:23,993 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:33:24,036 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:33:24,037 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:33:24,054 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:33:38,361 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:33:38,380 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:33:38,382 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:33:38,399 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:33:49,510 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:33:49,527 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:33:49,529 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:33:49,550 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-23 22:34:07,273 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:34:07,291 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-23 22:34:07,292 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-23 22:34:07,308 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-04-27 21:01:37,510 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-27 21:01:37,620 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-04-27 21:01:38,012 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-27 21:01:38,044 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 01:11:44,487 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 01:11:44,671 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 01:11:45,076 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 01:11:45,080 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 01:20:38,211 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 01:20:38,477 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 01:20:38,479 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 01:20:38,483 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 01:21:01,948 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 01:21:01,953 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 01:21:01,954 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 01:21:01,957 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 01:21:04,111 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 01:21:04,116 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 01:21:04,117 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 01:21:04,121 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 01:21:17,956 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 01:21:17,961 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 01:21:17,962 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 01:21:17,966 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 01:21:20,663 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 01:21:20,673 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 01:21:20,674 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 01:21:20,678 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 01:21:56,865 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 01:21:56,876 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 01:21:56,878 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 01:21:56,884 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 03:38:13,683 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:38:14,264 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 03:38:14,266 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:38:14,270 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 03:38:23,051 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:38:23,059 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 03:38:23,060 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:38:23,067 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 03:38:27,352 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:38:27,359 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 03:38:27,360 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:38:27,367 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 03:38:32,801 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:38:32,806 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 03:38:32,807 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:38:32,810 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 03:38:34,879 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:38:34,884 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 03:38:34,885 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:38:34,888 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 03:39:17,818 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:39:17,823 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 03:39:17,825 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:39:17,828 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 03:41:03,258 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:41:03,263 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 03:41:03,264 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:41:03,268 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 03:50:27,208 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:50:27,247 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 03:50:27,249 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:50:27,254 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 03:50:49,856 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:50:49,867 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 03:50:49,868 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:50:49,872 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 03:51:20,820 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:51:20,825 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 03:51:20,826 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:51:20,831 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 03:51:33,299 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:51:33,304 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 03:51:33,305 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:51:33,309 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 03:52:01,263 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:52:01,268 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 03:52:01,269 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:52:01,273 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 03:52:07,671 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:52:07,685 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 03:52:07,686 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:52:07,698 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 03:52:20,293 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:52:20,299 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 03:52:20,300 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:52:20,304 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 03:53:10,334 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:53:10,339 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 03:53:10,341 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:53:10,345 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 03:53:12,421 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:53:12,435 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 03:53:12,437 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:53:12,450 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 03:53:20,334 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:53:20,339 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 03:53:20,340 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:53:20,344 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 03:53:28,931 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:53:28,936 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 03:53:28,937 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:53:28,941 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 03:53:31,865 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:53:31,872 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 03:53:31,873 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:53:31,878 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 03:53:35,429 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:53:35,441 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 03:53:35,442 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:53:35,454 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 03:53:42,810 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:53:42,815 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 03:53:42,816 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:53:42,820 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 03:54:03,992 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:54:03,998 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 03:54:03,999 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:54:04,003 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 03:54:10,410 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:54:10,421 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 03:54:10,423 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:54:10,433 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 03:54:16,390 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:54:16,397 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 03:54:16,398 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:54:16,401 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 03:54:31,385 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:54:31,392 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 03:54:31,393 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 03:54:31,396 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:01:17,953 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:01:18,018 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:01:18,018 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:01:18,022 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:01:22,957 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:01:22,962 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:01:22,963 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:01:22,967 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:09:56,178 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:09:56,420 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:09:56,421 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:09:56,425 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:10:19,255 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:10:19,260 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:10:19,261 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:10:19,265 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:10:34,310 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:10:34,316 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:10:34,317 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:10:34,321 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:17:46,631 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:17:46,696 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:17:46,697 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:17:46,701 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:17:49,218 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:17:49,232 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:17:49,233 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:17:49,245 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:26:07,492 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:26:07,560 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:26:07,561 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:26:07,565 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:26:31,378 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:26:31,392 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:26:31,393 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:26:31,407 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:27:00,955 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:27:00,960 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:27:00,961 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:27:00,965 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:27:24,769 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:27:24,774 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:27:24,775 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:27:24,779 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:27:56,855 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:27:56,863 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:27:56,864 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:27:56,868 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:28:01,151 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:28:01,157 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:28:01,158 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:28:01,162 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:28:14,169 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:28:14,174 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:28:14,175 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:28:14,179 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:28:24,745 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:28:24,750 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:28:24,752 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:28:24,756 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:28:37,802 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:28:37,807 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:28:37,810 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:28:37,814 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:28:42,023 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:28:42,028 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:28:42,029 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:28:42,033 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:28:49,663 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:28:49,669 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:28:49,670 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:28:49,674 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:28:54,314 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:28:54,320 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:28:54,321 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:28:54,325 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:29:01,225 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:29:01,230 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:29:01,231 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:29:01,235 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:29:32,439 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:29:32,453 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:29:32,454 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:29:32,458 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:29:38,046 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:29:38,052 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:29:38,052 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:29:38,057 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:29:56,343 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:29:56,348 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:29:56,350 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:29:56,354 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:30:08,854 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:30:08,860 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:30:08,861 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:30:08,865 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:31:53,836 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:31:53,913 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:31:53,914 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:31:53,918 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:32:02,625 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:32:02,630 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:32:02,631 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:32:02,635 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:32:08,586 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:32:08,593 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:32:08,594 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:32:08,598 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:32:20,265 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:32:20,271 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:32:20,271 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:32:20,276 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:32:24,112 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:32:24,117 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:32:24,118 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:32:24,122 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:33:12,967 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:33:12,973 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:33:12,977 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:33:12,981 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:33:24,847 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:33:24,852 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:33:24,853 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:33:24,857 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:35:14,328 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:35:14,334 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:35:14,335 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:35:14,339 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:35:26,933 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:35:26,939 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:35:26,940 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:35:26,944 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:35:53,606 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:35:53,612 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:35:53,612 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:35:53,617 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:36:09,374 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:36:09,380 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:36:09,381 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:36:09,385 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:36:19,790 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:36:19,798 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:36:19,799 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:36:19,807 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:36:34,331 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:36:34,337 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:36:34,338 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:36:34,345 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:37:04,565 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:37:04,574 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:37:04,575 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:37:04,585 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:37:09,927 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:37:09,933 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:37:09,934 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:37:09,938 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources
+2016-05-17 04:37:18,678 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:37:18,684 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-05-17 04:37:18,685 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-05-17 04:37:18,689 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /afs/cs.wisc.edu/u/q/h/qhu28/Documents/CS799-16S/GENIC/GENIClib/src/test/resources

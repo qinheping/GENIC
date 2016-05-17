@@ -1,0 +1,5 @@
+package injchecker;
+
+public class TransitionInjChecker {
+
+}

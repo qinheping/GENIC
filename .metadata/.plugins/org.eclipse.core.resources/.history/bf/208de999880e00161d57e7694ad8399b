@@ -1,0 +1,108 @@
+import java.util.*;
+
+import com.microsoft.z3.*;
+public class gClause {
+	public final Set<BoolExpr> exprs;
+	public Context ctx;
+	
+	public gClause(Set<BoolExpr> n, Context c){
+		this.exprs = n;
+		this.ctx = c;
+	}
+	
+	public Expr toExpr(){
+		Integer s = exprs.size();
+		BoolExpr[] args = new BoolExpr[s];
+		Integer i = 0;
+		for(BoolExpr e: exprs){
+			args[i] = e;
+			i++;
+		}
+		return ctx.mkOr(args);
+	}
+	
+	public gCube negate(){
+		Set<BoolExpr> args = new HashSet<BoolExpr>();
+		for(BoolExpr e: exprs){
+			args.add(ctx.mkNot(e));
+		}
+		return new gCube(args, ctx);
+	}
+	
+	public gClause prime(){
+		Set<BoolExpr> args = new HashSet<BoolExpr>();
+		for(BoolExpr e: exprs){
+			Expr varprime = ctx.mkConst(e.getArgs()[0].getFuncDecl().getName().toString() + "\'", e.getArgs()[0].getSort());
+			BoolExpr eprime = ctx.mkEq(varprime, e.getArgs()[1]);
+			args.add(eprime);
+		}
+		return new gClause(args, ctx);
+	}
+	
+	public boolean isPrime(Expr var){
+		return var.getArgs()[0].getFuncDecl().getName().toString().endsWith("\'");
+	}
+	
+	public Set<Symbol> getVars(){
+		Set<Symbol> result = new HashSet<Symbol>();
+		for(Expr e: exprs)
+			result.add(e.getArgs()[0].getFuncDecl().getName());
+		return result;
+	}
+	
+	public gClause remove(Symbol var){
+		Set<BoolExpr> args = new HashSet<BoolExpr>();
+		for(Expr e: exprs){
+			if(!e.getArgs()[0].getFuncDecl().getName().toString().equals(var.toString()))
+			args.add(ctx.mkBoolConst(e.getFuncDecl().getName().toString()));
+		}
+		return new gClause(args, ctx);
+	}
+	
+	public boolean isSubclauseOf(Clause other) {
+		return exprs.stream().allMatch(other.exprs::contains)
+	}
+	
+	@Override
+	public String toString() {
+		return toExpr().toString();
+	}
+	
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((neg == null) ? 0 : neg.hashCode());
+		result = prime * result + ((pos == null) ? 0 : pos.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (obj == null) {
+			return false;
+		}
+		if (!(obj instanceof Clause)) {
+			return false;
+		}
+		Clause other = (Clause) obj;
+		if (neg == null) {
+			if (other.neg != null) {
+				return false;
+			}
+		} else if (!neg.equals(other.neg)) {
+			return false;
+		}
+		if (pos == null) {
+			if (other.pos != null) {
+				return false;
+			}
+		} else if (!pos.equals(other.pos)) {
+			return false;
+		}
+		return true;
+	}
+}

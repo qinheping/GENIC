@@ -1,9 +1,9 @@
-package SMTast;
+package smtast;
 import ast.*;
 
 
-public class QuantvarNode extends SMTASTNode{
-	public QuantvarNode(String s, SortNode sn){
+public class QuantVarNode extends SMTASTNode{
+	public QuantVarNode(String s, SortNode sn){
 		mysymbol = s;
 		mysort = sn;
 	}
@@ -28,5 +28,8 @@ public class QuantvarNode extends SMTASTNode{
 	}
 	public String getName(){
 		return mysymbol;
+	}
+	public SortNode getSort(){
+		return mysort;
 	}
 }

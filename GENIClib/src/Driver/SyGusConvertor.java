@@ -2,7 +2,7 @@ package Driver;
 
 import java.util.*;
 
-import SMTast.*;
+import smtast.*;
 
 public class SyGusConvertor {
 	public SyGusConvertor(){

@@ -1,11 +1,11 @@
-package SMTast;
+package smtast;
 import java.util.List;
 
 import ast.*;
 
 
-public class CmddefNode extends SMTASTNode{
-	public CmddefNode(String s, QvlistNode qvl, SortNode ast, TermNode t){
+public class DefCmdNode extends SMTASTNode{
+	public DefCmdNode(String s, QVListNode qvl, SortNode ast, TermNode t){
 		funcname = s;
 		funcsort = ast;
 		mylist = qvl;
@@ -15,7 +15,7 @@ public class CmddefNode extends SMTASTNode{
 	private String funcname;
 	private SortNode funcsort;
 	private TermNode functerm;
-	private QvlistNode mylist;
+	private QVListNode mylist;
 	
 	@Override
 	public void print_this() {
@@ -32,13 +32,23 @@ public class CmddefNode extends SMTASTNode{
 	public List<String> getVarList(){
 		return mylist.getVarList();
 	}	
+	public QVListNode getQVListNode(){
+		return mylist;
+	}	
+	public TermNode getTermNode(){
+		return functerm;
+	}
 	public TypeNode getOuttype(){
 		return funcsort.getType();
 	}
-	String getFuncName(){
+	public String getFuncName(){
 		return funcname;
 	}
-
+	
+	public SortNode getSort(){
+		return funcsort;
+	}
+	
 	@Override
 	public String to_String_z3() {
 		String result = "(define-fun " + funcname + " (";

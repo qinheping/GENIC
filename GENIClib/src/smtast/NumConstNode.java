@@ -1,9 +1,9 @@
-package SMTast;
+package smtast;
 
 
 
-public class NumconstNode extends SMTASTNode{
-	public NumconstNode(Integer i, String s){
+public class NumConstNode extends SMTASTNode{
+	public NumConstNode(Integer i, String s){
 		setMytype(i);
 		content = s;
 	}
@@ -25,6 +25,9 @@ public class NumconstNode extends SMTASTNode{
 	}
 	public void setMytype(Integer mytype) {
 		this.mytype = mytype;
+	}
+	public String getContent(){
+		return content;
 	}
 	@Override
 	public String to_String_z3() {

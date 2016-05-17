@@ -1,17 +1,29 @@
-package SMTast;
+package smtast;
 
 import java.util.LinkedList;
+import java.util.List;
 
 
-public class TermlistNode extends SMTASTNode{
-	public TermlistNode(){
+public class TermListNode extends SMTASTNode{
+	public TermListNode(){
 		mylist = new LinkedList<TermNode>();
+	}
+	public TermListNode(TermNode t){
+		mylist = new LinkedList<TermNode>();
+		mylist.add(t);
+	}
+	public TermListNode(List<TermNode> l){
+		mylist = new LinkedList<TermNode>();
+		mylist.addAll(l);
 	}
 	public void add(TermNode t){
 		mylist.addLast(t);
 	}
-	
 	private LinkedList<TermNode> mylist;
+	
+	public List<TermNode> getList(){
+		return mylist;
+	}
 	
 	@Override
 	public void print_this() {

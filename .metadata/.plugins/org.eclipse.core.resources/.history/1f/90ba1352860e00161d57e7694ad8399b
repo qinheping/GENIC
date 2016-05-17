@@ -1,0 +1,104 @@
+
+import java.util.*;
+
+import com.microsoft.z3.*;
+public class gCube {
+	public final Set<BoolExpr> exprs;
+	public Context ctx;
+	
+	public gCube(Set<BoolExpr> p, Context c){
+		this.exprs = p;
+		this.ctx = c;
+	}
+	
+	public Expr toExpr(){
+		Integer s = exprs.size();
+		BoolExpr[] args = new BoolExpr[s];
+		Integer i = 0;
+		for(BoolExpr e: exprs){
+			args[i] = e;
+			i++;
+		}
+		return ctx.mkAnd(args);
+	}
+	
+	public gClause negate(){
+		Set<BoolExpr> args = new HashSet<BoolExpr>();
+		for(BoolExpr e: exprs){
+			args.add(ctx.mkNot(e));
+		}
+		return new gClause(args, ctx);
+	}
+
+	public gCube prime(){
+		Set<BoolExpr> args = new HashSet<BoolExpr>();
+		for(BoolExpr e: exprs){
+			Expr varprime = ctx.mkConst(e.getArgs()[0].getFuncDecl().getName().toString() + "\'", e.getArgs()[0].getSort());
+			BoolExpr eprime = ctx.mkEq(varprime, e.getArgs()[1]);
+			args.add(eprime);
+		}
+		return new gCube(args, ctx);
+	}
+	
+	public boolean isPrime(Expr var){
+		return var.getArgs()[0].toString().endsWith("\'");
+	}
+	
+	public Set<Symbol> getVars(){
+		Set<Symbol> result = new HashSet<Symbol>();
+		for(Expr e: exprs)
+			result.add(e.getArgs()[0].getFuncDecl().getName());
+		return result;
+	}	
+	
+	public gInterpretation toInterpretation(){
+		Map<Expr, Expr> map = new HashMap<>();
+		exprs.stream().forEach(v -> map.put(v.getArgs()[0], v.getArgs()[1]));
+		return new gInterpretation(map);
+	}
+	
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((exprs == null) ? 0 : exprs.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (obj == null) {
+			return false;
+		}
+		if (!(obj instanceof Cube)) {
+			return false;
+		}
+		Cube other = (Cube) obj;
+		if (exprs == null) {
+			if (other.neg != null) {
+				return false;
+			}
+		} else if (!exprs.equals(other.neg)) {
+			return false;
+		}
+
+		return true;
+	}
+	
+	@Override
+	public String toString() {
+		return toExpr().toString();
+	}
+	
+	public gCube removePrime() {
+		Set<BoolExpr> args = new HashSet<BoolExpr>();
+		for(BoolExpr e: exprs){
+			if(!e.getArgs()[0].getFuncDecl().getName().toString().endsWith("\'"))
+				args.add(e);
+		}
+		return new gCube(args, ctx);
+	}
+}
