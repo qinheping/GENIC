@@ -1,5 +1,4 @@
 # Reverser of String Encoders
-================
 Instructions with Eclipse
 ----------------
 *Requirements*: Java SE >= 1.8
