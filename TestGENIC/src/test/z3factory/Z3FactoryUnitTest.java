@@ -9,7 +9,6 @@ import org.junit.Test;
 
 import Driver.SMTDriver;
 import smtast.*;
-import java_cup.runtime.Symbol;
 
 import com.microsoft.z3.Context;
 import com.microsoft.z3.Expr;

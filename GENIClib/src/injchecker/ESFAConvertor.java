@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-import Z3Pred.Z3BooleanAlgebra;
+import theory.Z3Pred.Z3BooleanAlgebra;
 import ast.*;
 import automata.sfa.SFA;
 import automata.sfa.SFAInputMove;
