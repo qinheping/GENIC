@@ -195,6 +195,7 @@ public class mainDriver {
 		outpattern.add("tail");
 		return outpattern;
 	}
+	
 	// we assume all types are bv 8 here
 	public static String getGrammar(String name,List<String> varlist){
 		String result = "(synth-fun "+name+" (";

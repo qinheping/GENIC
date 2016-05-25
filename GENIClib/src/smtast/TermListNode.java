@@ -8,17 +8,28 @@ public class TermListNode extends SMTASTNode{
 	public TermListNode(){
 		mylist = new LinkedList<TermNode>();
 	}
+	
 	public TermListNode(TermNode t){
 		mylist = new LinkedList<TermNode>();
 		mylist.add(t);
 	}
+	
 	public TermListNode(List<TermNode> l){
 		mylist = new LinkedList<TermNode>();
 		mylist.addAll(l);
+	}	
+	public boolean containVar(String vname){
+		for(TermNode t: mylist){
+			if(t.containVar(vname))
+				return true;
+		}
+		return false;
 	}
+	
 	public void add(TermNode t){
 		mylist.addLast(t);
 	}
+	
 	private LinkedList<TermNode> mylist;
 	
 	public List<TermNode> getList(){

@@ -30,6 +30,18 @@ public class TermNode extends SMTASTNode{
 		symboltype = false;
 	}
 	
+	public boolean containVar(String vname){
+
+		switch(this.getChildtype()){
+		case 0: 
+		case 1: return ((TermNode)mychild).containVar(vname);
+		case 2: return mysymbol.equals(vname);
+		case 3: return false;
+		case 4: ((TermListNode)mychild).containVar(vname);
+		}
+		return false;
+	}
+	
 	public final static Integer FORALL = 0;
 	public final static Integer EXISTS = 1;
 	public final static Integer SYMBOL = 2;
