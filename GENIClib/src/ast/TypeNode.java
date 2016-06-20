@@ -20,24 +20,24 @@ class TypeNode extends ASTnode{
 	}
 	@Override
 	public void print_this() {
-		if(type == Type.INT){
+		if(type == Type.INT){			// 0
 			System.out.print("Int");
-		}else if(type == Type.BOOL){
+		}else if(type == Type.BOOL){	// 1
 			System.out.print("Bool");
-		}else if(type == Type.CHAR){
+		}else if(type == Type.CHAR){	// 2
 			System.out.print("Char");
-		}else if(type == Type.BV){
+		}else if(type == Type.BV){		// 3
 			System.out.print("(BitVec " + length + ")");
 		}
 		
 	}
 	
-	public String to_String(){
+	public String toString(){
 		String result = "";
 		if(type == Type.INT){
 			result = "Int";
 		}else if(type == Type.BOOL){
-			result = "bool";
+			result = "Bool";
 		}else if(type == Type.CHAR){
 			result = "Char";
 		}else if(type == Type.BV){
@@ -45,12 +45,12 @@ class TypeNode extends ASTnode{
 		}
 		return result;
 	}
-	public String to_String_z3(){
+	public String toString_z3(){
 		String result = "";
 		if(type == Type.INT){
 			result = "Int";
 		}else if(type == Type.BOOL){
-			result = "bool";
+			result = "Bool";
 		}else if(type == Type.CHAR){
 			result = "Char";
 		}else if(type == Type.BV){

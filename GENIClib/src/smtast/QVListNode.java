@@ -23,10 +23,10 @@ public class QVListNode extends SMTASTNode{
 		}
 	}
 	@Override
-	public String to_String_z3() {
+	public String toString_z3() {
 		String result = "";
 		for(int i = 0; i < mylist.size(); i++){
-			result += mylist.get(i).to_String_z3();
+			result += mylist.get(i).toString_z3();
 		}
 		return result;
 	}

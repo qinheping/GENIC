@@ -35,9 +35,9 @@ class ProgNode extends ASTnode{
 	
 	@Override
 	public void print_this() {
-		System.out.print("Program " + ProgName + ": ");
+		System.out.print("\n function " + ProgName + " ");
 		myType.print_this();
-		System.out.print(" with input ");
+		System.out.print(" ");
 		myInput.print_this();
 		myProgbody.print_this();
 	}

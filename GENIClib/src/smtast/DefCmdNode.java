@@ -25,6 +25,7 @@ public class DefCmdNode extends SMTASTNode{
 		funcsort.print_this();
 		System.out.print(" ");
 		functerm.print_this();
+		System.out.print(")");
 	}
 	public List<TypeNode> getIntype(){
 		return mylist.getIntype();
@@ -50,12 +51,12 @@ public class DefCmdNode extends SMTASTNode{
 	}
 	
 	@Override
-	public String to_String_z3() {
+	public String toString_z3() {
 		String result = "(define-fun " + funcname + " (";
-		result += mylist.to_String_z3();
+		result += mylist.toString_z3();
 		result += ") ";
-		result += funcsort.to_String_z3();
-		result += " " + functerm.to_String_z3() + ")";
+		result += funcsort.toString_z3();
+		result += " " + functerm.toString_z3() + ")";
 		return result;
 	}
 }

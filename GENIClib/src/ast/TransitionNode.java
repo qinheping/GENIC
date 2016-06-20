@@ -17,6 +17,11 @@ public class TransitionNode extends ASTnode{
 	public List<String> getPattern(){
 		return myPattern;
 	}
+	
+	public List<String> getVarList(){
+		return myPattern.subList(0, myPattern.size()-1);
+	}
+	
 	public OutputNode getOutput(){
 		return myOutput;
 	}
@@ -41,6 +46,7 @@ public class TransitionNode extends ASTnode{
 		}
 		System.out.print(" when ");
 		myPred.print_this();
+		System.out.print("; ->");
 		myOutput.print_this();
 		
 	}

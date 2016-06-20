@@ -1,6 +1,6 @@
-package Parser;
+package parser;
 
-import Ast.*;
+import ast.*;
 import java_cup.runtime.*;
 import java.util.*;
 import java.io.*;
@@ -31,8 +31,8 @@ non terminal ProgbodyNode	program_body;
 non terminal InputNode		input;
 non terminal TypeNode		type;
 non terminal String		match_head;
-non terminal LinkedList		case_list;
-non terminal CaseNode		case;
+non terminal LinkedList		transition_list;
+non terminal TransitionNode	transition;
 non terminal LinkedList		pattern;
 non terminal OutputNode		output;
 non terminal LinkedList		outputfunction_list;
@@ -77,24 +77,26 @@ type			::= INT 			{: RESULT = new TypeNode(Type.INT); :}
 			  | CHAR 			{: RESULT = new TypeNode(Type.CHAR); :}
 			  | LPAREN BV INTVALUE:n 	{: RESULT = new TypeNode(Type.BV,n); :} RPAREN;
 
-program_body		::= match_head:mhstr case_list:cl
-			{:  RESULT = new ProgbodyNode(mhstr, new CaseListNode(cl));
+program_body		::= match_head:mhstr transition_list:cl
+			{:  RESULT = new ProgbodyNode(mhstr, new TransListNode(cl));
 			:};
 
 match_head		::= MATCH ID:idstr WITH
 			{:  RESULT = idstr;
 			:};
 
-case_list		::= case_list:cl VLINE case:c 
+transition_list		::= transition_list:cl VLINE transition:c 
 			{:  cl.addLast(c);
 			    RESULT = cl;
 			:}
-			| 
-			{:  RESULT = new LinkedList<CaseNode>();
+			| VLINE transition:c
+			{:  LinkedList<TransitionNode> result = new LinkedList<TransitionNode>();
+			    result.addLast(c);
+			    RESULT = result;
 			:};
 
-case			::= pattern:p WHEN PREDICATE:predstr MAPTO output:o
-			{:  RESULT = new CaseNode(p,new PredNode(predstr),o);
+transition		::= pattern:p WHEN PREDICATE:predstr MAPTO output:o
+			{:  RESULT = new TransitionNode(p,new PredNode(predstr),o);
 			:};
 
 pattern			::= pattern:p CONCAT ID:idstr 

@@ -30,7 +30,7 @@ public class NumConstNode extends SMTASTNode{
 		return content;
 	}
 	@Override
-	public String to_String_z3() {
-		return content;
+	public String toString_z3() {
+		return " "+ content + " ";
 	}
 }

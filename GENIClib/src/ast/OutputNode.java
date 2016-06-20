@@ -20,9 +20,9 @@ class OutputNode extends ASTnode{
 	}
 	@Override
 	public void print_this() {
-		System.out.print("Output: ");
+		System.out.print(" [");
 		myOFL.print_this();
-		System.out.print(" ++ ");
+		System.out.print("] ++ ");
 		myFunc.print_this();
 	}
 }

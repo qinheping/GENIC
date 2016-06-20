@@ -13,7 +13,7 @@ class PredNode extends ASTnode{
 	}
 	@Override
 	public void print_this() {
-		System.out.print("Pred:" + myPredstr + " ");
+		System.out.print(" " + myPredstr + " ");
 		
 	}
 }

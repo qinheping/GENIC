@@ -28,7 +28,7 @@ public class SortNode extends SMTASTNode{
 		}
 	}
 	@Override
-	public String to_String_z3() {
+	public String toString_z3() {
 		String result;
 		if(mytype == 0){
 			result = mysymbol;

@@ -24,6 +24,8 @@ class OutputFuncListNode extends ASTnode{
 	public void print_this() {
 		for(OutputFuncNode ofn: myOFNodes){
 			ofn.print_this();
+			if(ofn != myOFNodes.get(myOFNodes.size()-1))
+				System.out.print(";");
 		}
 		
 	}

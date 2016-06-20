@@ -55,7 +55,6 @@ public class Z3Factory {
 		Expr result = null;
 		Sort[] types;
 		String[] names;
-
 		switch(n.getChildtype()){
 		case 0: 		//forall
 				types = getSortsFromQVListNode(n.getQVList());
@@ -78,7 +77,10 @@ public class Z3Factory {
 	                TermNodeToExpr((TermNode)n.getChild()), 1, null/* patterns */, null, null, null);
 				break;
 		case 2: 		//symbol
-				result = ctx.mkConst(n.getSymbol(), sortstable.get(n.getSymbol()));
+				if(sortstable.containsKey(n.getSymbol()))
+					result = ctx.mkConst(n.getSymbol(), sortstable.get(n.getSymbol()));
+				else
+					result = ctx.mkConst(n.getSymbol(), ctx.mkIntSort());
 				break;
 		case 3: 		//const
 				NumConstNode num = (NumConstNode) n.getChild();

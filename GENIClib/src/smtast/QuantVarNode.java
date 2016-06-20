@@ -19,8 +19,8 @@ public class QuantVarNode extends SMTASTNode{
 	}
 
 	@Override
-	public String to_String_z3() {
-		String result = "(" + mysymbol +" " + mysort.to_String_z3() + ")";
+	public String toString_z3() {
+		String result = "(" + mysymbol +" " + mysort.toString_z3() + ")";
 		return result;
 	}	
 	public TypeNode getType(){

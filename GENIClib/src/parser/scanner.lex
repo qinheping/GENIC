@@ -1,4 +1,4 @@
-package Parser;
+package parser;
 import java_cup.runtime.*;
 
 class TokenVal{

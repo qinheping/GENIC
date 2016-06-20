@@ -1,7 +1,10 @@
 package smtast;
 
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Set;
 
 
 public class TermListNode extends SMTASTNode{
@@ -36,6 +39,20 @@ public class TermListNode extends SMTASTNode{
 		return mylist;
 	}
 	
+	public List<String> getVarList(){
+		List<String> result = new ArrayList();
+		for(TermNode t: mylist)
+			result.addAll(t.getVarList());
+		return result;
+	}
+	
+	public Set<String> getConstSet_Int(){
+		Set<String> result = new HashSet<String>();
+		for(TermNode t: mylist)
+			result.addAll(t.getConstSet_Int());
+		return result;
+	}
+	
 	@Override
 	public void print_this() {
 		for(int i = 0; i < mylist.size(); i++){
@@ -43,10 +60,10 @@ public class TermListNode extends SMTASTNode{
 		}		
 	}
 	@Override
-	public String to_String_z3() {
+	public String toString_z3() {
 		String result = "";
 		for(int i = 0; i < mylist.size(); i++){
-			result += mylist.get(i).to_String_z3();
+			result += mylist.get(i).toString_z3();
 		}		
 		return result;
 	}

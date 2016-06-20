@@ -12,7 +12,7 @@ class OutputFuncNode extends ASTnode{
 	}
 	@Override
 	public void print_this() {
-		System.out.print(myOstr+";");
+		System.out.print(myOstr);
 		
 	}
 }

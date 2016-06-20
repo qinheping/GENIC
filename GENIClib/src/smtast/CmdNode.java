@@ -26,14 +26,20 @@ class CmdNode extends SMTASTNode{
 	public SMTASTNode getChild(){
 		return mychild;
 	}
+	
+	public TermNode getTermNode(){
+		if(childtype == CMDTERM)
+			return (TermNode) mychild;
+		return ((DefCmdNode)mychild).getTermNode();
+	}
 	public String getFuncName(){
 		if(childtype == CMDTERM)
 			return null;
 		return ((DefCmdNode)mychild).getFuncName();
 	}
 	@Override
-	public String to_String_z3() {
-		return mychild.to_String_z3();
+	public String toString_z3() {
+		return mychild.toString_z3();
 	}
 	public List<TypeNode> getIntype(){
 		if(childtype == CMDTERM)

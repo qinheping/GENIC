@@ -22,7 +22,7 @@ class ProgbodyNode extends ASTnode{
 	public TransListNode getCaseslist(){ return myTransListNode; }
 	@Override
 	public void print_this() {
-		System.out.print("Match " + matchName + " with");
+		System.out.println("match " + matchName + " with");
 		myTransListNode.print_this();
 	}
 }
