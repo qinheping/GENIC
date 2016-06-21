@@ -1,0 +1,3 @@
+[submodule "symbolicautomata"]
+	path = symbolicautomata
+	url = git@github.com:lorisdanto/symbolicautomata.git
