@@ -1,0 +1,209 @@
+
+===
+function F (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 1) (> z 1));
+		-> [1; (+ y 1); (+ z 2)] ++ F(tail)
+	| x::y::z::tail when (and (= x 1) (> y 2) (> z 2));
+		-> [1; (+ y 2); (+ z 3)] ++ F(tail)
+	| x::y::z::tail when (and (= x 2) (> y 3) (> z 3));
+		-> [1; (+ y 3); (+ z 4)] ++ F(tail)
+	| x::y::z::tail when (and (= x 3) (> y 4) (> z 4));
+		-> [1; (+ y 4); (+ z 5)] ++ F(tail)
+	| x::y::z::tail when (and (= x 4) (> y 5) (> z 5));
+		-> [1; (+ y 5); (+ z 6)] ++ F(tail)
+	| x::y::z::tail when (and (= x 5) (> y 6) (> z 6));
+		-> [1; (+ y 6); (+ z 7)] ++ F(tail)
+	| x::y::z::tail when (and (= x 6) (> y 7) (> z 7));
+		-> [1; (+ y 7); (+ z 8)] ++ F(tail)
+	| x::y::z::tail when (and (= x 7) (> y 8) (> z 8));
+		-> [1; (+ y 8); (+ z 9)] ++ F(tail)
+	| x::y::z::tail when (and (= x 8) (> y 9) (> z 9));
+		-> [1; (+ y 9); (+ z 10)] ++ F(tail)
+	| x::y::z::tail when (and (= x 9) (> y 10) (> z 10));
+		-> [1; (+ y 10); (+ z 11)] ++ F(tail)
+	| x::y::z::tail when (and (= x 10) (> y 11) (> z 11));
+		-> [1; (+ y 11); (+ z 12)] ++ F(tail)
+	| x::y::z::tail when (and (= x 11) (> y 12) (> z 12));
+		-> [1; (+ y 12); (+ z 13)] ++ F(tail)
+	| x::y::z::tail when (and (= x 12) (> y 13) (> z 13));
+		-> [1; (+ y 13); (+ z 14)] ++ F(tail)
+	| x::y::z::tail when (and (= x 13) (> y 14) (> z 14));
+		-> [1; (+ y 14); (+ z 15)] ++ F(tail)
+	| x::y::z::tail when (and (= x 14) (> y 15) (> z 15));
+		-> [1; (+ y 15); (+ z 16)] ++ F(tail)
+	| x::y::z::tail when (and (= x 15) (> y 16) (> z 16));
+		-> [1; (+ y 16); (+ z 17)] ++ F(tail)
+	| x::y::z::tail when (and (= x 16) (> y 17) (> z 17));
+		-> [1; (+ y 17); (+ z 18)] ++ F(tail)
+	| x::y::z::tail when (and (= x 17) (> y 18) (> z 18));
+		-> [1; (+ y 18); (+ z 19)] ++ F(tail)
+	| x::y::z::tail when (and (= x 18) (> y 19) (> z 19));
+		-> [1; (+ y 19); (+ z 20)] ++ F(tail)
+	| x::y::z::tail when (and (= x 19) (> y 20) (> z 20));
+		-> [1; (+ y 20); (+ z 21)] ++ F(tail)
+	| x::y::z::tail when (and (= x 20) (> y 21) (> z 21));
+		-> [1; (+ y 21); (+ z 22)] ++ F(tail)
+	| x::y::z::tail when (and (= x 21) (> y 22) (> z 22));
+		-> [1; (+ y 22); (+ z 23)] ++ F(tail)
+	| x::y::z::tail when (and (= x 22) (> y 23) (> z 23));
+		-> [1; (+ y 23); (+ z 24)] ++ F(tail)
+	| x::y::z::tail when (and (= x 23) (> y 24) (> z 24));
+		-> [1; (+ y 24); (+ z 25)] ++ F(tail)
+	| x::y::z::tail when (and (= x 24) (> y 25) (> z 25));
+		-> [1; (+ y 25); (+ z 26)] ++ F(tail)
+	| x::y::z::tail when (and (= x 25) (> y 26) (> z 26));
+		-> [1; (+ y 26); (+ z 27)] ++ F(tail)
+	| x::y::z::tail when (and (= x 26) (> y 27) (> z 27));
+		-> [1; (+ y 27); (+ z 28)] ++ F(tail)
+	| x::y::z::tail when (and (= x 27) (> y 28) (> z 28));
+		-> [1; (+ y 28); (+ z 29)] ++ F(tail)
+	| x::y::z::tail when (and (= x 28) (> y 29) (> z 29));
+		-> [1; (+ y 29); (+ z 30)] ++ F(tail)
+	| x::y::z::tail when (and (= x 29) (> y 30) (> z 30));
+		-> [1; (+ y 30); (+ z 31)] ++ F(tail)
+	| x::y::z::tail when (and (= x 30) (> y 31) (> z 31));
+		-> [1; (+ y 31); (+ z 32)] ++ F(tail)
+	| x::y::z::tail when (and (= x 31) (> y 32) (> z 32));
+		-> [1; (+ y 32); (+ z 33)] ++ F(tail)
+	| x::y::z::tail when (and (= x 32) (> y 33) (> z 33));
+		-> [1; (+ y 33); (+ z 34)] ++ F(tail)
+	| x::y::z::tail when (and (= x 33) (> y 34) (> z 34));
+		-> [1; (+ y 34); (+ z 35)] ++ F(tail)
+	| x::y::z::tail when (and (= x 34) (> y 35) (> z 35));
+		-> [1; (+ y 35); (+ z 36)] ++ F(tail)
+	| x::y::z::tail when (and (= x 35) (> y 36) (> z 36));
+		-> [1; (+ y 36); (+ z 37)] ++ F(tail)
+	| x::y::z::tail when (and (= x 36) (> y 37) (> z 37));
+		-> [1; (+ y 37); (+ z 38)] ++ F(tail)
+	| x::y::z::tail when (and (= x 37) (> y 38) (> z 38));
+		-> [1; (+ y 38); (+ z 39)] ++ F(tail)
+	| x::y::z::tail when (and (= x 38) (> y 39) (> z 39));
+		-> [1; (+ y 39); (+ z 40)] ++ F(tail)
+	| x::y::z::tail when (and (= x 39) (> y 40) (> z 40));
+		-> [1; (+ y 40); (+ z 41)] ++ F(tail)
+	| x::y::z::tail when (and (= x 40) (> y 41) (> z 41));
+		-> [1; (+ y 41); (+ z 42)] ++ F(tail)
+	| x::y::z::tail when (and (= x 41) (> y 42) (> z 42));
+		-> [1; (+ y 42); (+ z 43)] ++ F(tail)
+	| x::y::z::tail when (and (= x 42) (> y 43) (> z 43));
+		-> [1; (+ y 43); (+ z 44)] ++ F(tail)
+	| x::y::z::tail when (and (= x 43) (> y 44) (> z 44));
+		-> [1; (+ y 44); (+ z 45)] ++ F(tail)
+	| x::y::z::tail when (and (= x 44) (> y 45) (> z 45));
+		-> [1; (+ y 45); (+ z 46)] ++ F(tail)
+	| x::y::z::tail when (and (= x 45) (> y 46) (> z 46));
+		-> [1; (+ y 46); (+ z 47)] ++ F(tail)
+	| x::y::z::tail when (and (= x 46) (> y 47) (> z 47));
+		-> [1; (+ y 47); (+ z 48)] ++ F(tail)
+	| x::y::z::tail when (and (= x 47) (> y 48) (> z 48));
+		-> [1; (+ y 48); (+ z 49)] ++ F(tail)
+	| x::y::z::tail when (and (= x 48) (> y 49) (> z 49));
+		-> [1; (+ y 49); (+ z 50)] ++ F(tail)
+	| x::y::z::tail when (and (= x 49) (> y 50) (> z 50));
+		-> [1; (+ y 50); (+ z 51)] ++ F(tail)
+	| x::y::z::tail when (and (= x 50) (> y 51) (> z 51));
+		-> [1; (+ y 51); (+ z 52)] ++ F(tail)
+	| x::y::z::tail when (and (= x 51) (> y 52) (> z 52));
+		-> [1; (+ y 52); (+ z 53)] ++ F(tail)
+	| x::y::z::tail when (and (= x 52) (> y 53) (> z 53));
+		-> [1; (+ y 53); (+ z 54)] ++ F(tail)
+	| x::y::z::tail when (and (= x 53) (> y 54) (> z 54));
+		-> [1; (+ y 54); (+ z 55)] ++ F(tail)
+	| x::y::z::tail when (and (= x 54) (> y 55) (> z 55));
+		-> [1; (+ y 55); (+ z 56)] ++ F(tail)
+	| x::y::z::tail when (and (= x 55) (> y 56) (> z 56));
+		-> [1; (+ y 56); (+ z 57)] ++ F(tail)
+	| x::y::z::tail when (and (= x 56) (> y 57) (> z 57));
+		-> [1; (+ y 57); (+ z 58)] ++ F(tail)
+	| x::y::z::tail when (and (= x 57) (> y 58) (> z 58));
+		-> [1; (+ y 58); (+ z 59)] ++ F(tail)
+	| x::y::z::tail when (and (= x 58) (> y 59) (> z 59));
+		-> [1; (+ y 59); (+ z 60)] ++ F(tail)
+	| x::y::z::tail when (and (= x 59) (> y 60) (> z 60));
+		-> [1; (+ y 60); (+ z 61)] ++ F(tail)
+	| x::y::z::tail when (and (= x 60) (> y 61) (> z 61));
+		-> [1; (+ y 61); (+ z 62)] ++ F(tail)
+	| x::y::z::tail when (and (= x 61) (> y 62) (> z 62));
+		-> [1; (+ y 62); (+ z 63)] ++ F(tail)
+	| x::y::z::tail when (and (= x 62) (> y 63) (> z 63));
+		-> [1; (+ y 63); (+ z 64)] ++ F(tail)
+	| x::y::z::tail when (and (= x 63) (> y 64) (> z 64));
+		-> [1; (+ y 64); (+ z 65)] ++ F(tail)
+	| x::y::z::tail when (and (= x 64) (> y 65) (> z 65));
+		-> [1; (+ y 65); (+ z 66)] ++ F(tail)
+	| x::y::z::tail when (and (= x 65) (> y 66) (> z 66));
+		-> [1; (+ y 66); (+ z 67)] ++ F(tail)
+	| x::y::z::tail when (and (= x 66) (> y 67) (> z 67));
+		-> [1; (+ y 67); (+ z 68)] ++ F(tail)
+	| x::y::z::tail when (and (= x 67) (> y 68) (> z 68));
+		-> [1; (+ y 68); (+ z 69)] ++ F(tail)
+	| x::y::z::tail when (and (= x 68) (> y 69) (> z 69));
+		-> [1; (+ y 69); (+ z 70)] ++ F(tail)
+	| x::y::z::tail when (and (= x 69) (> y 70) (> z 70));
+		-> [1; (+ y 70); (+ z 71)] ++ F(tail)
+	| x::y::z::tail when (and (= x 70) (> y 71) (> z 71));
+		-> [1; (+ y 71); (+ z 72)] ++ F(tail)
+	| x::y::z::tail when (and (= x 71) (> y 72) (> z 72));
+		-> [1; (+ y 72); (+ z 73)] ++ F(tail)
+	| x::y::z::tail when (and (= x 72) (> y 73) (> z 73));
+		-> [1; (+ y 73); (+ z 74)] ++ F(tail)
+	| x::y::z::tail when (and (= x 73) (> y 74) (> z 74));
+		-> [1; (+ y 74); (+ z 75)] ++ F(tail)
+	| x::y::z::tail when (and (= x 74) (> y 75) (> z 75));
+		-> [1; (+ y 75); (+ z 76)] ++ F(tail)
+	| x::y::z::tail when (and (= x 75) (> y 76) (> z 76));
+		-> [1; (+ y 76); (+ z 77)] ++ F(tail)
+	| x::y::z::tail when (and (= x 76) (> y 77) (> z 77));
+		-> [1; (+ y 77); (+ z 78)] ++ F(tail)
+	| x::y::z::tail when (and (= x 77) (> y 78) (> z 78));
+		-> [1; (+ y 78); (+ z 79)] ++ F(tail)
+	| x::y::z::tail when (and (= x 78) (> y 79) (> z 79));
+		-> [1; (+ y 79); (+ z 80)] ++ F(tail)
+	| x::y::z::tail when (and (= x 79) (> y 80) (> z 80));
+		-> [1; (+ y 80); (+ z 81)] ++ F(tail)
+	| x::y::z::tail when (and (= x 80) (> y 81) (> z 81));
+		-> [1; (+ y 81); (+ z 82)] ++ F(tail)
+	| x::y::z::tail when (and (= x 81) (> y 82) (> z 82));
+		-> [1; (+ y 82); (+ z 83)] ++ F(tail)
+	| x::y::z::tail when (and (= x 82) (> y 83) (> z 83));
+		-> [1; (+ y 83); (+ z 84)] ++ F(tail)
+	| x::y::z::tail when (and (= x 83) (> y 84) (> z 84));
+		-> [1; (+ y 84); (+ z 85)] ++ F(tail)
+	| x::y::z::tail when (and (= x 84) (> y 85) (> z 85));
+		-> [1; (+ y 85); (+ z 86)] ++ F(tail)
+	| x::y::z::tail when (and (= x 85) (> y 86) (> z 86));
+		-> [1; (+ y 86); (+ z 87)] ++ F(tail)
+	| x::y::z::tail when (and (= x 86) (> y 87) (> z 87));
+		-> [1; (+ y 87); (+ z 88)] ++ F(tail)
+	| x::y::z::tail when (and (= x 87) (> y 88) (> z 88));
+		-> [1; (+ y 88); (+ z 89)] ++ F(tail)
+	| x::y::z::tail when (and (= x 88) (> y 89) (> z 89));
+		-> [1; (+ y 89); (+ z 90)] ++ F(tail)
+	| x::y::z::tail when (and (= x 89) (> y 90) (> z 90));
+		-> [1; (+ y 90); (+ z 91)] ++ F(tail)
+	| x::y::z::tail when (and (= x 90) (> y 91) (> z 91));
+		-> [1; (+ y 91); (+ z 92)] ++ F(tail)
+	| x::y::z::tail when (and (= x 91) (> y 92) (> z 92));
+		-> [1; (+ y 92); (+ z 93)] ++ F(tail)
+	| x::y::z::tail when (and (= x 92) (> y 93) (> z 93));
+		-> [1; (+ y 93); (+ z 94)] ++ F(tail)
+	| x::y::z::tail when (and (= x 93) (> y 94) (> z 94));
+		-> [1; (+ y 94); (+ z 95)] ++ F(tail)
+	| x::y::z::tail when (and (= x 94) (> y 95) (> z 95));
+		-> [1; (+ y 95); (+ z 96)] ++ F(tail)
+	| x::y::z::tail when (and (= x 95) (> y 96) (> z 96));
+		-> [1; (+ y 96); (+ z 97)] ++ F(tail)
+	| x::y::z::tail when (and (= x 96) (> y 97) (> z 97));
+		-> [1; (+ y 97); (+ z 98)] ++ F(tail)
+	| x::y::z::tail when (and (= x 97) (> y 98) (> z 98));
+		-> [1; (+ y 98); (+ z 99)] ++ F(tail)
+	| x::y::z::tail when (and (= x 98) (> y 99) (> z 99));
+		-> [1; (+ y 99); (+ z 100)] ++ F(tail)
+	| x::y::z::tail when (and (= x 99) (> y 100) (> z 100));
+		-> [1; (+ y 100); (+ z 101)] ++ F(tail)
+	| x::y::z::tail when (and (= x 100) (> y 101) (> z 101));
+		-> [1; (+ y 101); (+ z 102)] ++ F(tail)
+
+===
+invert f;

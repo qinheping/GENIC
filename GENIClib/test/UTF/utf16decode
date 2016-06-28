@@ -1,0 +1,18 @@
+
+(define-fun B ((h (BitVec 8)) (l (BitVec 8)) (v (BitVec 8))) (BitVec 8)
+   	(bvlshr (bvshl v (bvsub #x07 h)) (bvsub #x07 (bvsub h l))));
+(define-fun D ((x (BitVec 8))) (BitVec 8) (ite (and (bvule x #x39) (bvuge x #x30)) (bvsub x #x30) (bvsub x #x37))), (define-fun domain (x (BitVec 8)) Bool (or (and (bvule x #x39) (bvuge x #x30))
+				     (and (bvule x #x46) (bvuge x #x41))
+			         ));
+(define-fun domain (x (BitVec 8)) Bool (or (and (bvule x #x39) (bvuge x #x30))
+				     (and (bvule x #x46) (bvuge x #x41))
+			         ));
+===
+function S0 (l: (BitVec 8)) : (BitVec 8) :=
+	match l with
+	| y1::y2::tail when (and (domain y1) (domain y2));
+		-> [(bvor (bvshl (D y1) #x04) (D y2))] ++ F(tail)
+
+===
+isInjective S0;
+invert S0;

@@ -1,0 +1,8 @@
+
+===
+function F (l: Int) : Int :=
+	match l with
+	| x::y::tail when (and (= x 0) (> y 1) );
+		-> [1; (+ y 1)] ++ F(tail)
+===
+invert f;

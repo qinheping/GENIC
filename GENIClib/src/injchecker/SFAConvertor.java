@@ -28,7 +28,7 @@ public class SFAConvertor {
 	public SFAConvertor(CoderNode root, Context ctx){
 		this.progs = root.getProgList();
 		finalState = "F";
-		initialState = "S0";
+		initialState = "F";
 		nameList = new HashMap();
 		this.ctx = ctx;
 	}
@@ -59,6 +59,8 @@ public class SFAConvertor {
 				Integer to = getId(trans.getOutput().getFunc().FuncName());
 				String to_s = trans.getOutput().getFunc().FuncName();
 				
+				//System.out.println(TransitionInjChecker.check(ctx, domain, varsName, outputFuncs, sort));
+				
 				Integer lookahead = trans.getLookahead();
 				// factory used to generate predicate
 				Z3Factory factory = new Z3Factory(ctx);
@@ -73,7 +75,7 @@ public class SFAConvertor {
 					varlist.add(ctx.mkIntConst(varsname.get(i)));
 				}
 				////////////
-
+				
 				preds = toCartesianPreds(pred, varlist);
 				// get id and name of way points
 				String [] wayPoints_s = new String[lookahead - 1];
@@ -118,8 +120,15 @@ public class SFAConvertor {
 		//System.out.println("Cartesian: " + (end-start));
 		return preds;
 	}
+	@SuppressWarnings("unused")
+	private boolean CartesianCheck(BoolExpr pred, List<Expr> varlist) throws Exception {
+		BoolExpr cart = ctx.mkAnd(toCartesianPreds(pred, varlist));
+		BoolExpr neq = ctx.mkNot(ctx.mkEq(cart, pred));
+		
+		return check(ctx, neq, Status.SATISFIABLE) == null;
+	}
 	
-	Sort toSort(Integer t){
+	public Sort toSort(Integer t){
 		if(t == 0)
 			return ctx.mkIntSort();
 		return null;

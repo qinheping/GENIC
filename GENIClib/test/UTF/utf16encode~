@@ -1,0 +1,33 @@
+(define-fun E ((x (BitVec 8))) (BitVec 8) (ite (bvule x #x09) (bvadd x #x30) (bvadd x #x37))) (define-fun domain_E (x (BitVec 8)) (BitVec 8)  (bvult x #x10));
+(define-fun B ((h (BitVec 8)) (l (BitVec 8)) (v (BitVec 8))) (BitVec 8)
+   	(bvlshr (bvshl v (bvsub #x07 h)) (bvsub #x07 (bvsub h l))));
+(define-fun E_1 ((x (BitVec 32))) (BitVec 32) (bvor #x00000000 (B #x07 #x00 x)) )
+
+(define-fun domainE ((x (BitVec 32))) Bool (and (bvule x #x0000007f)
+						(bvuge x #x00000000)) )
+
+(define-fun E_1 ((x (BitVec 32))) (BitVec 32) (bvor #x000000e0 (B #x10 #x0c x)) )
+(define-fun E_2 ((x (BitVec 32))) (BitVec 32) (bvor #x00000080 (B #x0b #x06 x)) )
+(define-fun E_3 ((x (BitVec 32))) (BitVec 32) (bvor #x00000080 (B #x05 #x00 x)) )
+
+(define-fun domainE ((x (BitVec 32))) Bool (and (bvule x #x0000ffff)
+						(bvuge x #x00000800)) )
+
+(define-fun E_1 ((x (BitVec 32))) (BitVec 32) (bvor #x000000c0 (B #x0a #x06 x)) )
+(define-fun E_2 ((x (BitVec 32))) (BitVec 32) (bvor #x00000080 (B #x05 #x00 x)) )
+
+(define-fun domainE ((x (BitVec 32))) Bool (and (bvule x #x000007ff)
+						(bvuge x #x00000080)) )
+
+===
+function S0 (l: (BitVec 8)) : (BitVec 8) :=
+	match l with
+	| x::tail when true;
+		-> [(E (B #x07 #x04 x) );  (E (B #x03 #x00 y)) ] ++ F(tail)
+	| x::tail when true;
+		-> [(E (B #x07 #x04 x) );  (E (B #x03 #x00 y)) ] ++ F(tail)
+	| x::tail when true;
+		-> [(E (B #x07 #x04 x) );  (E (B #x03 #x00 y)) ] ++ F(tail)
+===
+isInjective S0;
+invert S0;

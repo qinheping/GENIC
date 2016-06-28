@@ -1,0 +1,18 @@
+(define-fun E ((x (BitVec 8))) (BitVec 8) (ite (bvule x #x19) (bvadd x #x41) (
+						ite (bvule x #x33) (bvadd x #x47) (
+							ite (bvule x #x3d) (bvsub x #x04) (
+								ite (= x #x3e) #x2b #x2f))))) (define-fun domain_E (x (BitVec 8)) (BitVec 8)  (bvult x #x40));
+(define-fun B ((h (BitVec 8)) (l (BitVec 8)) (v (BitVec 8))) (BitVec 8)
+   	(bvlshr (bvshl v (bvsub #x07 h)) (bvsub #x07 (bvsub h l))));
+===
+function S0 (l: (BitVec 8)) : (BitVec 8) :=
+	match l with
+	| x::y::z::tail when true;
+		-> [(E (B #x07 #x02 x) ); (E (bvor (bvshl (B #x01 #x00 x) #x04) (B #x07 #x04 y))) ;  (E (bvor (bvshl (B #x04 #x00 y) #x02) (B #x07 #x06 z))); (E (B #x05 #x00 z))] ++ F(tail)
+	| x::y::tail when true;
+		-> [(E (B #x07 #x02 x) );  (E (bvor (bvshl (B #x01 #x00 x) #x04) (B #x07 #x04 y))) ; (E (bvshl (B #x04 #x00 y) #x02)) ;#xff] ++ F(tail)
+	| x::tail when true;
+		-> [(E (B #x07 #x02 x) ); (E (bvshl (B #x01 #x00 x) #x04)); #xff; #xff] ++ F(tail)
+===
+isInjective S0;
+invert S0;

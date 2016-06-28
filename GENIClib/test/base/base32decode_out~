@@ -1,0 +1,35 @@
+(define-fun D ((x (BitVec 8))) (BitVec 8) (ite (bvule x #x5a) (bvsub x #x41) (bvsub x #x18))), (define-fun domain (x (BitVec 8)) Bool (or (and (bvule x #x37) (bvuge x #x32))
+					(and (bvule x #x5a) (bvuge x #x41))
+				    ));
+(define-fun inverted_D ((x (BitVec 8))) (BitVec 8) (ite (bvule x #x19) (bvadd x #x41) (bvadd x #x18))), (define-fun domain_E (x (BitVec 8)) (BitVec 8)  (bvult x #x40));
+(define-fun B ((h (BitVec 8)) (l (BitVec 8)) (v (BitVec 8))) (BitVec 8)
+   	(bvlshr (bvshl v (bvsub #x07 h)) (bvsub #x07 (bvsub h l))));
+(define-fun domain (x (BitVec 8)) Bool (or (and (bvule x #x37) (bvuge x #x32))
+					(and (bvule x #x5a) (bvuge x #x41))
+				    ));
+===
+function S0 (l: (BitVec 8)) : (BitVec 8) :=
+	match l with
+	| y1::y2::y3::y4::y5::tail when (and 	(and (bvule y1 #xff) (bvuge y1 #x00))
+					(and (bvule y2 #xff) (bvuge y2 #x00))
+					(and (bvule y3 #xff) (bvuge y3 #x00))
+					(and (bvule y4 #xff) (bvuge y4 #x00))
+					(and (bvule y5 #xff) (bvuge y5 #x00)) );
+		-> [(inverted_D (B #x07 #x03 y1) ); (inverted_D (bvor (bvshl (B #x02 #x00 y1) #x02) (B #x07 #x06 y2))) ;  (E(B #x05 #x01 y2)); (inverted_D (bvor (bvshl (B #x00 #x00 y2) #x04) (B #x07 #x04 y3)));(inverted_D (bvor (bvshl (B #x03 #x00 y3) #x01) (B #x07 #x07 y4)));(inverted_D (B #x06 #x02 y4));(inverted_D (bvor (bvshl (B #x01 #x00 y4) #x03) (B #x07 #x06 y5)));(inverted_D (B #x04 #x00 y5) )] ++ F(tail)
+	| y1::y2::y3::y4::tail when (and 	(and (bvule y1 #xff) (bvuge y1 #x00))
+					(and (bvule y2 #xff) (bvuge y2 #x00))
+					(and (bvule y3 #xff) (bvuge y3 #x00))
+					(and (bvule y4 #xff) (bvuge y4 #x00)) );
+		-> [(inverted_D (B #x07 #x03 y1) ); (inverted_D (bvor (bvshl (B #x02 #x00 y1) #x02) (B #x07 #x06 y2))) ;  (E(B #x05 #x01 y2)); (inverted_D (bvor (bvshl (B #x00 #x00 y2) #x04) (B #x07 #x04 y3)));(inverted_D (bvor (bvshl (B #x03 #x00 y3) #x01) (B #x07 #x07 y4)));(inverted_D (B #x06 #x02 y4));(inverted_D  (bvshl (B #x01 #x00 y4) #x03) ); #x3d] ++ F(tail)
+	| y1::y2::y3::tail when (and 	(and (bvule y1 #xff) (bvuge y1 #x00))
+					(and (bvule y2 #xff) (bvuge y2 #x00))
+					(and (bvule y3 #xff) (bvuge y3 #x00)));
+		-> [(inverted_D (B #x07 #x03 y1) ); (inverted_D (bvor (bvshl (B #x02 #x00 y1) #x02) (B #x07 #x06 y2))) ;  (E(B #x05 #x01 y2)); (inverted_D (bvor (bvshl (B #x00 #x00 y2) #x04) (B #x07 #x04 y3)));(inverted_D (bvshl (B #x03 #x00 y3) #x01) ); #x3d; #x3d; #x3d] ++ F(tail)
+	| y1::y2::tail when (and 	(and (bvule y1 #xff) (bvuge y1 #x00))
+					(and (bvule y2 #xff) (bvuge y2 #x00)) );
+		-> [(inverted_D (B #x07 #x03 y1) ); (inverted_D (bvor (bvshl (B #x02 #x00 y1) #x02) (B #x07 #x06 y2))) ;  (E(B #x05 #x01 y2)); (inverted_D  (bvshl (B #x00 #x00 y2) #x04)); #x3d; #x3d; #x3d; #x3d] ++ F(tail)
+	| y1::tail when (and 	(and (bvule y1 #xff) (bvuge y1 #x00)) );
+		-> [(inverted_D (B #x07 #x03 y1) ); (inverted_D (bvor (bvshl (B #x02 #x00 y1) #x02) (B #x07 #x06 y2))) ;  #x3d; #x3d; #x3d; #x3d; #x3d; #x3d] ++ F(tail)
+===
+isInjective S0;
+invert S0;

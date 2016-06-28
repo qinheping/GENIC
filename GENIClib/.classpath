@@ -6,7 +6,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/java-1.8.0-openjdk-1.8.0.77-0.b03.el6_7.x86_64"/>
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
@@ -15,5 +14,6 @@
 	<classpathentry kind="lib" path="lib"/>
 	<classpathentry kind="lib" path="lib/com.microsoft.z3.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/SVPAlib"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

@@ -1,0 +1,24 @@
+(define-fun E ((x (BitVec 8))) (BitVec 8) (ite (bvule x #x19) (bvadd x #x41) (bvadd x #x18))), (define-fun domain_E (x (BitVec 8)) (BitVec 8)  (bvult x #x40));
+(define-fun B ((h (BitVec 8)) (l (BitVec 8)) (v (BitVec 8))) (BitVec 8)
+   	(bvlshr (bvshl v (bvsub #x07 h)) (bvsub #x07 (bvsub h l))));
+===
+function S0 (l: (BitVec 8)) : (BitVec 8) :=
+	match l with
+	| x1::x2::x3::x4::x5::tail when true;
+		-> [(E (B #x07 #x03 x1) ); (E (bvor (bvshl (B #x02 #x00 x1) #x02) (B #x07 #x06 x2))) ;  (E(B #x05 #x01 x2)); (E (bvor (bvshl (B #x00 #x00 x2) #x04) (B #x07 #x04 x3)))
+		   ;(E (bvor (bvshl (B #x03 #x00 x3) #x01) (B #x07 #x07 x4)));(E (B #x06 #x02 x4));(E (bvor (bvshl (B #x01 #x00 x4) #x03) (B #x07 #x06 x5)));(E (B #x04 #x00 x5) )] ++ F(tail)
+	| x1::x2::x3::x4::tail when true;
+		-> [(E (B #x07 #x03 x1) ); (E (bvor (bvshl (B #x02 #x00 x1) #x02) (B #x07 #x06 x2))) ;  (E(B #x05 #x01 x2)); (E (bvor (bvshl (B #x00 #x00 x2) #x04) (B #x07 #x04 x3)))
+		   ;(E (bvor (bvshl (B #x03 #x00 x3) #x01) (B #x07 #x07 x4)));(E (B #x06 #x02 x4));(E(bvshl (B #x01 #x00 x4) #x03) ); #x3d] ++ F(tail)
+	| x1::x2::x3::tail when true;
+		-> [(E (B #x07 #x03 x1) ); (E (bvor (bvshl (B #x02 #x00 x1) #x02) (B #x07 #x06 x2))) ;  (E(B #x05 #x01 x2)); (E (bvor (bvshl (B #x00 #x00 x2) #x04) (B #x07 #x04 x3)))
+		   ;(E(bvshl (B #x03 #x00 x3) #x01) );#x3d; #x3d; #x3d] ++ F(tail)
+	| x1::x2::tail when true;
+		-> [(E (B #x07 #x03 x1) ); (E (bvor (bvshl (B #x02 #x00 x1) #x02) (B #x07 #x06 x2))) ;  (E(B #x05 #x01 x2)); (E (bvshl (B #x00 #x00 x2) #x04))
+		   ; #x3d; #x3d; #x3d; #x3d] ++ F(tail)
+	| x1::tail when true;
+		-> [(E (B #x07 #x03 x1) ); (E (bvshl (B #x02 #x00 x1) #x02) ) ; #x3d
+		   ; #x3d; #x3d; #x3d; #x3d] ++ F(tail)
+===
+isInjective S0;
+invert S0;

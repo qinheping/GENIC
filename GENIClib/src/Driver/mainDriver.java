@@ -5,14 +5,22 @@ import injchecker.*;
 import java.io.*;
 import java.util.*;
 
+import com.microsoft.z3.ApplyResult;
 import com.microsoft.z3.BoolExpr;
 import com.microsoft.z3.Context;
 import com.microsoft.z3.Expr;
+import com.microsoft.z3.Goal;
 import com.microsoft.z3.Log;
+import com.microsoft.z3.Model;
+import com.microsoft.z3.Pattern;
+import com.microsoft.z3.Solver;
+import com.microsoft.z3.Sort;
+import com.microsoft.z3.Status;
 
 import parser.parser;
 import smtast.*;
 import theory.Z3Pred.Z3BooleanAlgebra;
+import z3factory.Z3Factory;
 import ast.*;
 import automata.sfa.SFA;
 import java_cup.runtime.*;
@@ -27,14 +35,13 @@ public class mainDriver {
 	static GrammarFactory gf;
 	static Stack<String> toInvert;
 	static Set<String> inverted;
+	static Context ctx;
 	
 	public static void main(String args[]) throws Exception {
 			// read input
-			Symbol root = GetRoot("test/int_test_20");
+			Symbol root = GetRoot("test/int_test/int_test_10");
     		CoderNode Root = (CoderNode) root.value;
-
-    		funcdefs = Root.getFuncdefs();   		
-    		
+    		funcdefs = Root.getFuncdefs();
     		// init def
     		inverted_funcdefs = new ArrayList<String>();
     		funcdefs_z3 = new ArrayList<String>();
@@ -53,40 +60,40 @@ public class mainDriver {
             Log.open("test.log");
     		HashMap<String, String> cfg = new HashMap<String, String>();
             cfg.put("model", "true");
-            Context ctx = new Context(cfg);
+            ctx = new Context(cfg);
             //Context ctx2 = new Context(cfg);
     		SFAConvertor converter = new SFAConvertor(Root, ctx);
     		SFA<BoolExpr, Expr> sfa = converter.Convert();
     		Z3BooleanAlgebra Z3ba = new Z3BooleanAlgebra(ctx);
-    		System.out.println(sfa);
-    		sfa.getAmbiguousInput(Z3ba);
+    		//System.out.println(sfa);
+    		System.out.println(sfa.getAmbiguousInput(Z3ba));
     		long end = System.currentTimeMillis();
     		System.out.println("inj: " + (end-start));
     		//////////
 
-//    		
-//    		start = System.currentTimeMillis();
-//    		Decoder = new CoderNode();		
-//    		List<DeclNode>myDecls = new ArrayList<DeclNode>();
-//    		for(int i=0; i< funcdefs.size();i++)
-//    			myDecls.add(new DeclNode(funcdefs.get(i)));
-//    		Decoder.setDeclList(new DeclListNode(myDecls));
-//    		
-//    		toInvert = new Stack<String>();
-//    		inverted = new HashSet<String>();
-//    		toInvert.push("S0");
-//    		while(!toInvert.isEmpty()){
-//    			String prog = toInvert.pop();
-//    			if(Root.findProg(prog) == null || inverted.contains(prog))
-//    				continue;
-//    			ProgNode invertedProg = InvertProg(prog,Root);
-//        		//invertedProg.print_this();
-//        		inverted.add(prog);
-//        		toInvert.remove(prog);
-//    		}
-//    		end = System.currentTimeMillis();
-//    		System.out.println("invert: :"+(end-start));
-//    		//Root.print_this();
+    		
+    		start = System.currentTimeMillis();
+    		Decoder = new CoderNode();		
+    		List<DeclNode>myDecls = new ArrayList<DeclNode>();
+    		for(int i=0; i< funcdefs.size();i++)
+   			myDecls.add(new DeclNode(funcdefs.get(i)));
+    		Decoder.setDeclList(new DeclListNode(myDecls));
+    		
+    		toInvert = new Stack<String>();
+    		inverted = new HashSet<String>();
+    		toInvert.push("S0");
+    		while(!toInvert.isEmpty()){
+    			String prog = toInvert.pop();
+   			if(Root.findProg(prog) == null || inverted.contains(prog))
+    				continue;
+   			ProgNode invertedProg = InvertProg(prog,Root);
+       		invertedProg.print_this();
+       		inverted.add(prog);
+       		toInvert.remove(prog);
+    		}
+    		end = System.currentTimeMillis();
+    		System.out.println("invert: :"+(end-start));
+    		//Root.print_this();
 	}
 	
 	//////////////////////////////////////////////////////////////////////////////////
@@ -204,32 +211,91 @@ public class mainDriver {
 	}
 	
 	// Given a transition t and its input output types, this method will invert it
-	static public String invertPred(TransitionNode t, TypeNode intype, TypeNode outtype) throws InterruptedException{
-		String result = "";
-		String z3script = "";
-		List<String> outpattern = generateY_Pattern(t.getOutputFuncList().size());
-		List<String> inpattern = t.getPattern();
-		for(int i=0; i<outpattern.size()-1;i++) z3script += "(declare-const "+outpattern.get(i)+" "+outtype.toString_z3()+")\n";
-		for(int i=0; i<funcdefs_z3.size();i++) z3script += funcdefs_z3.get(i);
-		String funcdefCMD = "";
-		for(int i = 0; i < t.getOutputFuncList().size();i++){
-			funcdefCMD += "(define-fun f_"+ (i+1) + " (";
-			for(int j = 0; j < inpattern.size()-1; j++) funcdefCMD += "(" + inpattern.get(j) + " " + intype.toString_z3() + ")";
-			funcdefCMD += ") " + outtype.toString_z3() + t.getOutputFuncList().get(i).getOutputFunc() + ")\n";
+//	static public String invertPred(TransitionNode t, TypeNode intype, TypeNode outtype) throws InterruptedException{
+//		String result = "";
+//		String z3script = "";
+//		List<String> outpattern = generateY_Pattern(t.getOutputFuncList().size());
+//		List<String> inpattern = t.getPattern();
+//		for(int i=0; i<outpattern.size()-1;i++) z3script += "(declare-const "+outpattern.get(i)+" "+outtype.toString_z3()+")\n";
+//		for(int i=0; i<funcdefs_z3.size();i++) z3script += funcdefs_z3.get(i);
+//		String funcdefCMD = "";
+//		for(int i = 0; i < t.getOutputFuncList().size();i++){
+//			funcdefCMD += "(define-fun f_"+ (i+1) + " (";
+//			for(int j = 0; j < inpattern.size()-1; j++) funcdefCMD += "(" + inpattern.get(j) + " " + intype.toString_z3() + ")";
+//			funcdefCMD += ") " + outtype.toString_z3() + t.getOutputFuncList().get(i).getOutputFunc() + ")\n";
+//		}
+//		z3script += funcdefCMD;
+//		String PredCMD = "(define-fun Pred (";
+//		for(int i = 0; i < inpattern.size()-1; i++) PredCMD += "(" + inpattern.get(i) + " " + intype.toString_z3() + ")";
+//		PredCMD += ") Bool" + t.getPred() + ")\n"; 
+//		z3script += PredCMD + "(assert (exists (";
+//		for(int i = 0; i < inpattern.size()-1;i++) z3script +="(" + inpattern.get(i) + " " + intype.toString_z3()+")";
+//		z3script +=") (and  (Pred "+getVarNameList(inpattern.subList(0, inpattern.size()-1))+") (and ";
+//		for(int i = 0; i < outpattern.size()-1; i++) z3script += "(= "+outpattern.get(i)+" (f_"+(i+1)+" "+getVarNameList(inpattern.subList(0, inpattern.size()-1))+"))\n";
+//		z3script +="))))\n(apply qe)";
+//		result = CallZ3.CallByString(z3script);
+//		return result;
+//	}	
+	static public String invertPred(TransitionNode t, TypeNode intype, TypeNode outtype) throws Exception{
+		Z3Factory factory = new Z3Factory(ctx);
+		List<Expr> output = new ArrayList<Expr>();
+
+		
+		int size = t.getVarList().size();
+		com.microsoft.z3.Symbol[] varsname= new com.microsoft.z3.Symbol[size];
+		com.microsoft.z3.Symbol[] testnames= new com.microsoft.z3.Symbol[size];
+		List<Expr> varlist = new ArrayList<Expr>();
+		Expr[] vars = new Expr[size];
+		Expr[] boundvars = new Expr[size];
+		Sort[] sorts = new Sort[size];
+		List<Expr> decodevarlist = new ArrayList<Expr>();
+		List<Sort> types = new ArrayList<Sort>();
+		BoolExpr eq = ctx.mkTrue();
+		for(int i = 0; i < t.getVarList().size(); i++){
+			varsname[i] = ctx.mkSymbol(t.getVarList().get(i));
+			testnames[i] = ctx.mkSymbol("t"+i);
+			varlist.add(ctx.mkIntConst(varsname[i]));
+			vars[i] = varlist.get(i);
+			boundvars[i] = ctx.mkBound(i, ctx.mkIntSort());
+			sorts[i] = ctx.mkIntSort();
+			types.add(ctx.mkIntSort());
 		}
-		z3script += funcdefCMD;
-		String PredCMD = "(define-fun Pred (";
-		for(int i = 0; i < inpattern.size()-1; i++) PredCMD += "(" + inpattern.get(i) + " " + intype.toString_z3() + ")";
-		PredCMD += ") Bool" + t.getPred() + ")\n"; 
-		z3script += PredCMD + "(assert (exists (";
-		for(int i = 0; i < inpattern.size()-1;i++) z3script +="(" + inpattern.get(i) + " " + intype.toString_z3()+")";
-		z3script +=") (and  (Pred "+getVarNameList(inpattern.subList(0, inpattern.size()-1))+") (and ";
-		for(int i = 0; i < outpattern.size()-1; i++) z3script += "(= "+outpattern.get(i)+" (f_"+(i+1)+" "+getVarNameList(inpattern.subList(0, inpattern.size()-1))+"))\n";
-		z3script +="))))\n(apply qe)";
-		result = CallZ3.CallByString(z3script);
+		for(int i = 0; i < t.getOutputFuncList().size(); i++) {
+			output.add(factory.StringToExpr(t.getOutputFuncList().get(i).getOutputFunc()).substitute(vars, boundvars));
+		}
+		BoolExpr pred = (BoolExpr) factory.StringToExpr(t.getPred()).substitute(vars, boundvars);
+		for(int i = 0; i < t.getOutputFuncList().size(); i++){
+			decodevarlist.add(ctx.mkIntConst("y"+i));
+		}
+		for(int i = 0; i < decodevarlist.size(); i++){
+			eq = ctx.mkAnd(eq, ctx.mkEq(decodevarlist.get(i), output.get(i)));
+		}
+		eq = ctx.mkAnd(eq, pred);
+		BoolExpr q = ctx.mkExists(sorts, testnames, eq, 1, null, null,
+                null, null );
+		//System.out.println(q);
+		Solver s = ctx.mkSolver();
+        s.add(q);
+        Model m = null;
+        if (s.check() == Status.SATISFIABLE)
+        	m = s.getModel();
+        //System.out.println(m);
+        Goal g = ctx.mkGoal(true, true, false);
+        g.add(q);
+        //System.out.println(g.AsBoolExpr());
+        ApplyResult ar = ctx.mkTactic("qe").apply(g);
+       // System.out.println(ar.getNumSubgoals());
+		String result = "(and ";
+		String[] lines = ar.toString().split(System.getProperty("line.separator"));
+		for(int i = 2; i < lines.length; i++){
+			result += lines[i];
+		}
 		return result;
 	}
-	
+	private static int countLines(String str){
+		   String[] lines = str.split("\r\n|\r|\n");
+		   return  lines.length;
+		}
 	// Given a CoderNode and the prog name we want to invert, this method will invert it
 	static public ProgNode InvertProg(String progname, CoderNode root) throws Exception{
 		ProgNode target = root.findProg(progname);

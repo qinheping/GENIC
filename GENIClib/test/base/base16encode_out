@@ -1,0 +1,17 @@
+(define-fun E ((x (BitVec 8))) (BitVec 8) (ite (bvule x #x09) (bvadd x #x30) (bvadd x #x37))) (define-fun domain_E (x (BitVec 8)) (BitVec 8)  (bvult x #x10));
+(define-fun B ((h (BitVec 8)) (l (BitVec 8)) (v (BitVec 8))) (BitVec 8)
+   	(bvlshr (bvshl v (bvsub #x07 h)) (bvsub #x07 (bvsub h l))));
+(define-fun inverted_E ((x (BitVec 8))) (BitVec 8) (ite (and (bvule x #x39) (bvuge x #x30)) (bvsub x #x30) (bvsub x #x37)));
+===
+function S0 (l: (BitVec 8)) : (BitVec 8) :=
+	match l with
+	| y1::y2::tail when (and (or (and (bvule y1 #x39) (bvuge y1 #x30))
+				     (and (bvule y1 #x46) (bvuge y1 #x41))
+			         ) (or (and (bvule y2 #x39) (bvuge y2 #x30))
+				     (and (bvule y2 #x46) (bvuge y2 #x41))
+			         ));
+		-> [(bvor (bvshl (inverted_E y1) #x04) (inverted_E y2))] ++ F(tail)
+
+===
+isInjective S0;
+invert S0;

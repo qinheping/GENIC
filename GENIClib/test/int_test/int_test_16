@@ -1,0 +1,107 @@
+
+===
+function S0 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 1) (> z 1));
+		-> [1; (+ y 1); (+ z 2)] ++ S1(tail)
+	| x::y::z::tail when (and (= x 1) (> y 1) (> z 1));
+		-> [0; (- y 2); (- z 4)] ++ S1(tail)
+function S1 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 2) (> z 2));
+		-> [1; (+ y 2); (+ z 3)] ++ S2(tail)
+	| x::y::z::tail when (and (= x 1) (> y 2) (> z 2));
+		-> [0; (+ y 4); (+ z 6)] ++ S1(tail)
+function S2 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 3) (> z 3));
+		-> [1; (+ y 3); (+ z 4)] ++ S3(tail)
+	| x::y::z::tail when (and (= x 1) (> y 3) (> z 3));
+		-> [0; (+ y 6); (+ z 8)] ++ S2(tail)
+function S3 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 4) (> z 4));
+		-> [1; (+ y 4); (+ z 5)] ++ S4(tail)
+	| x::y::z::tail when (and (= x 1) (> y 4) (> z 4));
+		-> [0; (+ y 8); (+ z 10)] ++ S3(tail)
+function S4 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 5) (> z 5));
+		-> [1; (+ y 5); (+ z 6)] ++ S5(tail)
+	| x::y::z::tail when (and (= x 1) (> y 5) (> z 5));
+		-> [0; (+ y 10); (+ z 12)] ++ S4(tail)
+function S5 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 6) (> z 6));
+		-> [1; (+ y 6); (+ z 7)] ++ S6(tail)
+	| x::y::z::tail when (and (= x 1) (> y 6) (> z 6));
+		-> [0; (+ y 12); (+ z 14)] ++ S5(tail)
+function S6 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 7) (> z 7));
+		-> [1; (+ y 7); (+ z 8)] ++ S7(tail)
+	| x::y::z::tail when (and (= x 1) (> y 7) (> z 7));
+		-> [0; (+ y 14); (+ z 16)] ++ S6(tail)
+function S7 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 8) (> z 8));
+		-> [1; (+ y 8); (+ z 9)] ++ S8(tail)
+	| x::y::z::tail when (and (= x 1) (> y 8) (> z 8));
+		-> [0; (+ y 16); (+ z 18)] ++ S7(tail)
+function S8 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 9) (> z 9));
+		-> [1; (+ y 9); (+ z 10)] ++ S9(tail)
+	| x::y::z::tail when (and (= x 1) (> y 9) (> z 9));
+		-> [0; (+ y 18); (+ z 20)] ++ S8(tail)
+function S9 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 10) (> z 10));
+		-> [1; (+ y 10); (+ z 11)] ++ S10(tail)
+	| x::y::z::tail when (and (= x 1) (> y 10) (> z 10));
+		-> [0; (+ y 20); (+ z 22)] ++ S9(tail)
+function S10 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 11) (> z 11));
+		-> [1; (+ y 11); (+ z 12)] ++ S11(tail)
+	| x::y::z::tail when (and (= x 1) (> y 11) (> z 11));
+		-> [0; (+ y 22); (+ z 24)] ++ S10(tail)
+function S11 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 12) (> z 12));
+		-> [1; (+ y 12); (+ z 13)] ++ S12(tail)
+	| x::y::z::tail when (and (= x 1) (> y 12) (> z 12));
+		-> [0; (+ y 24); (+ z 26)] ++ S11(tail)
+function S12 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 13) (> z 13));
+		-> [1; (+ y 13); (+ z 14)] ++ S13(tail)
+	| x::y::z::tail when (and (= x 1) (> y 13) (> z 13));
+		-> [0; (+ y 26); (+ z 28)] ++ S12(tail)
+function S13 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 14) (> z 14));
+		-> [1; (+ y 14); (+ z 15)] ++ S14(tail)
+	| x::y::z::tail when (and (= x 1) (> y 14) (> z 14));
+		-> [0; (+ y 28); (+ z 30)] ++ S13(tail)
+function S14 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 15) (> z 15));
+		-> [1; (+ y 15); (+ z 16)] ++ S15(tail)
+	| x::y::z::tail when (and (= x 1) (> y 15) (> z 15));
+		-> [0; (+ y 30); (+ z 32)] ++ S14(tail)
+function S15 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 16) (> z 16));
+		-> [1; (+ y 16); (+ z 17)] ++ S16(tail)
+	| x::y::z::tail when (and (= x 1) (> y 16) (> z 16));
+		-> [0; (+ y 32); (+ z 34)] ++ S15(tail)
+function S16 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 17) (> z 17));
+		-> [1; (+ y 17); (+ z 18)] ++ F(tail)
+	| x::y::z::tail when (and (= x 1) (> y 17) (> z 17));
+		-> [0; (+ y 34); (+ z 36)] ++ F(tail)
+
+===
+invert f;

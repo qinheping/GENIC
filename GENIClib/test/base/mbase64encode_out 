@@ -1,0 +1,65 @@
+(define-fun E ((x (BitVec 8))) (BitVec 8) (ite (bvule x #x19) (bvadd x #x41) (
+						ite (bvule x #x33) (bvadd x #x47) (
+							ite (bvule x #x3d) (bvsub x #x04) (
+								ite (= x #x3e) #x2b #x2f))))) (define-fun domain_E (x (BitVec 8)) Bool true);
+(define-fun B ((h (BitVec 8)) (l (BitVec 8)) (v (BitVec 8))) (BitVec 8)
+   	(bvlshr (bvshl v (bvsub #x07 h)) (bvsub #x07 (bvsub h l))));
+(define-fun inverted_E ((x (BitVec 8))) (BitVec 8) (ite (= x #x2f) #x3f (
+						ite (= x #x2b) #x3e (
+							ite (bvule x #x39) (bvadd x #x04) (
+								ite (bvule x #x5a) (bvsub x #x41) (bvsub x #x47))))));
+===
+function S0 (l: (BitVec 8)) : (BitVec 8) :=
+	match l with
+	| y1::y2::y3::y4::tail when (and (or (and (bvule y1 #x39) (bvuge y1 #x30))
+					(and (bvule y1 #x5a) (bvuge y1 #x41))
+					(and (bvule y1 #x7a) (bvuge y1 #x61))
+					(= y1 #x2f) (= y1 #x2b)
+				    )
+				    (or (and (bvule y2 #x39) (bvuge y2 #x30))
+					(and (bvule y2 #x5a) (bvuge y2 #x41))
+					(and (bvule y2 #x7a) (bvuge y2 #x61))
+					(= y2 #x2f) (= y2 #x2b)
+				    )
+				    (or (and (bvule y3 #x39) (bvuge y3 #x30))
+					(and (bvule y3 #x5a) (bvuge y3 #x41))
+					(and (bvule y3 #x7a) (bvuge y3 #x61))
+					(= y3 #x2f) (= y3 #x2b)
+				    )
+				    (or (and (bvule y4 #x39) (bvuge y4 #x30))
+					(and (bvule y4 #x5a) (bvuge y4 #x41))
+					(and (bvule y4 #x7a) (bvuge y4 #x61))
+					(= y4 #x2f) (= y4 #x2b)
+				    ));
+		-> [(bvor (bvshl (inverted_E y1 ) #x02) (B #x05 #x04 (inverted_E y2))) ; (bvor (bvshl (B #x03 #x00 y2) #x04) (B #x05 #x02 y3) ) ; (bvor (bvshl (B #x01 #x00 y3) #x06))] ++ F(tail)
+	| y1::y2::y3::tail when (and (or (and (bvule y1 #x39) (bvuge y1 #x30))
+					(and (bvule y1 #x5a) (bvuge y1 #x41))
+					(and (bvule y1 #x7a) (bvuge y1 #x61))
+					(= y1 #x2f) (= y1 #x2b)
+				    )
+				    (or (and (bvule y2 #x39) (bvuge y2 #x30))
+					(and (bvule y2 #x5a) (bvuge y2 #x41))
+					(and (bvule y2 #x7a) (bvuge y2 #x61))
+					(= y2 #x2f) (= y2 #x2b)
+				    )
+				    (or (and (bvule y3 #x39) (bvuge y3 #x30))
+					(and (bvule y3 #x5a) (bvuge y3 #x41))
+					(and (bvule y3 #x7a) (bvuge y3 #x61))
+					(= y3 #x2f) (= y3 #x2b)
+				    ));
+		-> [(bvor (bvshl (inverted_E y1 ) #x02) (B #x05 #x04 (inverted_E y2))) ; (bvor (bvshl (B #x03 #x00 y2) #x04) (B #x05 #x02 y3) ) ] ++ F(tail)
+	| y1::y2::tail when (and
+				    )(or (and (bvule y1 #x39) (bvuge y1 #x30))
+					(and (bvule y1 #x5a) (bvuge y1 #x41))
+					(and (bvule y1 #x7a) (bvuge y1 #x61))
+					(= y1 #x2f) (= y1 #x2b)
+				    )
+				    (or (and (bvule y2 #x39) (bvuge y2 #x30))
+					(and (bvule y2 #x5a) (bvuge y2 #x41))
+					(and (bvule y2 #x7a) (bvuge y2 #x61))
+					(= y2 #x2f) (= y2 #x2b)
+				    ));
+		-> [(bvor (bvshl (inverted_E y1 ) #x02) (B #x05 #x04 (inverted_E y2)))] ++ F(tail)
+===
+isInjective S0;
+invert S0;

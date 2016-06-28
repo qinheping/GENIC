@@ -1,0 +1,311 @@
+
+===
+function S0 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 1) (> z 1));
+		-> [1; (+ y 1); (+ z 2)] ++ S1(tail)
+	| x::y::z::tail when (and (= x 1) (> y 1) (> z 1));
+		-> [0; (- y 2); (- z 4)] ++ S1(tail)
+function S1 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 2) (> z 2));
+		-> [1; (+ y 2); (+ z 3)] ++ S2(tail)
+	| x::y::z::tail when (and (= x 1) (> y 2) (> z 2));
+		-> [0; (+ y 4); (+ z 6)] ++ S1(tail)
+function S2 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 3) (> z 3));
+		-> [1; (+ y 3); (+ z 4)] ++ S3(tail)
+	| x::y::z::tail when (and (= x 1) (> y 3) (> z 3));
+		-> [0; (+ y 6); (+ z 8)] ++ S2(tail)
+function S3 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 4) (> z 4));
+		-> [1; (+ y 4); (+ z 5)] ++ S4(tail)
+	| x::y::z::tail when (and (= x 1) (> y 4) (> z 4));
+		-> [0; (+ y 8); (+ z 10)] ++ S3(tail)
+function S4 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 5) (> z 5));
+		-> [1; (+ y 5); (+ z 6)] ++ S5(tail)
+	| x::y::z::tail when (and (= x 1) (> y 5) (> z 5));
+		-> [0; (+ y 10); (+ z 12)] ++ S4(tail)
+function S5 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 6) (> z 6));
+		-> [1; (+ y 6); (+ z 7)] ++ S6(tail)
+	| x::y::z::tail when (and (= x 1) (> y 6) (> z 6));
+		-> [0; (+ y 12); (+ z 14)] ++ S5(tail)
+function S6 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 7) (> z 7));
+		-> [1; (+ y 7); (+ z 8)] ++ S7(tail)
+	| x::y::z::tail when (and (= x 1) (> y 7) (> z 7));
+		-> [0; (+ y 14); (+ z 16)] ++ S6(tail)
+function S7 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 8) (> z 8));
+		-> [1; (+ y 8); (+ z 9)] ++ S8(tail)
+	| x::y::z::tail when (and (= x 1) (> y 8) (> z 8));
+		-> [0; (+ y 16); (+ z 18)] ++ S7(tail)
+function S8 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 9) (> z 9));
+		-> [1; (+ y 9); (+ z 10)] ++ S9(tail)
+	| x::y::z::tail when (and (= x 1) (> y 9) (> z 9));
+		-> [0; (+ y 18); (+ z 20)] ++ S8(tail)
+function S9 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 10) (> z 10));
+		-> [1; (+ y 10); (+ z 11)] ++ S10(tail)
+	| x::y::z::tail when (and (= x 1) (> y 10) (> z 10));
+		-> [0; (+ y 20); (+ z 22)] ++ S9(tail)
+function S10 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 11) (> z 11));
+		-> [1; (+ y 11); (+ z 12)] ++ S11(tail)
+	| x::y::z::tail when (and (= x 1) (> y 11) (> z 11));
+		-> [0; (+ y 22); (+ z 24)] ++ S10(tail)
+function S11 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 12) (> z 12));
+		-> [1; (+ y 12); (+ z 13)] ++ S12(tail)
+	| x::y::z::tail when (and (= x 1) (> y 12) (> z 12));
+		-> [0; (+ y 24); (+ z 26)] ++ S11(tail)
+function S12 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 13) (> z 13));
+		-> [1; (+ y 13); (+ z 14)] ++ S13(tail)
+	| x::y::z::tail when (and (= x 1) (> y 13) (> z 13));
+		-> [0; (+ y 26); (+ z 28)] ++ S12(tail)
+function S13 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 14) (> z 14));
+		-> [1; (+ y 14); (+ z 15)] ++ S14(tail)
+	| x::y::z::tail when (and (= x 1) (> y 14) (> z 14));
+		-> [0; (+ y 28); (+ z 30)] ++ S13(tail)
+function S14 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 15) (> z 15));
+		-> [1; (+ y 15); (+ z 16)] ++ S15(tail)
+	| x::y::z::tail when (and (= x 1) (> y 15) (> z 15));
+		-> [0; (+ y 30); (+ z 32)] ++ S14(tail)
+function S15 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 16) (> z 16));
+		-> [1; (+ y 16); (+ z 17)] ++ S16(tail)
+	| x::y::z::tail when (and (= x 1) (> y 16) (> z 16));
+		-> [0; (+ y 32); (+ z 34)] ++ S15(tail)
+function S16 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 17) (> z 17));
+		-> [1; (+ y 17); (+ z 18)] ++ S17(tail)
+	| x::y::z::tail when (and (= x 1) (> y 17) (> z 17));
+		-> [0; (+ y 34); (+ z 36)] ++ S16(tail)
+function S17 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 18) (> z 18));
+		-> [1; (+ y 18); (+ z 19)] ++ S18(tail)
+	| x::y::z::tail when (and (= x 1) (> y 18) (> z 18));
+		-> [0; (+ y 36); (+ z 38)] ++ S17(tail)
+function S18 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 19) (> z 19));
+		-> [1; (+ y 19); (+ z 20)] ++ S19(tail)
+	| x::y::z::tail when (and (= x 1) (> y 19) (> z 19));
+		-> [0; (+ y 38); (+ z 40)] ++ S18(tail)
+function S19 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 20) (> z 20));
+		-> [1; (+ y 20); (+ z 21)] ++ S20(tail)
+	| x::y::z::tail when (and (= x 1) (> y 20) (> z 20));
+		-> [0; (+ y 40); (+ z 42)] ++ S19(tail)
+function S20 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 21) (> z 21));
+		-> [1; (+ y 21); (+ z 22)] ++ S21(tail)
+	| x::y::z::tail when (and (= x 1) (> y 21) (> z 21));
+		-> [0; (+ y 42); (+ z 44)] ++ S20(tail)
+function S21 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 22) (> z 22));
+		-> [1; (+ y 22); (+ z 23)] ++ S22(tail)
+	| x::y::z::tail when (and (= x 1) (> y 22) (> z 22));
+		-> [0; (+ y 44); (+ z 46)] ++ S21(tail)
+function S22 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 23) (> z 23));
+		-> [1; (+ y 23); (+ z 24)] ++ S23(tail)
+	| x::y::z::tail when (and (= x 1) (> y 23) (> z 23));
+		-> [0; (+ y 46); (+ z 48)] ++ S22(tail)
+function S23 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 24) (> z 24));
+		-> [1; (+ y 24); (+ z 25)] ++ S24(tail)
+	| x::y::z::tail when (and (= x 1) (> y 24) (> z 24));
+		-> [0; (+ y 48); (+ z 50)] ++ S23(tail)
+function S24 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 25) (> z 25));
+		-> [1; (+ y 25); (+ z 26)] ++ S25(tail)
+	| x::y::z::tail when (and (= x 1) (> y 25) (> z 25));
+		-> [0; (+ y 50); (+ z 52)] ++ S24(tail)
+function S25 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 26) (> z 26));
+		-> [1; (+ y 26); (+ z 27)] ++ S26(tail)
+	| x::y::z::tail when (and (= x 1) (> y 26) (> z 26));
+		-> [0; (+ y 52); (+ z 54)] ++ S25(tail)
+function S26 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 27) (> z 27));
+		-> [1; (+ y 27); (+ z 28)] ++ S27(tail)
+	| x::y::z::tail when (and (= x 1) (> y 27) (> z 27));
+		-> [0; (+ y 54); (+ z 56)] ++ S26(tail)
+function S27 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 28) (> z 28));
+		-> [1; (+ y 28); (+ z 29)] ++ S28(tail)
+	| x::y::z::tail when (and (= x 1) (> y 28) (> z 28));
+		-> [0; (+ y 56); (+ z 58)] ++ S27(tail)
+function S28 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 29) (> z 29));
+		-> [1; (+ y 29); (+ z 30)] ++ S29(tail)
+	| x::y::z::tail when (and (= x 1) (> y 29) (> z 29));
+		-> [0; (+ y 58); (+ z 60)] ++ S28(tail)
+function S29 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 30) (> z 30));
+		-> [1; (+ y 30); (+ z 31)] ++ S30(tail)
+	| x::y::z::tail when (and (= x 1) (> y 30) (> z 30));
+		-> [0; (+ y 60); (+ z 62)] ++ S29(tail)
+function S30 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 31) (> z 31));
+		-> [1; (+ y 31); (+ z 32)] ++ S31(tail)
+	| x::y::z::tail when (and (= x 1) (> y 31) (> z 31));
+		-> [0; (+ y 62); (+ z 64)] ++ S30(tail)
+function S31 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 32) (> z 32));
+		-> [1; (+ y 32); (+ z 33)] ++ S32(tail)
+	| x::y::z::tail when (and (= x 1) (> y 32) (> z 32));
+		-> [0; (+ y 64); (+ z 66)] ++ S31(tail)
+function S32 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 33) (> z 33));
+		-> [1; (+ y 33); (+ z 34)] ++ S33(tail)
+	| x::y::z::tail when (and (= x 1) (> y 33) (> z 33));
+		-> [0; (+ y 66); (+ z 68)] ++ S32(tail)
+function S33 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 34) (> z 34));
+		-> [1; (+ y 34); (+ z 35)] ++ S34(tail)
+	| x::y::z::tail when (and (= x 1) (> y 34) (> z 34));
+		-> [0; (+ y 68); (+ z 70)] ++ S33(tail)
+function S34 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 35) (> z 35));
+		-> [1; (+ y 35); (+ z 36)] ++ S35(tail)
+	| x::y::z::tail when (and (= x 1) (> y 35) (> z 35));
+		-> [0; (+ y 70); (+ z 72)] ++ S34(tail)
+function S35 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 36) (> z 36));
+		-> [1; (+ y 36); (+ z 37)] ++ S36(tail)
+	| x::y::z::tail when (and (= x 1) (> y 36) (> z 36));
+		-> [0; (+ y 72); (+ z 74)] ++ S35(tail)
+function S36 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 37) (> z 37));
+		-> [1; (+ y 37); (+ z 38)] ++ S37(tail)
+	| x::y::z::tail when (and (= x 1) (> y 37) (> z 37));
+		-> [0; (+ y 74); (+ z 76)] ++ S36(tail)
+function S37 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 38) (> z 38));
+		-> [1; (+ y 38); (+ z 39)] ++ S38(tail)
+	| x::y::z::tail when (and (= x 1) (> y 38) (> z 38));
+		-> [0; (+ y 76); (+ z 78)] ++ S37(tail)
+function S38 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 39) (> z 39));
+		-> [1; (+ y 39); (+ z 40)] ++ S39(tail)
+	| x::y::z::tail when (and (= x 1) (> y 39) (> z 39));
+		-> [0; (+ y 78); (+ z 80)] ++ S38(tail)
+function S39 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 40) (> z 40));
+		-> [1; (+ y 40); (+ z 41)] ++ S40(tail)
+	| x::y::z::tail when (and (= x 1) (> y 40) (> z 40));
+		-> [0; (+ y 80); (+ z 82)] ++ S39(tail)
+function S40 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 41) (> z 41));
+		-> [1; (+ y 41); (+ z 42)] ++ S41(tail)
+	| x::y::z::tail when (and (= x 1) (> y 41) (> z 41));
+		-> [0; (+ y 82); (+ z 84)] ++ S40(tail)
+function S41 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 42) (> z 42));
+		-> [1; (+ y 42); (+ z 43)] ++ S42(tail)
+	| x::y::z::tail when (and (= x 1) (> y 42) (> z 42));
+		-> [0; (+ y 84); (+ z 86)] ++ S41(tail)
+function S42 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 43) (> z 43));
+		-> [1; (+ y 43); (+ z 44)] ++ S43(tail)
+	| x::y::z::tail when (and (= x 1) (> y 43) (> z 43));
+		-> [0; (+ y 86); (+ z 88)] ++ S42(tail)
+function S43 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 44) (> z 44));
+		-> [1; (+ y 44); (+ z 45)] ++ S44(tail)
+	| x::y::z::tail when (and (= x 1) (> y 44) (> z 44));
+		-> [0; (+ y 88); (+ z 90)] ++ S43(tail)
+function S44 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 45) (> z 45));
+		-> [1; (+ y 45); (+ z 46)] ++ S45(tail)
+	| x::y::z::tail when (and (= x 1) (> y 45) (> z 45));
+		-> [0; (+ y 90); (+ z 92)] ++ S44(tail)
+function S45 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 46) (> z 46));
+		-> [1; (+ y 46); (+ z 47)] ++ S46(tail)
+	| x::y::z::tail when (and (= x 1) (> y 46) (> z 46));
+		-> [0; (+ y 92); (+ z 94)] ++ S45(tail)
+function S46 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 47) (> z 47));
+		-> [1; (+ y 47); (+ z 48)] ++ S47(tail)
+	| x::y::z::tail when (and (= x 1) (> y 47) (> z 47));
+		-> [0; (+ y 94); (+ z 96)] ++ S46(tail)
+function S47 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 48) (> z 48));
+		-> [1; (+ y 48); (+ z 49)] ++ S48(tail)
+	| x::y::z::tail when (and (= x 1) (> y 48) (> z 48));
+		-> [0; (+ y 96); (+ z 98)] ++ S47(tail)
+function S48 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 49) (> z 49));
+		-> [1; (+ y 49); (+ z 50)] ++ S49(tail)
+	| x::y::z::tail when (and (= x 1) (> y 49) (> z 49));
+		-> [0; (+ y 98); (+ z 100)] ++ S48(tail)
+function S49 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 50) (> z 50));
+		-> [1; (+ y 50); (+ z 51)] ++ S50(tail)
+	| x::y::z::tail when (and (= x 1) (> y 50) (> z 50));
+		-> [0; (+ y 100); (+ z 102)] ++ S49(tail)
+function S50 (l: Int) : Int :=
+	match l with
+	| x::y::z::tail when (and (= x 0) (> y 51) (> z 51));
+		-> [1; (+ y 51); (+ z 52)] ++ F(tail)
+	| x::y::z::tail when (and (= x 1) (> y 51) (> z 51));
+		-> [0; (+ y 102); (+ z 104)] ++ F(tail)
+
+===
+invert f;

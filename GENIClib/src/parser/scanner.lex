@@ -33,6 +33,7 @@ return new Symbol(sym.EOF);
 %state PREDICATESTATE
 %state OUTPUTFUNCTIONSTATE
 %state QUERYSTATE
+%state DOMAINSTATE
 
 %cup
 
@@ -42,8 +43,12 @@ return new Symbol(sym.EOF);
 <YYINITIAL>	{WHITESPACE}	{}
 <YYINITIAL>	"==="		{ yybegin(PROGRAMSTATE);}
 
-<DECLARESTATE>	[^;]		{ TempString.str += yytext();}
+<DECLARESTATE>	[^;,]		{ TempString.str += yytext();}
+<DECLARESTATE>  ","		{ yybegin(DOMAINSTATE); String result = TempString.str; TempString.str = ""; return new Symbol(sym.DECLARATION, result);}
 <DECLARESTATE>	";"		{ yybegin(YYINITIAL); return new Symbol(sym.DECLARATION, TempString.str);}
+
+<DOMAINSTATE>	[^;,]		{ TempString.str += yytext();}
+<DOMAINSTATE>	";"		{ yybegin(YYINITIAL); return new Symbol(sym.DOMAIN, TempString.str);}
 
 
 <PROGRAMSTATE>	{WHITESPACE}	{}

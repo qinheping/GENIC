@@ -19,6 +19,7 @@ terminal String DECLARATION;
 terminal String ID;
 terminal String PREDICATE;
 terminal String OUTPUTFUNCTION;
+terminal String DOMAIN;
 
 non terminal CoderNode 		coder;
 non terminal LinkedList 	decl_list;
@@ -46,6 +47,10 @@ coder			::= decl_list:dl program_list:pl query_list:ql
 
 decl_list		::= decl_list:dl DECLARATION:d 
 			{:  dl.addLast(new DeclNode(d));
+			    RESULT = dl;
+			:} 
+			|   decl_list:dl DECLARATION:d DOMAIN:dom
+			{:  dl.addLast(new DeclNode(d, dom));
 			    RESULT = dl;
 			:} 
 			| 
