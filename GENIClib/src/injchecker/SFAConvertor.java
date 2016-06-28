@@ -46,6 +46,7 @@ public class SFAConvertor {
 		Collection<SFAMove<BoolExpr, Expr>> transitions = new LinkedList<SFAMove<BoolExpr, Expr>>();
 		Z3BooleanAlgebra Z3ba = new Z3BooleanAlgebra(ctx);
 		
+		
 		unit = ctx.mkConst("x", toSort(progs.get(0).getInType().getType()));
 		
 		for(ProgNode node: this.progs){

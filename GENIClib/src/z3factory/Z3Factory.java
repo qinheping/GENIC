@@ -7,6 +7,7 @@ import Driver.SMTDriver;
 import ast.TypeNode;
 
 import com.microsoft.z3.*;
+import com.microsoft.z3.enumerations.Z3_sort_kind;
 
 import smtast.*;
 
@@ -33,6 +34,8 @@ public class Z3Factory {
 	}
 	public Z3Factory(Map<String, Sort> st, Map<String, FuncDecl> ft, Context ctx){
 		sortstable = st;
+		if(((Sort)st.values().toArray()[0]).getSortKind()==Z3_sort_kind.Z3_BV_SORT)
+			bvsize = ((BitVecSort)st.values().toArray()[0]).getSize();
 		funcdeclstable = ft;
 		funcdefstable = new HashMap<String, Expr>();
 		this.ctx = ctx;
@@ -55,6 +58,8 @@ public class Z3Factory {
 		Expr result = null;
 		Sort[] types;
 		String[] names;
+		//System.out.println(n);
+		//System.out.println(n.getChildtype());
 		switch(n.getChildtype()){
 		case 0: 		//forall
 				types = getSortsFromQVListNode(n.getQVList());
@@ -84,8 +89,10 @@ public class Z3Factory {
 				break;
 		case 3: 		//const
 				NumConstNode num = (NumConstNode) n.getChild();
-				if(num.getMytype() == NumConstNode.BV) {
+				if(num.getMytype() == NumConstNode.HEX) {
+					//System.out.println(num.getContent());
 					result = ctx.mkBV(Integer.parseInt(num.getContent().substring(2, num.getContent().length()), 16), bvsize);
+
 				}
 				if(num.getMytype() == NumConstNode.NUM){
 					result = ctx.mkInt(Integer.parseInt(num.getContent()));
@@ -97,6 +104,7 @@ public class Z3Factory {
 				Expr[] vars = new Expr[tlist.size()];
 				for(int i = 0; i < tlist.size(); i++){
 					vars[i] = TermNodeToExpr(tlist.get(i));
+					//System.out.println(vars[i]);
 					}
 				if(funcdeclstable != null){
 				if(funcdeclstable.containsKey(n.getSymbol())){

@@ -3,6 +3,7 @@ package ast;
 public class DeclNode extends ASTnode{
 	public DeclNode(String s){
 		myDecl = s;
+		domain = null;
 	}
 	public DeclNode(String s, String domain){
 		myDecl = s;
@@ -16,5 +17,8 @@ public class DeclNode extends ASTnode{
 	@Override
 	public void print_this() {
 		System.out.println("Decl: " + myDecl);
+	}
+	public String getDomain() {
+				return domain;
 	}
 }

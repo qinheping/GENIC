@@ -37,4 +37,8 @@ public class CoderNode extends ASTnode{
 		System.out.println("===");
 		myQueryList.print_this();
 	}
+	public List<String> getDomains() {
+		return myDeclList.getDomains();
+
+	}
 }

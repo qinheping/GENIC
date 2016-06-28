@@ -1,9 +1,12 @@
 package smtast;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
+
 
 
 
@@ -34,6 +37,9 @@ public class TermNode extends SMTASTNode{
 		mychild = l;
 		symboltype = false;
 	}
+	public List<TermNode> getArgs(){
+		return ((TermListNode)mychild).getArgs();
+	}
 
 	public final static Integer FORALL = 0;
 	public final static Integer EXISTS = 1;
@@ -53,7 +59,8 @@ public class TermNode extends SMTASTNode{
 		case 3: return result;
 		case 4: result.addAll(((TermListNode)mychild).getVarList());
 		}
-		return result;
+		return 
+			    new ArrayList<>(new LinkedHashSet<>(result));
 	}
 	
 	public boolean containVar(String vname){
@@ -128,8 +135,26 @@ public class TermNode extends SMTASTNode{
 	private Integer childtype;
 	@Override
 	public void print_this() {
-		//TODO
-	}
+		String result = "";
+		switch(this.getChildtype()){
+		case 0: result += "(forall (";
+				result += mylist.toString_z3();
+				result += ") ";
+				result += mychild.toString_z3() + ") ";
+				break;
+		case 1: result += "(exists (";
+				result += mylist.toString_z3();
+				result += ") ";
+				result += mychild.toString_z3() + ") ";
+				break;
+		case 2: result += " "+mysymbol + " ";
+				break;
+		case 3: result += mychild.toString_z3();
+				break;
+		case 4: result += "(" + mysymbol + " " + mychild.toString_z3() + ") ";
+				break;
+		}
+		System.out.println( result);	}
 	public String getSymbol(){
 		return mysymbol;
 	}
@@ -196,6 +221,31 @@ public class TermNode extends SMTASTNode{
 				break;
 		case 4: result += "(" + mysymbol + " " + mychild.toString_z3() + ") ";
 				break;
+		}
+		return result;
+	}
+	public Set< String> getConstSet_BV(int depth, Integer length) {
+		Set<String> result = getConstSet_BV(length);
+		Set<Integer> constset = new HashSet<Integer>();
+		for(String s: result) {
+			constset.add( (int) Long.parseLong(s.substring(2, s.length()), 16));
+		}
+		for(int i = 0; i < depth; i++)
+			expand(constset);
+		for(Integer n: constset) {result.add("#x" + String.format("%0"+ (length/4) +"X", n));}
+		return result;
+	}
+	Set<String> getConstSet_BV(Integer length) {
+		Set<Integer> constset = new HashSet<Integer>(); // need parse
+		Set<String> result = new HashSet<String>();
+		switch(this.getChildtype()){
+		case 0: 
+		case 1: 
+		case 2: break;
+		case 3: 
+				result.add(((NumConstNode)mychild).getContent());
+				break;
+		case 4: result.addAll(((TermListNode)mychild).getConstSet_BV(length));
 		}
 		return result;
 	}

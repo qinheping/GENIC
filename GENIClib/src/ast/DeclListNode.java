@@ -22,4 +22,12 @@ public class DeclListNode extends ASTnode{
 			decl.print_this();
 		}
 	}
+
+	public List<String> getDomains() {
+		List result = new ArrayList();
+		for(DeclNode decl: myDecls)
+			result.add(decl.getDomain());
+		return result;
+		
+	}
 }

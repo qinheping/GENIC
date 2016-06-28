@@ -67,9 +67,25 @@ public class GrammarFactory {
 	public static String getGrammar(List<TermNode> terms, TypeNode type, List<String> varnames){
 		if(type.getType() == 0) // INT
 			return getGrammar_Int(terms, varnames);
+		if(type.getType() == 3) // BV
+			return getGrammar_BV(terms, varnames, type.getLength());
 		return null;
 	}
 	
+	private static String getGrammar_BV(List<TermNode> terms, List<String> varnames, Integer length) {
+
+		String start = getStart_BV( terms, varnames, length);
+		String constset = getConstSet_BV(terms, length);
+		String varset = getVarSet_BV(varnames, length);
+		
+		String result = "(" + start + varset + constset + ")";
+		return result;
+	}
+
+
+
+
+
 	private static String getGrammar_Int(List<TermNode> terms,
 			List<String> varnames) {
 		String start = getStart_Int( terms, varnames);
@@ -88,6 +104,31 @@ public class GrammarFactory {
 		String constset = getConstSet_Int(term);
 		String varset = getVarSet_Int(varnames);
 		String result = "(" + start + varset + constset + ")";
+		return result;
+	}
+	
+	private static String getStart_BV(List<TermNode> terms, List<String> varnames, Integer length) {
+		String result = "( Start (BitVec "+length+") ( ";
+		if(varnames.size() !=0) result+=" VarSet\n";
+		boolean needconst = false;
+		for(TermNode term: terms){
+			if(term.containFunc("bvadd") || term.containFunc("bvsub")){
+				result += "(bvadd Start Start)\n";
+				result += "(bvsub Start Start)\n";
+				needconst = true;
+				break;
+		}}
+		if(needconst)
+			result += "ConstSet";
+		result += "))";
+		return result;
+	}
+
+	private static String getVarSet_BV(List<String> varnames, Integer length) {
+		if(varnames.size()==0) return "";
+		String result = "( VarSet (BitVec "+length+") (";
+		result += mainDriver.getVarNameList(varnames) + "\n";
+		result += "))";
 		return result;
 	}
 	
@@ -120,6 +161,18 @@ public class GrammarFactory {
 			result += "(- Start Start)\n";
 			result += "(+ Start Start)\n";
 		}
+		result += "))";
+		return result;
+	}
+	
+	private static String getConstSet_BV(List<TermNode> terms, Integer length) {
+		String result = " (ConstSet (BitVec " + length + ") (";
+		Set<String> set = new HashSet<String>();
+		for(TermNode term: terms) {
+			//System.out.println(term);
+			set.addAll(term.getConstSet_BV(constdepth, length));
+		}
+		result += expandToString(set);
 		result += "))";
 		return result;
 	}

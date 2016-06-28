@@ -1,6 +1,7 @@
 package smtast;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
@@ -65,6 +66,17 @@ public class TermListNode extends SMTASTNode{
 		for(int i = 0; i < mylist.size(); i++){
 			result += mylist.get(i).toString_z3();
 		}		
+		return result;
+	}
+
+	public List<TermNode> getArgs() {
+		return mylist;
+	}
+
+	public Set< String> getConstSet_BV(Integer length) {
+		Set<String> result = new HashSet<String>();
+		for(TermNode t: mylist)
+			result.addAll(t.getConstSet_BV(length));
 		return result;
 	}
 }
