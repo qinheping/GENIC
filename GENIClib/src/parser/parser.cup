@@ -126,7 +126,9 @@ output			::= outputfunction_list:ofl APPEND function:f
 			:};
 
 outputfunction_list	::= outputfunction_list:ofl OUTPUTFUNCTION:t  
-			{:  ofl.addLast(new OutputFuncNode(t));
+			{:  
+			    if (t.trim().length() > 0)
+         		    	ofl.addLast(new OutputFuncNode(t));
 			    RESULT = ofl; 
 			:}
 			| 

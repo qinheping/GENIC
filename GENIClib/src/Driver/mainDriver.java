@@ -40,7 +40,7 @@ public class mainDriver {
 	
 	public static void main(String args[]) throws Exception {
 			// read input
-			Symbol root = GetRoot("test/base/base64encode");
+			Symbol root = GetRoot("test/base/base16decode");
     		CoderNode Root = (CoderNode) root.value;
     		funcdefs = Root.getFuncdefs();
     		// init def
@@ -66,6 +66,7 @@ public class mainDriver {
             
     		SFAConvertor converter = new SFAConvertor(Root, ctx, funcdefs, inverted_funcdefs, "S0");
     		SFA<BoolExpr, Expr> sfa = converter.Convert();
+    		//System.out.println(sfa);
     		Z3BooleanAlgebra Z3ba = new Z3BooleanAlgebra(ctx);
     		//System.out.println(sfa);
     		System.out.println(sfa.getAmbiguousInput(Z3ba));
@@ -73,28 +74,34 @@ public class mainDriver {
     		System.out.println("inj: " + (end-start));
     		//////////
 
-    		
+    		//////////
     		start = System.currentTimeMillis();
-    		Decoder = new CoderNode();		
-    		List<DeclNode>myDecls = new ArrayList<DeclNode>();
-    		for(int i=0; i< funcdefs.size();i++)
-   			myDecls.add(new DeclNode(funcdefs.get(i)));
-    		Decoder.setDeclList(new DeclListNode(myDecls));
-    		
-    		toInvert = new Stack<String>();
-    		inverted = new HashSet<String>();
-    		toInvert.push("S0");
-    		while(!toInvert.isEmpty()){
-    			String prog = toInvert.pop();
-   			if(Root.findProg(prog) == null || inverted.contains(prog))
-    				continue;
-   			ProgNode invertedProg = InvertProg(prog,Root);
-       		invertedProg.print_this();
-       		inverted.add(prog);
-       		toInvert.remove(prog);
-    		}
+    		System.out.println("Deterministic check: " + converter.deterministCheck());
     		end = System.currentTimeMillis();
-    		System.out.println("invert: :"+(end-start));
+    		System.out.println("	cost: " + (end-start));
+    		//////////
+    		
+//    		start = System.currentTimeMillis();
+//    		Decoder = new CoderNode();		
+//    		List<DeclNode>myDecls = new ArrayList<DeclNode>();
+//    		for(int i=0; i< funcdefs.size();i++)
+//   			myDecls.add(new DeclNode(funcdefs.get(i)));
+//    		Decoder.setDeclList(new DeclListNode(myDecls));
+//    		
+//    		toInvert = new Stack<String>();
+//    		inverted = new HashSet<String>();
+//    		toInvert.push("S0");
+//    		while(!toInvert.isEmpty()){
+//    			String prog = toInvert.pop();
+//   			if(Root.findProg(prog) == null || inverted.contains(prog))
+//    				continue;
+//   			ProgNode invertedProg = InvertProg(prog,Root);
+//       		invertedProg.print_this();
+//       		inverted.add(prog);
+//       		toInvert.remove(prog);
+//    		}
+//    		end = System.currentTimeMillis();
+//    		System.out.println("invert: :"+(end-start));
     		//Root.print_this();
 	}
 	

@@ -9,14 +9,15 @@
 function S0 (l: (BitVec 8)) : (BitVec 8) :=
 	match l with
 	| x1::x2::x3::x4::x5::x6::x7::x8::tail when (and (domain x1) (domain x2) (domain x3) (domain w));
-		-> [(bvor (bvshl (D x ) #x02) (B #x05 #x04 (D y))) ; (bvor (bvshl (B #x03 #x00 (D y)) #x04) (B #x05 #x02 (D z)) ) ; (bvor (bvshl (B #x01 #x00 (D z)) #x06) (D w))] ++ F(tail)
+		-> [(bvor (bvshl (D x ) #x02) (B #x05 #x04 (D y))) ; (bvor (bvshl (B #x03 #x00 (D y)) #x04) (B #x05 #x02 (D z)) ) ; (bvor (bvshl (B #x01 #x00 (D z)) #x06) (D w))] ++ S0(tail)
 	| x::y::z::w::tail when (and (domain x)	(domain y) (domain z) 
 				    (= w #x3d));
-		-> [(bvor (bvshl (D x ) #x02) (B #x05 #x04 (D y))) ; (bvor (bvshl (B #x03 #x00 (D y)) #x04) (B #x05 #x02 (D z)) ) ] ++ F(tail)
+		-> [(bvor (bvshl (D x ) #x02) (B #x05 #x04 (D y))) ; (bvor (bvshl (B #x03 #x00 (D y)) #x04) (B #x05 #x02 (D z)) ) ] 
 	| x::y::z::w::tail when (and (domain x)	(domain y)
 				    (= z #x3d)
 				    (= w #x3d));
-		-> [(bvor (bvshl (D x ) #x02) (B #x05 #x04 (D y)))] ++ F(tail)
+		-> [(bvor (bvshl (D x ) #x02) (B #x05 #x04 (D y)))]
+	| [] when true;
+		-> []
 ===
-isInjective S0;
 invert S0;

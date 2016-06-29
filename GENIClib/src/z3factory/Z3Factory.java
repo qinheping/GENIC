@@ -52,6 +52,11 @@ public class Z3Factory {
 		funcdefstable = new HashMap<String, Expr>();
 		this.ctx = ctx;
 	}
+	public void setSort(Sort sort){
+		this.sort = sort;
+		if(sort.getSortKind()==Z3_sort_kind.Z3_BV_SORT)
+			bvsize = ((BitVecSort)sort).getSize();
+	}
 	
 	public void addFunc(DefCmdNode n){
 		Sort funcsort = getSortFromSortNode(n.getSort());
@@ -108,7 +113,8 @@ public class Z3Factory {
 				NumConstNode num = (NumConstNode) n.getChild();
 				if(num.getMytype() == NumConstNode.HEX) {
 					//System.out.println(num.getContent());
-					result = ctx.mkBV(Integer.parseInt(num.getContent().substring(2, num.getContent().length()), 16), bvsize);
+					result = ctx.mkBV(Integer.parseInt(num.getContent().substring(2, 
+							num.getContent().length()), 16), bvsize);
 
 				}
 				if(num.getMytype() == NumConstNode.NUM){

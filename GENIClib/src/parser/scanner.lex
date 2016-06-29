@@ -10,6 +10,7 @@ class TokenVal{
 }
 
 class TempString {
+	static boolean hasOutput = false;
 	static String str = new String();
 }
 class IndexNum {
