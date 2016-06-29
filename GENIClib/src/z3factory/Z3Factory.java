@@ -3,7 +3,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import Driver.Invertor;
 import Driver.SMTDriver;
+import Driver.mainDriver;
 import ast.TypeNode;
 
 import com.microsoft.z3.*;
@@ -18,12 +20,22 @@ public class Z3Factory {
 	Map<String, Expr>	funcdefstable;
 	Integer bvsize; // all bit vectors have same size
 	Context ctx;
+	Sort sort;
 	// convert a termnode to its corresponding Expr in given context
 	
 	public Z3Factory(Context ctx){
 		sortstable = new HashMap<String, Sort>();
 		funcdeclstable = new HashMap<String, FuncDecl>();
 		funcdefstable = new HashMap<String, Expr>();
+		this.ctx = ctx;
+	}	
+	public Z3Factory(Context ctx, Sort sort){
+		sortstable = new HashMap<String, Sort>();
+		funcdeclstable = new HashMap<String, FuncDecl>();
+		funcdefstable = new HashMap<String, Expr>();		
+		this.sort = sort;
+		if(sort.getSortKind()==Z3_sort_kind.Z3_BV_SORT)
+			bvsize = ((BitVecSort)sort).getSize();
 		this.ctx = ctx;
 	}
 	public Z3Factory(Map<String, Sort> st, Map<String, FuncDecl> ft, Map<String, Expr> fd, Context ctx){
@@ -59,6 +71,7 @@ public class Z3Factory {
 		Sort[] types;
 		String[] names;
 		//System.out.println(n);
+		//n.print_this();
 		//System.out.println(n.getChildtype());
 		switch(n.getChildtype()){
 		case 0: 		//forall
@@ -82,12 +95,16 @@ public class Z3Factory {
 	                TermNodeToExpr((TermNode)n.getChild()), 1, null/* patterns */, null, null, null);
 				break;
 		case 2: 		//symbol
+				if(n.getSymbol().equals("true")) return ctx.mkTrue();
+				if(n.getSymbol().equals("false")) return ctx.mkFalse();
+				
 				if(sortstable.containsKey(n.getSymbol()))
 					result = ctx.mkConst(n.getSymbol(), sortstable.get(n.getSymbol()));
 				else
-					result = ctx.mkConst(n.getSymbol(), ctx.mkIntSort());
+					result = ctx.mkConst(n.getSymbol(), sort);
 				break;
 		case 3: 		//const
+				
 				NumConstNode num = (NumConstNode) n.getChild();
 				if(num.getMytype() == NumConstNode.HEX) {
 					//System.out.println(num.getContent());
@@ -186,6 +203,8 @@ public class Z3Factory {
 				result = ctx.mkMul(result,(ArithExpr) vars[i]);
 			return result;
 			}
+		if(funcname.equals("ite"))
+			return ctx.mkITE((BoolExpr) vars[0], vars[1], vars[2]);
 		if(funcname.equals("/"))
 			return ctx.mkDiv((ArithExpr)vars[0], (ArithExpr)vars[1]);
 		if(funcname.equals("<"))
@@ -263,5 +282,15 @@ public class Z3Factory {
 		if(funcname.equals("bvsgt"))
 			return ctx.mkBVSGT((BitVecExpr)vars[0], (BitVecExpr)vars[1]);
 		return null;
+	}
+	public FuncDecl StringToFuncDecl(String f) throws Exception {
+		CmdNode r = mainDriver.toCmdNode(f);
+		String name = r.getFuncName();
+		int num_read = r.getVarList().size();
+		Sort[] in_sorts = new Sort[num_read];
+		Sort out_sort = Invertor.getSort(r.getOuttype(), ctx);
+		for(int i = 0; i < num_read; i++)
+			in_sorts[i] = Invertor.getSort(r.getIntype().get(i), ctx);
+		return ctx.mkFuncDecl(name, in_sorts, out_sort);
 	}
 }

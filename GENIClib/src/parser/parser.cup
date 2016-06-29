@@ -13,7 +13,7 @@ parser code {:
 :}
 
 
-terminal FUNCTION, LPAREN, RPAREN, SEMICOLON, VLINE, MAPTO, COLON, DEFINE, CONCAT, APPEND, INT, BOOL, BV, CHAR, WITH, INVERT, MATCH, WHEN;
+terminal FUNCTION, LPAREN, RPAREN, SEMICOLON, VLINE, MAPTO, COLON, DEFINE, CONCAT, APPEND, INT, BOOL, BV, CHAR, WITH, INVERT, MATCH, WHEN, NIL;
 terminal Integer INTVALUE;
 terminal String DECLARATION;
 terminal String ID;
@@ -37,7 +37,7 @@ non terminal TransitionNode	transition;
 non terminal LinkedList		pattern;
 non terminal OutputNode		output;
 non terminal LinkedList		outputfunction_list;
-non terminal FuncNode	function;
+non terminal FuncNode		function;
 
 start with coder;
 
@@ -104,7 +104,7 @@ transition		::= pattern:p WHEN PREDICATE:predstr MAPTO output:o
 			{:  RESULT = new TransitionNode(p,new PredNode(predstr),o);
 			:};
 
-pattern			::= pattern:p CONCAT ID:idstr 
+pattern			::= pattern:p CONCAT ID:idstr  
 			{:  p.addLast(idstr); 
 			    RESULT = p;
 			:} 
@@ -112,10 +112,17 @@ pattern			::= pattern:p CONCAT ID:idstr
 			{:  LinkedList<String> result = new LinkedList<String>();
 			    result.addLast(idstr);
 			    RESULT = result;
-			:};
+			:}
+			| pattern:p CONCAT NIL {: p.addLast("NIL"); RESULT = p; :}
+			| NIL {: LinkedList<String> result = new LinkedList<String>();
+			    result.addLast("NIL");
+			    RESULT = result; :};
 
 output			::= outputfunction_list:ofl APPEND function:f
 			{:  RESULT = new OutputNode(new OutputFuncListNode(ofl),f);
+			:}
+			|   outputfunction_list:ofl
+			{:  RESULT = new OutputNode(new OutputFuncListNode(ofl),null);
 			:};
 
 outputfunction_list	::= outputfunction_list:ofl OUTPUTFUNCTION:t  

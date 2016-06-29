@@ -22,7 +22,9 @@ class OutputNode extends ASTnode{
 	public void print_this() {
 		System.out.print(" [");
 		myOFL.print_this();
-		System.out.print("] ++ ");
-		myFunc.print_this();
+		System.out.print("]");
+		if(myFunc != null){
+		System.out.print(" ++ ");
+		myFunc.print_this();}else System.out.println("");
 	}
 }

@@ -8,6 +8,8 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 import com.microsoft.z3.ApplyResult;
+import com.microsoft.z3.BitVecExpr;
+import com.microsoft.z3.BitVecSort;
 import com.microsoft.z3.BoolExpr;
 import com.microsoft.z3.Context;
 import com.microsoft.z3.Expr;
@@ -15,12 +17,15 @@ import com.microsoft.z3.FuncDecl;
 import com.microsoft.z3.Goal;
 import com.microsoft.z3.Log;
 import com.microsoft.z3.Model;
+import com.microsoft.z3.Params;
 import com.microsoft.z3.Solver;
 import com.microsoft.z3.Sort;
 import com.microsoft.z3.Status;
 import com.microsoft.z3.Symbol;
+import com.microsoft.z3.enumerations.Z3_sort_kind;
 
 import ast.TypeNode;
+import smtast.CmdNode;
 import smtast.DefCmdNode;
 import smtast.SortNode;
 import smtast.TermNode;
@@ -68,12 +73,20 @@ public class Invertor {
 				BoolExpr truecondition = ctx.mkAnd(domain, (BoolExpr)factory.TermNodeToExpr(fterm.getArgs().get(0)));
 				BoolExpr falsecondition = ctx.mkAnd(domain, ctx.mkNot((BoolExpr)factory.TermNodeToExpr(fterm.getArgs().get(0))));
 				Entry<String, BoolExpr> trueaction = unification(fterm.getArgs().get(1), truecondition);
+
 				Entry<String, BoolExpr> falseaction = unification(fterm.getArgs().get(2), falsecondition);
-				
-				return null;
+
+
+				BoolExpr range = ctx.mkOr(trueaction.getValue(), falseaction.getValue());
+				String action = "(ite " + trueaction.getValue().toString() + " " + trueaction.getKey()
+					+ " " + falseaction.getKey() + ")";
+				return new AbstractMap.SimpleEntry<String, BoolExpr>( action, range); 
 			}
-			return new AbstractMap.SimpleEntry<String, BoolExpr>( invert(fterm, domain), getRange(fterm, domain));
+			Entry<String, BoolExpr> result = new AbstractMap.SimpleEntry<String, BoolExpr>( invert(fterm, domain),
+					getRange(fterm, domain));
+			return result;
 		}
+		
 		if(fterm.getChildtype() == 3 ){
 			Solver s = ctx.mkSolver();
 			s.add(domain);
@@ -109,7 +122,7 @@ public class Invertor {
 		BoolExpr eq = ctx.mkTrue();
 		Expr func = factory.TermNodeToExpr(fterm).substitute(vars, boundvars);
 		
-		BoolExpr pred = domain;
+		BoolExpr pred = (BoolExpr) domain.substitute(vars[0], boundvars[0]);
 		
 		decodevars[0] = getVar("Y", type, ctx);
 		
@@ -127,16 +140,62 @@ public class Invertor {
         g.add(q);
         //System.out.println(g.AsBoolExpr());
         ApplyResult ar = ctx.mkTactic("qe").apply(g);
+        //System.out.println(g);
+        BoolExpr range = ctx.mkTrue();
+        BoolExpr[] formulas = ar.getSubgoals()[0].getFormulas();
+        for(BoolExpr e: formulas){
+        	range = (BoolExpr) ctx.mkAnd(range, e).simplify();
+        }
+        if(sort.getSortKind() == Z3_sort_kind.Z3_BV_SORT)
+        	range = toIntervals(ctx, range, ctx.mkConst(var, sort));
+        
 		String result = "(and ";
 		String[] lines = ar.toString().split(System.getProperty("line.separator"));
 		for(int i = 2; i < lines.length; i++){
 			result += lines[i];
 		}
-        System.out.println(result);
-		return (BoolExpr) factory.StringToExpr(result);
+        //System.out.println(range);
+		
+		return range;
 	}
 
 	
+	private static BoolExpr toIntervals(Context ctx2, BoolExpr range, Expr mkConst) {
+		int length = ((BitVecSort)mkConst.getSort()).getSize();
+		Map<Integer, Integer> intervals = new HashMap();
+		Integer curr_place = 0;
+		boolean flag = false;
+
+		for(int i = 0; i < Math.pow(2, length); i++){
+			Expr key = ctx2.mkBV(i, length);
+			BoolExpr q = ctx2.mkAnd(ctx2.mkEq(key, mkConst), range);
+			Solver s = ctx2.mkSolver();
+			s.add(q);
+			if(flag){
+				if(s.check() != Status.SATISFIABLE){
+					intervals.put(curr_place, i - 1);
+					flag = false;
+				}
+			}else{
+				if(s.check() == Status.SATISFIABLE){
+					curr_place = i;
+					flag = true;
+				}
+			}
+		}
+		if(flag) intervals.put(curr_place, (int) (Math.pow(2, length)-1));
+		BoolExpr result = ctx.mkFalse();
+		for(Integer e: intervals.keySet()){
+			Expr from = ctx2.mkBV(e, length);
+			Expr to = ctx2.mkBV(intervals.get(e), length);
+			if(e != intervals.get(e))
+				result = ctx2.mkOr(ctx2.mkAnd(ctx2.mkBVULE((BitVecExpr)mkConst, (BitVecExpr)to), 
+						ctx2.mkBVUGE((BitVecExpr)mkConst, (BitVecExpr)from)), result);
+			else
+				result = ctx.mkOr(result, ctx2.mkEq((BitVecExpr)mkConst, (BitVecExpr)to));
+		}
+		return result;
+	}
 	private static Expr getVar(String var2, TypeNode type2, Context ctx2) {
 		if(type2.getType() == 0)
 			return ctx2.mkConst(var, ctx2.mkIntSort());
@@ -151,14 +210,16 @@ public class Invertor {
 		List<String> encodeVars = new ArrayList();
 		encodeVars.add(var);		
 		List decodeVars = new ArrayList<String>();
-		decodeVars.add("Y");
+		decodeVars.add(var);
 		String result = mainDriver.invertFuncs(name, funcs, encodeVars, decodeVars, 
 				mainDriver.stringToFuncDef(domain.toString(), "domain", type, new TypeNode(1)).toString(), type, var);
-
-		return null;
+		CmdNode r = mainDriver.toCmdNode(result);
+		return r.getTermNode().toString();
 	}
 	
 	static public Sort getSort(TypeNode s, Context context){
+		if(s.getType() == 0)
+			return context.mkIntSort();
 		if(s.getType() == 3)
 			return context.mkBitVecSort(s.getLength());
 		return null;

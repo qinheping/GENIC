@@ -34,7 +34,7 @@ return new Symbol(sym.EOF);
 %state OUTPUTFUNCTIONSTATE
 %state QUERYSTATE
 %state DOMAINSTATE
-
+%state PATTERNSTATE
 %cup
 
 %%
@@ -51,17 +51,26 @@ return new Symbol(sym.EOF);
 <DOMAINSTATE>	";"		{ yybegin(YYINITIAL); return new Symbol(sym.DOMAIN, TempString.str);}
 
 
+<PATTERNSTATE>  {WHITESPACE}	{}
+<PATTERNSTATE>	"when"		{ yybegin(PREDICATESTATE);
+			  	  TempString.str = "";
+			  	  return new Symbol(sym.WHEN);}
+
+<PATTERNSTATE>	{LETTER}({LETTER}|{DIGIT})*	{ return new Symbol(sym.ID, new String(yytext()));}
+
+<PATTERNSTATE>	"::"		{ return new Symbol(sym.CONCAT);}
+<PATTERNSTATE>	"[]"		{ return new Symbol(sym.NIL);}
+
 <PROGRAMSTATE>	{WHITESPACE}	{}
 <PROGRAMSTATE>	"match"		{ return new Symbol(sym.MATCH);}
 <PROGRAMSTATE>	"function"	{ return new Symbol(sym.FUNCTION);}
 <PROGRAMSTATE>	"("		{ return new Symbol(sym.LPAREN);}
 <PROGRAMSTATE>	")"		{ return new Symbol(sym.RPAREN);}
 <PROGRAMSTATE>	";"		{ return new Symbol(sym.SEMICOLON);}
-<PROGRAMSTATE>	"|"		{ return new Symbol(sym.VLINE);}
+<PROGRAMSTATE>	"|"		{ yybegin(PATTERNSTATE); return new Symbol(sym.VLINE);}
 <PROGRAMSTATE>	"->"		{ return new Symbol(sym.MAPTO);}
 <PROGRAMSTATE>	":"		{ return new Symbol(sym.COLON);}
 <PROGRAMSTATE>	":="		{ return new Symbol(sym.DEFINE);}
-<PROGRAMSTATE>	"::"		{ return new Symbol(sym.CONCAT);}
 <PROGRAMSTATE>	"++"		{ return new Symbol(sym.APPEND);}
 <PROGRAMSTATE>	"Int"		{ return new Symbol(sym.INT);}
 <PROGRAMSTATE>	"Bool"		{ return new Symbol(sym.BOOL);}
@@ -73,9 +82,7 @@ return new Symbol(sym.EOF);
 				  TempString.str = "";
 				  IndexNum.num = 1;}
 
-<PROGRAMSTATE>	"when"		{ yybegin(PREDICATESTATE);
-			  	  TempString.str = "";
-			  	  return new Symbol(sym.WHEN);}
+
 
 <PROGRAMSTATE>	"==="		{ yybegin(QUERYSTATE); }
 <PROGRAMSTATE>	{LETTER}({LETTER}|{DIGIT})*	{ return new Symbol(sym.ID, new String(yytext()));}

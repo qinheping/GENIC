@@ -48,13 +48,12 @@ public class mainDriver {
     		funcdefs_z3 = new ArrayList<String>();
     		domains = Root.getDomains();
     		gf = new GrammarFactory(new ArrayList(), new ArrayList(), new ArrayList());
-    		for(int i = 0; i < funcdefs.size(); i++){
-    			funcdefs_z3.add(toString_z3(funcdefs.get(i)));
-    			if(domains.get(i) != null)
-    				inverted_funcdefs.add(Invertor.invertUnaryFunc(funcdefs.get(i),domains.get(i)));	// 0 for BV, 1 for LIA
-    			
-    		}
-    		
+//    		for(int i = 0; i < funcdefs.size(); i++){
+//    			funcdefs_z3.add(toString_z3(funcdefs.get(i)));
+//    			if(domains.get(i) != null)
+//    				inverted_funcdefs.add(Invertor.invertUnaryFunc(funcdefs.get(i),domains.get(i)));	// 0 for BV, 1 for LIA
+//    			
+//    		}
     		gf = new GrammarFactory(funcdefs, funcdefs_z3, inverted_funcdefs);
     		
     		//////////
@@ -64,8 +63,8 @@ public class mainDriver {
     		HashMap<String, String> cfg = new HashMap<String, String>();
             cfg.put("model", "true");
             ctx = new Context(cfg);
-            //Context ctx2 = new Context(cfg);
-    		SFAConvertor converter = new SFAConvertor(Root, ctx);
+            
+    		SFAConvertor converter = new SFAConvertor(Root, ctx, funcdefs, inverted_funcdefs, "S0");
     		SFA<BoolExpr, Expr> sfa = converter.Convert();
     		Z3BooleanAlgebra Z3ba = new Z3BooleanAlgebra(ctx);
     		//System.out.println(sfa);
@@ -189,7 +188,7 @@ public class mainDriver {
 		result += "))))\n";
 		return result;
 	}
-	static CmdNode toCmdNode(String source) throws Exception {
+	public static CmdNode toCmdNode(String source) throws Exception {
 		return (CmdNode)SMTDriver.GetSMTRootFromString(source).value;
 	}
 

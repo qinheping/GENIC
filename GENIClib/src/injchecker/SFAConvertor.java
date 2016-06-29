@@ -17,19 +17,48 @@ import z3factory.Z3Factory;
 
 import com.microsoft.z3.*;
 
+import Driver.Invertor;
+import Driver.mainDriver;
+
 public class SFAConvertor {
 	List<ProgNode> progs;
-	String finalState;
+	List<Integer> finalStates;
 	String initialState;
 	Map<String, Integer> nameList;
+	String finalstate;
 	Context ctx;
 	Expr unit;
+	Sort sort;
 	
-	public SFAConvertor(CoderNode root, Context ctx){
+	List<String> funcdefs_string;
+	FuncDecl[] funcDecls;
+	Expr[]	funcExprs;
+	List<String> inverted_funcdefs;
+	
+	public SFAConvertor(CoderNode root, Context ctx, List<String> funcdefs2, 
+							List<String> inverted_funcdefs2, String init) throws Exception{
 		this.progs = root.getProgList();
-		finalState = "F";
-		initialState = "F";
-		nameList = new HashMap();
+
+		finalStates = new ArrayList<Integer>();
+		initialState = init;
+		funcdefs_string = funcdefs2;
+		inverted_funcdefs = inverted_funcdefs2;
+		nameList = new HashMap<String, Integer>();
+		finalstate = "FINAL";
+		nameList.put(finalstate, getId(finalstate));
+		finalStates.add(getId(finalstate));
+		
+		sort = Invertor.getSort(progs.get(0).getInType(), ctx);
+		
+		Z3Factory factory = new Z3Factory(ctx, sort);
+		funcDecls = new FuncDecl[funcdefs_string.size()];
+		funcExprs = new Expr[funcdefs_string.size()];
+		for(int i = 0; i < funcdefs_string.size(); i++){
+			funcDecls[i] = factory.StringToFuncDecl(funcdefs_string.get(i));
+			//System.out.println(funcdefs_string.get(i));
+			funcExprs[i] = factory.StringToExpr(mainDriver.toCmdNode(funcdefs_string.get(i)).getTermNode().toString());
+		}
+		
 		this.ctx = ctx;
 	}
 	
@@ -46,38 +75,41 @@ public class SFAConvertor {
 		Collection<SFAMove<BoolExpr, Expr>> transitions = new LinkedList<SFAMove<BoolExpr, Expr>>();
 		Z3BooleanAlgebra Z3ba = new Z3BooleanAlgebra(ctx);
 		
-		
-		unit = ctx.mkConst("x", toSort(progs.get(0).getInType().getType()));
+		unit = ctx.mkConst("x", sort);
 		
 		for(ProgNode node: this.progs){
 			// the id and name of FROM node
 			Integer from = getId(node.getName());
 			String from_s = node.getName();
+			
 			List<TransitionNode> transList = node.getTransList();
 			for(int j = 0; j < transList.size(); j++){
 				TransitionNode trans = transList.get(j);
 				// the id and name of TO node
-				Integer to = getId(trans.getOutput().getFunc().FuncName());
-				String to_s = trans.getOutput().getFunc().FuncName();
+				
+				trans.print_this();
+				
+				Integer to = getTo(trans);
+				String to_s = getTos(trans);
 				
 				//System.out.println(TransitionInjChecker.check(ctx, domain, varsName, outputFuncs, sort));
 				
 				Integer lookahead = trans.getLookahead();
+				if(lookahead > 0){
 				// factory used to generate predicate
 				Z3Factory factory = new Z3Factory(ctx);
+				
 				BoolExpr pred = (BoolExpr) factory.StringToExpr(trans.getPred());
 				//System.out.println(pred);
 				BoolExpr[] preds = new BoolExpr[lookahead];
 				List<String> varsname= trans.getVarList();
-				List<Expr> varlist = new ArrayList<Expr>();
-				
-				//////////// Bad Code
+				Expr[] encodevarlist = new Expr[lookahead];
+
 				for(int i = 0; i < varsname.size(); i++){
-					varlist.add(ctx.mkIntConst(varsname.get(i)));
+					encodevarlist[i] = ctx.mkConst(varsname.get(i), sort);
 				}
-				////////////
 				
-				preds = toCartesianPreds(pred, varlist);
+				preds = toCartesianPreds(pred, new ArrayList<Expr>(Arrays.asList(encodevarlist)));
 				// get id and name of way points
 				String [] wayPoints_s = new String[lookahead - 1];
 				Integer [] wayPoints = new Integer[lookahead - 1];
@@ -95,12 +127,22 @@ public class SFAConvertor {
 					}
 					transitions.add(new SFAInputMove<BoolExpr, Expr>(wayPoints[lookahead-2], to, preds[lookahead - 1]));
 				}
-
+				}
 				
 			}
 		}
 		//System.out.println(SFA.MkSFA(transitions, getId(initialState), Arrays.asList(getId(finalState)), Z3ba));
-		return SFA.MkSFA(transitions, getId(initialState), Arrays.asList(getId(finalState)), Z3ba);
+		return SFA.MkSFA(transitions, getId(initialState), finalStates, Z3ba);
+	}
+
+	private String getTos(TransitionNode trans) {
+		if(trans.getOutput().getFunc() == null)
+			return finalstate;
+		return trans.getOutput().getFunc().FuncName();
+	}
+
+	private Integer getTo(TransitionNode trans) {
+		return getId(getTos(trans));
 	}
 
 	private BoolExpr[] toCartesianPreds(BoolExpr pred, List<Expr> varlist) throws Exception {

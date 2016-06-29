@@ -67,15 +67,17 @@ class Yylex implements java_cup.runtime.Scanner {
 	private final int OUTPUTFUNCTIONSTATE = 4;
 	private final int PROGRAMSTATE = 2;
 	private final int DECLARESTATE = 1;
+	private final int PATTERNSTATE = 7;
 	private final int DOMAINSTATE = 6;
 	private final int yy_state_dtrans[] = {
 		0,
-		46,
-		49,
-		54,
-		56,
-		58,
-		60
+		50,
+		53,
+		59,
+		62,
+		64,
+		66,
+		67
 	};
 	private void yybegin (int state) {
 		yy_lexical_state = state;
@@ -258,32 +260,32 @@ class Yylex implements java_cup.runtime.Scanner {
 		/* 39 */ YY_NO_ANCHOR,
 		/* 40 */ YY_NO_ANCHOR,
 		/* 41 */ YY_NO_ANCHOR,
-		/* 42 */ YY_NOT_ACCEPT,
+		/* 42 */ YY_NO_ANCHOR,
 		/* 43 */ YY_NO_ANCHOR,
 		/* 44 */ YY_NO_ANCHOR,
-		/* 45 */ YY_NO_ANCHOR,
-		/* 46 */ YY_NOT_ACCEPT,
+		/* 45 */ YY_NOT_ACCEPT,
+		/* 46 */ YY_NO_ANCHOR,
 		/* 47 */ YY_NO_ANCHOR,
 		/* 48 */ YY_NO_ANCHOR,
-		/* 49 */ YY_NOT_ACCEPT,
-		/* 50 */ YY_NO_ANCHOR,
+		/* 49 */ YY_NO_ANCHOR,
+		/* 50 */ YY_NOT_ACCEPT,
 		/* 51 */ YY_NO_ANCHOR,
-		/* 52 */ YY_NOT_ACCEPT,
-		/* 53 */ YY_NO_ANCHOR,
-		/* 54 */ YY_NOT_ACCEPT,
+		/* 52 */ YY_NO_ANCHOR,
+		/* 53 */ YY_NOT_ACCEPT,
+		/* 54 */ YY_NO_ANCHOR,
 		/* 55 */ YY_NO_ANCHOR,
 		/* 56 */ YY_NOT_ACCEPT,
 		/* 57 */ YY_NO_ANCHOR,
-		/* 58 */ YY_NOT_ACCEPT,
-		/* 59 */ YY_NO_ANCHOR,
-		/* 60 */ YY_NOT_ACCEPT,
+		/* 58 */ YY_NO_ANCHOR,
+		/* 59 */ YY_NOT_ACCEPT,
+		/* 60 */ YY_NO_ANCHOR,
 		/* 61 */ YY_NO_ANCHOR,
-		/* 62 */ YY_NO_ANCHOR,
+		/* 62 */ YY_NOT_ACCEPT,
 		/* 63 */ YY_NO_ANCHOR,
-		/* 64 */ YY_NO_ANCHOR,
+		/* 64 */ YY_NOT_ACCEPT,
 		/* 65 */ YY_NO_ANCHOR,
-		/* 66 */ YY_NO_ANCHOR,
-		/* 67 */ YY_NO_ANCHOR,
+		/* 66 */ YY_NOT_ACCEPT,
+		/* 67 */ YY_NOT_ACCEPT,
 		/* 68 */ YY_NO_ANCHOR,
 		/* 69 */ YY_NO_ANCHOR,
 		/* 70 */ YY_NO_ANCHOR,
@@ -303,43 +305,49 @@ class Yylex implements java_cup.runtime.Scanner {
 		/* 84 */ YY_NO_ANCHOR,
 		/* 85 */ YY_NO_ANCHOR,
 		/* 86 */ YY_NO_ANCHOR,
-		/* 87 */ YY_NO_ANCHOR
+		/* 87 */ YY_NO_ANCHOR,
+		/* 88 */ YY_NO_ANCHOR,
+		/* 89 */ YY_NO_ANCHOR,
+		/* 90 */ YY_NO_ANCHOR,
+		/* 91 */ YY_NO_ANCHOR,
+		/* 92 */ YY_NO_ANCHOR,
+		/* 93 */ YY_NO_ANCHOR,
+		/* 94 */ YY_NO_ANCHOR
 	};
 	private int yy_cmap[] = unpackFromString(1,130,
-"34:9,2:2,34,2:2,34:18,2,34:7,1,17,34,22,5,19,34:2,31:10,21,6,34,3,20,34:2,3" +
-"3,24,28,33:5,23,33:12,26,33:4,32,34,4,34:3,8,33,10,33,27,12,33,11,15,33:2,2" +
-"5,7,14,16,33:2,29,33,9,13,35,30,33:3,34,18,34:3,0:2")[0];
+"4:9,2:2,4,2:2,4:18,2,4:7,1,24,4,28,5,26,4:2,12:10,13,6,4,3,27,4:2,11,30,33," +
+"11:5,29,11:12,32,11:4,14,4,15,4:3,17,11,19,11,9,20,11,8,22,11:2,31,16,10,23" +
+",11:2,34,11,18,21,35,7,11:3,4,25,4:3,0:2")[0];
 
-	private int yy_rmap[] = unpackFromString(1,88,
-"0,1:3,2,1:7,3,1:2,4,5,1:6,6:8,1:7,7:2,1:2,8,1,9,10,11,12,13,14,15,16,17,18," +
-"19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,6,42,4" +
-"3,44,45,46,47,6,48,49,50")[0];
+	private int yy_rmap[] = unpackFromString(1,95,
+"0,1:3,2,1:7,3,4,5,1:7,6:7,1:7,7:2,1:3,8,1:2,9,10,1,11,12,13,14,15,16,17,18," +
+"19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,9,37,38,39,40,41,42,4" +
+"3,44,45,46,47,6,48,9,49,50,51,52,53,54,55")[0];
 
-	private int yy_nxt[][] = unpackFromString(51,36,
-"1,2,3,4,43:32,-1:39,42,-1:39,84,76,84:8,-1:6,84:8,77,-1,84,-1,84,-1:3,19,-1" +
-":17,20,-1:45,16,-1:11,84:10,-1:6,84:8,77,-1,84,-1,84,-1:7,38:10,-1:6,38:9,-" +
-"1,38,-1,38,-1:3,5,-1:39,84:2,23,84:7,-1:6,84:8,77,-1,84,-1,84,-1:7,38:2,39," +
-"38:7,-1:6,38:9,-1,38,-1,38,1,6:4,7,8,6:29,-1:20,18,-1:22,84:10,-1:6,84:2,24" +
-",84:5,77,-1,84,-1,84,1,9,10,62,43:2,11,12,84:4,86,84:4,13,14,47,43,15,50,63" +
-",72,84:3,74,84,75,16,17,84,43,84,-1:22,21,-1:20,84:10,-1:6,84:6,25,84,77,-1" +
-",84,-1,84,-1:3,22,-1:39,84:7,26,84:2,-1:6,84:8,77,-1,84,-1,84,1,31:5,32,31:" +
-"29,-1:7,84:4,27,84:5,-1:6,84:8,77,-1,84,-1,84,1,33:3,34,33,35,33:29,-1:7,84" +
-":4,28,84:5,-1:6,84:8,77,-1,84,-1,84,1,43,36,43:3,37,38:8,87,38,43:6,38:8,43" +
-":2,38,43,38,-1:7,84:3,29,84:6,-1:6,84:8,77,-1,84,-1,84,1,40:4,43,41,40:29,-" +
-"1:7,84:7,30,84:2,-1:6,84:8,77,-1,84,-1,84,-1:3,52,-1:39,84:7,44,84:2,-1:6,8" +
-"4:8,77,-1,84,-1,84,-1:7,38:10,-1:6,38:6,45,38:2,-1,38,-1,38,-1:7,84:9,48,-1" +
-":6,84:8,77,-1,84,-1,84,-1:7,84,51,84:8,-1:6,84:8,77,-1,84,-1,84,-1:7,84:10," +
-"-1:6,84:4,53,84:3,77,-1,84,-1,84,-1:7,84:2,55,84:7,-1:6,84:8,77,-1,84,-1,84" +
-",-1:7,84:3,57,84:6,-1:6,84:8,77,-1,84,-1,84,-1:7,84:10,-1:6,84:4,59,84:3,77" +
-",-1,84,-1,84,-1:7,84:9,61,-1:6,84:8,77,-1,84,-1,84,-1:7,84:8,79,65,-1:6,84:" +
-"8,77,-1,84,-1,84,-1:7,38:10,-1:6,38:4,64,38:4,-1,38,-1,38,-1:7,84:4,66,84:5" +
-",-1:6,84:8,77,-1,84,-1,84,-1:7,84:4,67,84:3,68,84,-1:6,84:8,77,-1,84,-1,84," +
-"-1:7,84:2,69,84:7,-1:6,84:8,77,-1,84,-1,84,-1:7,84:7,80,84:2,-1:6,84:8,77,-" +
-"1,84,-1,84,-1:7,84:2,81,84:7,-1:6,84:8,77,-1,84,-1,84,-1:7,84:3,82,84:6,-1:" +
-"6,84:8,77,-1,84,-1,84,-1:7,84:10,-1:6,84:3,70,84:4,77,-1,84,-1,84,-1:7,84:2" +
-",83,84:7,-1:6,84:8,77,-1,84,-1,84,-1:7,84:8,71,84,-1:6,84:8,77,-1,84,-1,84," +
-"-1:7,38:10,-1:6,38:9,-1,38,-1,73,-1:7,84:6,78,84:3,-1:6,84:8,77,-1,84,-1,84" +
-",-1:7,38:7,85,38:2,-1:6,38:9,-1,38,-1,38");
+	private int yy_nxt[][] = unpackFromString(56,36,
+"1,2,3,4,46:32,-1:39,45,-1:39,85:6,-1:3,85:6,72,85,-1:5,85:7,-1:12,13,-1:26," +
+"18,-1:39,85:6,-1:3,85:8,-1:5,85:7,-1:7,36:6,-1:3,36:8,-1:5,36:7,-1:7,87,71," +
+"87:3,73,-1:3,87:8,-1:5,87:7,-1:7,87:5,73,-1:3,87:8,-1:5,87:7,-1:3,5,-1:39,8" +
+"5:6,-1:3,85:2,22,85:5,-1:5,85:7,-1:7,36:6,-1:3,36:2,37,36:5,-1:5,36:7,-1:7," +
+"87:3,44,87,73,-1:3,87:8,-1:5,87:7,1,6:4,7,8,6:29,-1:27,19,-1:15,85,23,85:4," +
+"-1:3,85:8,-1:5,85:7,1,9,10,68,46:2,11,12,85:4,13,14,15,46,89,85:3,90,85:3,1" +
+"6,17,51,46,54,69,91,85:2,92,85:2,-1:28,20,-1:14,85:6,-1:3,85:8,-1:5,85:2,24" +
+",85:4,-1:3,21,-1:45,42,-1:29,85:6,-1:3,85:8,-1:5,85:5,25,85,1,29:5,30,29:29" +
+",-1:15,43,-1:27,85,26,85:4,-1:3,85:8,-1:5,85:7,1,31:5,32,31:8,33,31:20,-1:7" +
+",85:6,-1:3,85:3,27,85:4,-1:5,85:7,1,46,34,46:3,35,36:5,46:4,36:6,94,36,46:5" +
+",36:7,-1:7,85:3,28,85:2,-1:3,85:8,-1:5,85:7,1,38:4,46,39,38:29,1,46,40,46:4" +
+",41,87:4,46,57,60,46,87:8,46:5,87:7,-1:3,56,-1:39,85:3,47,85:2,-1:3,85:8,-1" +
+":5,85:7,-1:7,36:6,-1:3,36:8,-1:5,36:5,48,36,-1:7,87:2,49,87:2,73,-1:3,87:8," +
+"-1:5,87:7,-1:7,85:6,-1:3,85:2,52,85:5,-1:5,85:7,-1:7,85:6,-1:3,85:2,78,85:5" +
+",-1:5,85:7,-1:7,85:3,79,85:2,-1:3,85:8,-1:5,85:7,-1:7,85:6,-1:3,85:7,55,-1:" +
+"5,85:7,-1:7,85:6,-1:3,85,58,85:6,-1:5,85:7,-1:7,85:6,-1:3,85:3,61,85:4,-1:5" +
+",85:7,-1:7,85:6,-1:3,85:3,81,85:4,-1:5,85:7,-1:7,85:6,-1:3,85:8,-1:5,85:3,8" +
+"2,85:3,-1:7,85:6,-1:3,85:2,83,85:5,-1:5,85:7,-1:7,85:2,63,85:3,-1:3,85:8,-1" +
+":5,85:7,-1:7,85:6,-1:3,85:6,84,85,-1:5,85:7,-1:7,85:6,-1:3,85:7,65,-1:5,85:" +
+"7,-1:7,36:2,70,36:3,-1:3,36:8,-1:5,36:7,-1:7,85:6,-1:3,85:2,80,85:5,-1:5,85" +
+":7,-1:7,85:6,-1:3,85,74,85:6,-1:5,85:7,-1:7,85:6,-1:3,85:5,75,85:2,-1:5,85:" +
+"7,-1:7,85:6,-1:3,85:6,88,76,-1:5,85:7,-1:7,85,77,85:4,-1:3,85:8,-1:5,85:7,-" +
+"1:7,36:6,-1:3,36:8,-1:5,36:6,86,-1:7,36:3,93,36:2,-1:3,36:8,-1:5,36:7");
 
 	public java_cup.runtime.Symbol next_token ()
 		throws java.io.IOException {
@@ -435,49 +443,49 @@ return new Symbol(sym.EOF);
 					case -13:
 						break;
 					case 13:
-						{ return new Symbol(sym.RPAREN);}
+						{ return new Symbol(sym.INTVALUE, Integer.parseInt(yytext()));}
 					case -14:
 						break;
 					case 14:
-						{ return new Symbol(sym.VLINE);}
+						{ return new Symbol(sym.COLON);}
 					case -15:
 						break;
 					case 15:
-						{ return new Symbol(sym.COLON);}
-					case -16:
-						break;
-					case 16:
-						{ return new Symbol(sym.INTVALUE, Integer.parseInt(yytext()));}
-					case -17:
-						break;
-					case 17:
 						{ yybegin(OUTPUTFUNCTIONSTATE);
 				  TempString.str = "";
 				  IndexNum.num = 1;}
+					case -16:
+						break;
+					case 16:
+						{ return new Symbol(sym.RPAREN);}
+					case -17:
+						break;
+					case 17:
+						{ yybegin(PATTERNSTATE); return new Symbol(sym.VLINE);}
 					case -18:
 						break;
 					case 18:
-						{ return new Symbol(sym.MAPTO);}
+						{ return new Symbol(sym.DEFINE);}
 					case -19:
 						break;
 					case 19:
-						{ return new Symbol(sym.DEFINE);}
+						{ return new Symbol(sym.MAPTO);}
 					case -20:
 						break;
 					case 20:
-						{ return new Symbol(sym.CONCAT);}
+						{ return new Symbol(sym.APPEND);}
 					case -21:
 						break;
 					case 21:
-						{ return new Symbol(sym.APPEND);}
+						{ yybegin(QUERYSTATE); }
 					case -22:
 						break;
 					case 22:
-						{ yybegin(QUERYSTATE); }
+						{ return new Symbol(sym.INT);}
 					case -23:
 						break;
 					case 23:
-						{ return new Symbol(sym.INT);}
+						{ return new Symbol(sym.WITH);}
 					case -24:
 						break;
 					case 24:
@@ -489,25 +497,24 @@ return new Symbol(sym.EOF);
 					case -26:
 						break;
 					case 26:
-						{ yybegin(PREDICATESTATE);
-			  	  TempString.str = "";
-			  	  return new Symbol(sym.WHEN);}
+						{ return new Symbol(sym.MATCH);}
 					case -27:
 						break;
 					case 27:
-						{ return new Symbol(sym.WITH);}
+						{ return new Symbol(sym.BV);}
 					case -28:
 						break;
 					case 28:
-						{ return new Symbol(sym.MATCH);}
+						{ return new Symbol(sym.FUNCTION);}
 					case -29:
 						break;
 					case 29:
-						{ return new Symbol(sym.BV);}
+						{ TempString.str += yytext();}
 					case -30:
 						break;
 					case 30:
-						{ return new Symbol(sym.FUNCTION);}
+						{ yybegin(PROGRAMSTATE);
+			 	  return new Symbol(sym.PREDICATE, TempString.str);}
 					case -31:
 						break;
 					case 31:
@@ -515,202 +522,227 @@ return new Symbol(sym.EOF);
 					case -32:
 						break;
 					case 32:
-						{ yybegin(PROGRAMSTATE);
-			 	  return new Symbol(sym.PREDICATE, TempString.str);}
-					case -33:
-						break;
-					case 33:
-						{ TempString.str += yytext();}
-					case -34:
-						break;
-					case 34:
-						{ yybegin(PROGRAMSTATE);
-				  Symbol S = new Symbol(sym.OUTPUTFUNCTION, TempString.str);
-				  return S;}
-					case -35:
-						break;
-					case 35:
 						{ Symbol S = new Symbol(sym.OUTPUTFUNCTION, TempString.str);
 				  TempString.str = "";
 				  IndexNum.num ++;
 				  return S;}
+					case -33:
+						break;
+					case 33:
+						{ yybegin(PROGRAMSTATE);
+				  Symbol S = new Symbol(sym.OUTPUTFUNCTION, TempString.str);
+				  return S;}
+					case -34:
+						break;
+					case 34:
+						{}
+					case -35:
+						break;
+					case 35:
+						{return new Symbol(sym.SEMICOLON);}
 					case -36:
 						break;
 					case 36:
-						{}
+						{ return new Symbol(sym.ID, new String(yytext()));}
 					case -37:
 						break;
 					case 37:
-						{return new Symbol(sym.SEMICOLON);}
+						{return new Symbol(sym.INVERT);}
 					case -38:
 						break;
 					case 38:
-						{ return new Symbol(sym.ID, new String(yytext()));}
+						{ TempString.str += yytext();}
 					case -39:
 						break;
 					case 39:
-						{return new Symbol(sym.INVERT);}
+						{ yybegin(YYINITIAL); return new Symbol(sym.DOMAIN, TempString.str);}
 					case -40:
 						break;
 					case 40:
-						{ TempString.str += yytext();}
+						{}
 					case -41:
 						break;
 					case 41:
-						{ yybegin(YYINITIAL); return new Symbol(sym.DOMAIN, TempString.str);}
+						{ return new Symbol(sym.ID, new String(yytext()));}
 					case -42:
 						break;
-					case 43:
-						{ System.err.println("Illegal character: "+yytext()); }
+					case 42:
+						{ return new Symbol(sym.CONCAT);}
 					case -43:
 						break;
-					case 44:
-						{ return new Symbol(sym.ID, new String(yytext()));}
+					case 43:
+						{ return new Symbol(sym.NIL);}
 					case -44:
 						break;
-					case 45:
-						{ return new Symbol(sym.ID, new String(yytext()));}
+					case 44:
+						{ yybegin(PREDICATESTATE);
+			  	  TempString.str = "";
+			  	  return new Symbol(sym.WHEN);}
 					case -45:
 						break;
-					case 47:
+					case 46:
 						{ System.err.println("Illegal character: "+yytext()); }
 					case -46:
 						break;
-					case 48:
+					case 47:
 						{ return new Symbol(sym.ID, new String(yytext()));}
 					case -47:
 						break;
-					case 50:
-						{ System.err.println("Illegal character: "+yytext()); }
+					case 48:
+						{ return new Symbol(sym.ID, new String(yytext()));}
 					case -48:
 						break;
-					case 51:
+					case 49:
 						{ return new Symbol(sym.ID, new String(yytext()));}
 					case -49:
 						break;
-					case 53:
-						{ return new Symbol(sym.ID, new String(yytext()));}
+					case 51:
+						{ System.err.println("Illegal character: "+yytext()); }
 					case -50:
 						break;
-					case 55:
+					case 52:
 						{ return new Symbol(sym.ID, new String(yytext()));}
 					case -51:
 						break;
-					case 57:
-						{ return new Symbol(sym.ID, new String(yytext()));}
+					case 54:
+						{ System.err.println("Illegal character: "+yytext()); }
 					case -52:
 						break;
-					case 59:
+					case 55:
 						{ return new Symbol(sym.ID, new String(yytext()));}
 					case -53:
 						break;
-					case 61:
-						{ return new Symbol(sym.ID, new String(yytext()));}
+					case 57:
+						{ System.err.println("Illegal character: "+yytext()); }
 					case -54:
 						break;
-					case 62:
-						{ System.err.println("Illegal character: "+yytext()); }
+					case 58:
+						{ return new Symbol(sym.ID, new String(yytext()));}
 					case -55:
 						break;
-					case 63:
-						{ return new Symbol(sym.ID, new String(yytext()));}
+					case 60:
+						{ System.err.println("Illegal character: "+yytext()); }
 					case -56:
 						break;
-					case 64:
+					case 61:
 						{ return new Symbol(sym.ID, new String(yytext()));}
 					case -57:
 						break;
-					case 65:
+					case 63:
 						{ return new Symbol(sym.ID, new String(yytext()));}
 					case -58:
 						break;
-					case 66:
+					case 65:
 						{ return new Symbol(sym.ID, new String(yytext()));}
 					case -59:
 						break;
-					case 67:
-						{ return new Symbol(sym.ID, new String(yytext()));}
-					case -60:
-						break;
 					case 68:
-						{ return new Symbol(sym.ID, new String(yytext()));}
-					case -61:
+						{ System.err.println("Illegal character: "+yytext()); }
+					case -60:
 						break;
 					case 69:
 						{ return new Symbol(sym.ID, new String(yytext()));}
-					case -62:
+					case -61:
 						break;
 					case 70:
 						{ return new Symbol(sym.ID, new String(yytext()));}
-					case -63:
+					case -62:
 						break;
 					case 71:
 						{ return new Symbol(sym.ID, new String(yytext()));}
-					case -64:
+					case -63:
 						break;
 					case 72:
 						{ return new Symbol(sym.ID, new String(yytext()));}
-					case -65:
+					case -64:
 						break;
 					case 73:
 						{ return new Symbol(sym.ID, new String(yytext()));}
-					case -66:
+					case -65:
 						break;
 					case 74:
 						{ return new Symbol(sym.ID, new String(yytext()));}
-					case -67:
+					case -66:
 						break;
 					case 75:
 						{ return new Symbol(sym.ID, new String(yytext()));}
-					case -68:
+					case -67:
 						break;
 					case 76:
 						{ return new Symbol(sym.ID, new String(yytext()));}
-					case -69:
+					case -68:
 						break;
 					case 77:
 						{ return new Symbol(sym.ID, new String(yytext()));}
-					case -70:
+					case -69:
 						break;
 					case 78:
 						{ return new Symbol(sym.ID, new String(yytext()));}
-					case -71:
+					case -70:
 						break;
 					case 79:
 						{ return new Symbol(sym.ID, new String(yytext()));}
-					case -72:
+					case -71:
 						break;
 					case 80:
 						{ return new Symbol(sym.ID, new String(yytext()));}
-					case -73:
+					case -72:
 						break;
 					case 81:
 						{ return new Symbol(sym.ID, new String(yytext()));}
-					case -74:
+					case -73:
 						break;
 					case 82:
 						{ return new Symbol(sym.ID, new String(yytext()));}
-					case -75:
+					case -74:
 						break;
 					case 83:
 						{ return new Symbol(sym.ID, new String(yytext()));}
-					case -76:
+					case -75:
 						break;
 					case 84:
 						{ return new Symbol(sym.ID, new String(yytext()));}
-					case -77:
+					case -76:
 						break;
 					case 85:
 						{ return new Symbol(sym.ID, new String(yytext()));}
-					case -78:
+					case -77:
 						break;
 					case 86:
 						{ return new Symbol(sym.ID, new String(yytext()));}
-					case -79:
+					case -78:
 						break;
 					case 87:
 						{ return new Symbol(sym.ID, new String(yytext()));}
+					case -79:
+						break;
+					case 88:
+						{ return new Symbol(sym.ID, new String(yytext()));}
 					case -80:
+						break;
+					case 89:
+						{ return new Symbol(sym.ID, new String(yytext()));}
+					case -81:
+						break;
+					case 90:
+						{ return new Symbol(sym.ID, new String(yytext()));}
+					case -82:
+						break;
+					case 91:
+						{ return new Symbol(sym.ID, new String(yytext()));}
+					case -83:
+						break;
+					case 92:
+						{ return new Symbol(sym.ID, new String(yytext()));}
+					case -84:
+						break;
+					case 93:
+						{ return new Symbol(sym.ID, new String(yytext()));}
+					case -85:
+						break;
+					case 94:
+						{ return new Symbol(sym.ID, new String(yytext()));}
+					case -86:
 						break;
 					default:
 						yy_error(YY_E_INTERNAL,false);
