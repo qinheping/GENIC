@@ -222,6 +222,8 @@ public class Invertor {
 			return context.mkIntSort();
 		if(s.getType() == 3)
 			return context.mkBitVecSort(s.getLength());
+		if(s.getType() == 1)
+			return context.mkBoolSort();
 		return null;
 	}	
 	static public String toFormat(TypeNode type, String s){

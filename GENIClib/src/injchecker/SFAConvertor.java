@@ -172,8 +172,8 @@ public class SFAConvertor {
 				Goal g = ctx.mkGoal(true, false, false);
 				for (int i = 0; i < funcDefs.length; i++) {
 					g.add((BoolExpr) funcDefs[i]);
-					g.add(outputpred);
 				}
+				g.add(outputpred);
 				ApplyResult ar = ctx.mkTactic("macro-finder").apply(g);
 				outputpred = ctx.mkAnd(ar.getSubgoals()[0].getFormulas());
 				outputpred = ctx.mkExists(sorts, names, outputpred, 1, null, null, null, null);

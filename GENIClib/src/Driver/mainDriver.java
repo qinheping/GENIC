@@ -40,7 +40,7 @@ public class mainDriver {
 	
 	public static void main(String args[]) throws Exception {
 			// read input
-			Symbol root = GetRoot("test/base/base16decode");
+			Symbol root = GetRoot("test/int_test/int_test_20");
     		CoderNode Root = (CoderNode) root.value;
     		funcdefs = Root.getFuncdefs();
     		// init def
@@ -66,9 +66,10 @@ public class mainDriver {
             
     		SFAConvertor converter = new SFAConvertor(Root, ctx, funcdefs, inverted_funcdefs, "S0");
     		SFA<BoolExpr, Expr> sfa = converter.Convert();
+    		
     		//System.out.println(sfa);
+    		
     		Z3BooleanAlgebra Z3ba = new Z3BooleanAlgebra(ctx);
-    		//System.out.println(sfa);
     		System.out.println(sfa.getAmbiguousInput(Z3ba));
     		long end = System.currentTimeMillis();
     		System.out.println("inj: " + (end-start));

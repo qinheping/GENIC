@@ -123,9 +123,9 @@ function S19 (l: Int) : Int :=
 function S20 (l: Int) : Int :=
 	match l with
 	| x::y::z::tail when (and (= x 0) (> y 21) (> z 21));
-		-> [1; (+ y 21); (+ z 22)] ++ F(tail)
+		-> [1; (+ y 21); (+ z 22)] 
 	| x::y::z::tail when (and (= x 1) (> y 21) (> z 21));
-		-> [0; (+ y 42); (+ z 44)] ++ F(tail)
+		-> [0; (+ y 42); (+ z 44)] 
 
 ===
 invert f;

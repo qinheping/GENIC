@@ -50,6 +50,8 @@ public class SortNode extends SMTASTNode{
 			return new TypeNode(Type.INT);
 		if(mysymbol.equals("BitVec"))
 			return new TypeNode(Type.BV,myparameter);
+		if(mysymbol.equals("Bool"))
+			return new TypeNode(Type.BOOL);
 		return null;
 	}
 }
