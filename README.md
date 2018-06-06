@@ -3,7 +3,7 @@ Instructions with Eclipse
 ----------------
 *Requirements*: Java SE >= 1.8
 
-Z3 : You need to build [Z3](https://github.com/Z3Prover/z3.git) for JAVA api and copy your ``com.microsoft.z3.jar``, ``libz3.so`` and ``libz3java.so`` into lib folder
+z3 : You need to build [z3](https://github.com/Z3Prover/z3.git) for JAVA api and copy your ``com.microsoft.z3.jar``, ``libz3.so`` and ``libz3java.so`` into lib folder
 
 CVC4 : you need to build [CVC4](https://github.com/CVC4/CVC4.git) and copy the file ``CVC4`` into lib folder.
 
