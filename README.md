@@ -1,17 +1,33 @@
 # Reverser of String Encoders
-Instructions with Eclipse
-----------------
-*Requirements*: Java SE >= 1.8
 
-z3 : You need to build [z3](https://github.com/Z3Prover/z3.git) for JAVA api and copy your ``com.microsoft.z3.jar``, ``libz3.so`` and ``libz3java.so`` into lib folder
+## Overview
+This repository contains tools and libraries for symbolic automata and reversing string encoders. It consists of multiple Maven modules (`symbolicautomata`, `GENIClib`, and `TestGENIC`).
 
-CVC4 : you need to build [CVC4](https://github.com/CVC4/CVC4.git) and copy the file ``CVC4`` into lib folder.
+## Requirements
+* Java Development Kit (JDK) 1.8
+* Maven 3.x
 
-1. After finishing the preparation intorduced above, the easiest way to use the libraries and build them is to open them in Eclipse. You need to use a recent version of Eclipse (> Mars) otherwise you might see some problems.
+## Build Instructions
 
-2. In Eclipse, configure build path as follow: 
-    add jar ``/GENIC/GENIClib/lib/com.microsoft.z3.jar``
-    add class folder ``/GENIC/GENIClib/lib``
-    add library JUnit 4 (if you want to run the unittest)
+To build the entire project cleanly, simply use the acceptance script or standard Maven commands from the root of the repository:
 
-3. Run configuration: in the environment tab, set variable ``LD_LIBRARY_PATH`` to value ``../GENIClib/lib``
+```bash
+./acceptance_test.sh
+```
+
+Or manually run:
+
+```bash
+# Clean and compile the project and its modules
+mvn clean install -DskipTests
+```
+
+## Running Tests
+
+To run the tests for the project, run the following from the root directory:
+
+```bash
+mvn clean test
+```
+
+*Note:* Z3 Native bindings are already shipped under `GENIClib/lib/`. The Maven configuration automatically configures the library path (`LD_LIBRARY_PATH` or equivalent java arguments) during the test phase. You no longer need manual configuration via Eclipse to set up or run tests.
