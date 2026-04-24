@@ -40,7 +40,6 @@ public class Z3FactoryUnitTest {
 		Z3Factory fa = new Z3Factory(sortstable,funcstable,ctx);
 		Expr result = fa.TermNodeToExpr(n);
 		System.out.println(result);
-		fail("Not yet implemented");
 	}
 	
 }

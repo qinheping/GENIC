@@ -1,3 +1,4 @@
 [submodule "symbolicautomata"]
+	branch = inversion
 	path = symbolicautomata
 	url = git@github.com:lorisdanto/symbolicautomata.git
